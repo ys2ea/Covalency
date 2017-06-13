@@ -1,0 +1,241 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Article{bagus1984new,
+  Title                    = {A new analysis of charge transfer and polarization for ligand--metal bonding: Model studies of Al4CO and Al4NH3},
+  Author                   = {Bagus, Paul S and Hermann, K and Bauschlicher Jr, Charles W},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {1984},
+  Number                   = {9},
+  Pages                    = {4378--4386},
+  Volume                   = {80},
+
+  Publisher                = {AIP}
+}
+
+@Article{bagus1992decomposition,
+  Title                    = {Decomposition of the chemisorption bond by constrained variations: order of the variations and construction of the variational spaces},
+  Author                   = {Bagus, Paul S and Illas, Francesc},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {1992},
+  Number                   = {12},
+  Pages                    = {8962--8970},
+  Volume                   = {96},
+
+  Publisher                = {AIP}
+}
+
+@Article{chen1996energy,
+  Title                    = {Energy decomposition analyses for many-body interaction and applications to water complexes},
+  Author                   = {Chen, Wei and Gordon, Mark S},
+  Journal                  = {The Journal of Physical Chemistry},
+  Year                     = {1996},
+  Number                   = {34},
+  Pages                    = {14316--14328},
+  Volume                   = {100},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{cobar2012examination,
+  Title                    = {Examination of the hydrogen-bonding networks in small water clusters (n= 2--5, 13, 17) using absolutely localized molecular orbital energy decomposition analysis},
+  Author                   = {Cobar, Erika A and Horn, Paul R and Bergman, Robert G and Head-Gordon, Martin},
+  Journal                  = {Physical Chemistry Chemical Physics},
+  Year                     = {2012},
+  Number                   = {44},
+  Pages                    = {15328--15339},
+  Volume                   = {14},
+
+  Publisher                = {Royal Society of Chemistry}
+}
+
+@Article{ghanty2000hydrogen,
+  Title                    = {Is the hydrogen bond in water dimer and ice covalent?},
+  Author                   = {Ghanty, Tapan K and Staroverov, Viktor N and Koren, Patrick R and Davidson, Ernest R},
+  Journal                  = {Journal of the American Chemical Society},
+  Year                     = {2000},
+  Number                   = {6},
+  Pages                    = {1210--1214},
+  Volume                   = {122},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{glendening2005natural,
+  Title                    = {Natural energy decomposition analysis: Extension to density functional methods and analysis of cooperative effects in water clusters},
+  Author                   = {Glendening, Eric D},
+  Journal                  = {The Journal of Physical Chemistry A},
+  Year                     = {2005},
+  Number                   = {51},
+  Pages                    = {11936--11940},
+  Volume                   = {109},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{glendening1994natural,
+  Title                    = {Natural energy decomposition analysis: An energy partitioning procedure for molecular interactions with application to weak hydrogen bonding, strong ionic, and moderate donor--acceptor interactions},
+  Author                   = {Glendening, Eric D and Streitwieser, Andrew},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {1994},
+  Number                   = {4},
+  Pages                    = {2900--2909},
+  Volume                   = {100},
+
+  Publisher                = {AIP}
+}
+
+@Article{isaacs1999covalency,
+  Title                    = {Covalency of the hydrogen bond in ice: A direct X-ray measurement},
+  Author                   = {Isaacs, ED and Shukla, A and Platzman, PM and Hamann, DR and Barbiellini, B and Tulk, CA},
+  Journal                  = {Physical Review Letters},
+  Year                     = {1999},
+  Number                   = {3},
+  Pages                    = {600},
+  Volume                   = {82},
+
+  Publisher                = {APS}
+}
+
+@Article{khaliullin2009electron,
+  Title                    = {Electron donation in the water--water hydrogen bond},
+  Author                   = {Khaliullin, Rustam Z and Bell, Alexis T and Head-Gordon, Martin},
+  Journal                  = {Chemistry--A European Journal},
+  Year                     = {2009},
+  Number                   = {4},
+  Pages                    = {851--855},
+  Volume                   = {15},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{khaliullin2007unravelling,
+  Title                    = {Unravelling the origin of intermolecular interactions using absolutely localized molecular orbitals},
+  Author                   = {Khaliullin, Rustam Z and Cobar, Erika A and Lochan, Rohini C and Bell, Alexis T and Head-Gordon, Martin},
+  Journal                  = {The Journal of Physical Chemistry A},
+  Year                     = {2007},
+  Number                   = {36},
+  Pages                    = {8753--8765},
+  Volume                   = {111},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{khaliullin2006efficient,
+  Title                    = {An efficient self-consistent field method for large systems of weakly interacting components},
+  Author                   = {Khaliullin, Rustam Z and Head-Gordon, Martin and Bell, Alexis T},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {2006},
+  Number                   = {20},
+  Pages                    = {204105},
+  Volume                   = {124},
+
+  Publisher                = {AIP}
+}
+
+@Article{Khaliullin2013JCTC,
+  Title                    = {Efficient linear-scaling density functional theory for molecular systems},
+  Author                   = {Khaliullin, Rustam Z and VandeVondele, Joost and Hutter, Jürg},
+  Journal                  = {Journal of chemical theory and computation},
+  Year                     = {2013},
+  Number                   = {10},
+  Pages                    = {4421--4427},
+  Volume                   = {9},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{kitaura1976new,
+  Title                    = {A new energy decomposition scheme for molecular interactions within the Hartree-Fock approximation},
+  Author                   = {Kitaura, Kazuo and Morokuma, Keiji},
+  Journal                  = {International Journal of Quantum Chemistry},
+  Year                     = {1976},
+  Number                   = {2},
+  Pages                    = {325--340},
+  Volume                   = {10},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{misquitta2003dispersion,
+  Title                    = {Dispersion energy from density-functional theory description of monomers},
+  Author                   = {Misquitta, Alston J and Jeziorski, Bogumil and Szalewicz, Krzysztof},
+  Journal                  = {Physical review letters},
+  Year                     = {2003},
+  Number                   = {3},
+  Pages                    = {033201},
+  Volume                   = {91},
+
+  Publisher                = {APS}
+}
+
+@Article{mo2000energy,
+  Title                    = {Energy decomposition analysis of intermolecular interactions using a block-localized wave function approach},
+  Author                   = {Mo, Yirong and Gao, Jiali and Peyerimhoff, Sigrid D},
+  Journal                  = {The Journal of Chemical Physics},
+  Year                     = {2000},
+  Number                   = {13},
+  Pages                    = {5530--5538},
+  Volume                   = {112},
+
+  Publisher                = {AIP}
+}
+
+@Article{piquemal2005csov,
+  Title                    = {A CSOV study of the difference between HF and DFT intermolecular interaction energy values: The importance of the charge transfer contribution},
+  Author                   = {Piquemal, Jean-Philip and Marquez, Antonio and Parisel, Olivier and Giessner--Prettre, Claude},
+  Journal                  = {Journal of computational chemistry},
+  Year                     = {2005},
+  Number                   = {10},
+  Pages                    = {1052--1062},
+  Volume                   = {26},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{schenter1996natural,
+  Title                    = {Natural energy decomposition analysis: The linear response electrical self energy},
+  Author                   = {Schenter, Gregory K and Glendening, Eric D},
+  Journal                  = {The Journal of Physical Chemistry},
+  Year                     = {1996},
+  Number                   = {43},
+  Pages                    = {17152--17156},
+  Volume                   = {100},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{stevens1987frozen,
+  Title                    = {Frozen fragment reduced variational space analysis of hydrogen bonding interactions. Application to the water dimer},
+  Author                   = {Stevens, Walter J and Fink, William H},
+  Journal                  = {Chemical physics letters},
+  Year                     = {1987},
+  Number                   = {1},
+  Pages                    = {15--22},
+  Volume                   = {139},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{stone2017natural,
+  Title                    = {Natural Bond Orbitals and the Nature of the Hydrogen Bond},
+  Author                   = {Stone, Anthony J},
+  Journal                  = {The Journal of Physical Chemistry A},
+  Year                     = {2017},
+  Number                   = {7},
+  Pages                    = {1531--1534},
+  Volume                   = {121},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{weinhold1998natural,
+  Title                    = {Natural bond orbital methods},
+  Author                   = {Weinhold, Frank},
+  Journal                  = {Encyclopedia of computational chemistry},
+  Year                     = {1998},
+
+  Publisher                = {Wiley Online Library}
+}
+

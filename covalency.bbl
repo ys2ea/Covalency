@@ -1,0 +1,175 @@
+\begin{thebibliography}{21}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Isaacs et~al.}(1999)\citenamefont{Isaacs, Shukla,
+  Platzman, Hamann, Barbiellini, and Tulk}}]{isaacs1999covalency}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Isaacs}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Shukla}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Platzman}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Hamann}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Barbiellini}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Tulk}},
+  \bibinfo{journal}{Physical Review Letters} \textbf{\bibinfo{volume}{82}},
+  \bibinfo{pages}{600} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Ghanty et~al.}(2000)\citenamefont{Ghanty, Staroverov,
+  Koren, and Davidson}}]{ghanty2000hydrogen}
+\bibinfo{author}{\bibfnamefont{T.~K.} \bibnamefont{Ghanty}},
+  \bibinfo{author}{\bibfnamefont{V.~N.} \bibnamefont{Staroverov}},
+  \bibinfo{author}{\bibfnamefont{P.~R.} \bibnamefont{Koren}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.~R.} \bibnamefont{Davidson}},
+  \bibinfo{journal}{Journal of the American Chemical Society}
+  \textbf{\bibinfo{volume}{122}}, \bibinfo{pages}{1210} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Stone}(2017)}]{stone2017natural}
+\bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Stone}},
+  \bibinfo{journal}{The Journal of Physical Chemistry A}
+  \textbf{\bibinfo{volume}{121}}, \bibinfo{pages}{1531} (\bibinfo{year}{2017}).
+
+\bibitem[{\citenamefont{Weinhold}(1998)}]{weinhold1998natural}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Weinhold}},
+  \bibinfo{journal}{Encyclopedia of computational chemistry}
+  (\bibinfo{year}{1998}).
+
+\bibitem[{\citenamefont{Glendening and
+  Streitwieser}(1994)}]{glendening1994natural}
+\bibinfo{author}{\bibfnamefont{E.~D.} \bibnamefont{Glendening}}
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Streitwieser}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{100}}, \bibinfo{pages}{2900} (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Schenter and Glendening}(1996)}]{schenter1996natural}
+\bibinfo{author}{\bibfnamefont{G.~K.} \bibnamefont{Schenter}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.~D.} \bibnamefont{Glendening}},
+  \bibinfo{journal}{The Journal of Physical Chemistry}
+  \textbf{\bibinfo{volume}{100}}, \bibinfo{pages}{17152}
+  (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Glendening}(2005)}]{glendening2005natural}
+\bibinfo{author}{\bibfnamefont{E.~D.} \bibnamefont{Glendening}},
+  \bibinfo{journal}{The Journal of Physical Chemistry A}
+  \textbf{\bibinfo{volume}{109}}, \bibinfo{pages}{11936}
+  (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Weinhold}(2005)}]{weinhold2005resonance}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Weinhold}},
+  \bibinfo{journal}{Advances in protein chemistry}
+  \textbf{\bibinfo{volume}{72}}, \bibinfo{pages}{121} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Kitaura and Morokuma}(1976)}]{kitaura1976new}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Kitaura}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Morokuma}},
+  \bibinfo{journal}{International Journal of Quantum Chemistry}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{325} (\bibinfo{year}{1976}).
+
+\bibitem[{\citenamefont{Bagus et~al.}(1984)\citenamefont{Bagus, Hermann, and
+  Bauschlicher~Jr}}]{bagus1984new}
+\bibinfo{author}{\bibfnamefont{P.~S.} \bibnamefont{Bagus}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Hermann}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~W.} \bibnamefont{Bauschlicher~Jr}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{80}}, \bibinfo{pages}{4378} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Bagus and Illas}(1992)}]{bagus1992decomposition}
+\bibinfo{author}{\bibfnamefont{P.~S.} \bibnamefont{Bagus}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Illas}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{96}}, \bibinfo{pages}{8962} (\bibinfo{year}{1992}).
+
+\bibitem[{\citenamefont{Stevens and Fink}(1987)}]{stevens1987frozen}
+\bibinfo{author}{\bibfnamefont{W.~J.} \bibnamefont{Stevens}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.~H.} \bibnamefont{Fink}},
+  \bibinfo{journal}{Chemical physics letters} \textbf{\bibinfo{volume}{139}},
+  \bibinfo{pages}{15} (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Chen and Gordon}(1996)}]{chen1996energy}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Chen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Gordon}},
+  \bibinfo{journal}{The Journal of Physical Chemistry}
+  \textbf{\bibinfo{volume}{100}}, \bibinfo{pages}{14316}
+  (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Mo et~al.}(2000)\citenamefont{Mo, Gao, and
+  Peyerimhoff}}]{mo2000energy}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Mo}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Gao}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~D.} \bibnamefont{Peyerimhoff}},
+  \bibinfo{journal}{The Journal of Chemical Physics}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{5530} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Misquitta et~al.}(2003)\citenamefont{Misquitta,
+  Jeziorski, and Szalewicz}}]{misquitta2003dispersion}
+\bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Misquitta}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Jeziorski}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Szalewicz}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{033201} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Khaliullin et~al.}(2007)\citenamefont{Khaliullin,
+  Cobar, Lochan, Bell, and Head-Gordon}}]{khaliullin2007unravelling}
+\bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
+  \bibinfo{author}{\bibfnamefont{E.~A.} \bibnamefont{Cobar}},
+  \bibinfo{author}{\bibfnamefont{R.~C.} \bibnamefont{Lochan}},
+  \bibinfo{author}{\bibfnamefont{A.~T.} \bibnamefont{Bell}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Head-Gordon}},
+  \bibinfo{journal}{The Journal of Physical Chemistry A}
+  \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{8753} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Piquemal et~al.}(2005)\citenamefont{Piquemal, Marquez,
+  Parisel, and Giessner-Prettre}}]{piquemal2005csov}
+\bibinfo{author}{\bibfnamefont{J.-P.} \bibnamefont{Piquemal}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Marquez}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Parisel}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Giessner-Prettre}},
+  \bibinfo{journal}{Journal of computational chemistry}
+  \textbf{\bibinfo{volume}{26}}, \bibinfo{pages}{1052} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Khaliullin et~al.}(2009)\citenamefont{Khaliullin, Bell,
+  and Head-Gordon}}]{khaliullin2009electron}
+\bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
+  \bibinfo{author}{\bibfnamefont{A.~T.} \bibnamefont{Bell}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Head-Gordon}},
+  \bibinfo{journal}{Chemistry--A European Journal}
+  \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{851} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Cobar et~al.}(2012)\citenamefont{Cobar, Horn, Bergman,
+  and Head-Gordon}}]{cobar2012examination}
+\bibinfo{author}{\bibfnamefont{E.~A.} \bibnamefont{Cobar}},
+  \bibinfo{author}{\bibfnamefont{P.~R.} \bibnamefont{Horn}},
+  \bibinfo{author}{\bibfnamefont{R.~G.} \bibnamefont{Bergman}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Head-Gordon}},
+  \bibinfo{journal}{Physical Chemistry Chemical Physics}
+  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{15328} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Khaliullin et~al.}(2013)\citenamefont{Khaliullin,
+  VandeVondele, and Hutter}}]{Khaliullin2013JCTC}
+\bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{VandeVondele}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Hutter}},
+  \bibinfo{journal}{Journal of chemical theory and computation}
+  \textbf{\bibinfo{volume}{9}}, \bibinfo{pages}{4421} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Khaliullin et~al.}(2006)\citenamefont{Khaliullin,
+  Head-Gordon, and Bell}}]{khaliullin2006efficient}
+\bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Head-Gordon}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~T.} \bibnamefont{Bell}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{124}}, \bibinfo{pages}{204105}
+  (\bibinfo{year}{2006}).
+
+\end{thebibliography}
