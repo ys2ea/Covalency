@@ -1,11 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.13)  12 JUN 2017 15:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.24)  14 JUL 2017 13:04
 entering extended mode
-**C:/Users/syfta/Dropbox/water-covalency/covalency.tex
-(C:/Users/syfta/Dropbox/water-covalency/covalency.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9n> and hyphenation patterns for 69 languages loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\revtex4\revtex4.cls"
-Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**covalency.tex
+(./covalency.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
 cumentation)
  Copyright (c) 2001 The American Physical Society.
  mailto:revtex@aps.org
@@ -30,7 +32,7 @@ ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
 \pagegrid@col=\count82
 Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
 ly upper/lower case changing (DPC)]. on input line 3682.
-(C:\Users\syfta\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -47,7 +49,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@figure=\count90
 \c@table=\count91
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
@@ -57,47 +59,47 @@ LaTeX Info: Redefining \cite on input line 694.
 \widetext@top=\box32
 \widetext@bot=\box33
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\revtex4\revsymb.sty"
-Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
 tion)
 LaTeX Info: Redefining \REV@mathfrak on input line 118.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\revtex4\aps.rtx"
-File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
 n)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\revtex4\10pt.rtx"
-File: 10pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/10pt.rtx
+File: 10pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
 on)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count93
@@ -108,49 +110,49 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \epsfxsize=\dimen104
 \epsfysize=\dimen105
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 142.
+Package color Info: Driver file: pdftex.def on input line 143.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen106
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen107
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count95
 \leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count97
 \DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box34
 \strutbox@=\box35
 \big@size=\dimen108
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count99
 \c@MaxMatrixCols=\count100
 \dotsspace@=\muskip11
@@ -171,10 +173,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip46
 \multlinetaggap=\skip47
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
-)
-(covalency.aux)
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+) (./covalency.aux)
 \openout1 = `covalency.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -192,8 +193,7 @@ LaTeX Font Info:    ... okay on input line 4.
 Class revtex4 Info: Patching LaTeX tabular. on input line 4.
 Class revtex4 Info: cite was not loaded (OK!) on input line 4.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 4.
-
-(C:\Users\syfta\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
 \scratchdimen=\dimen115
@@ -206,15 +206,15 @@ Class revtex4 Info: multicol was not loaded (OK!) on input line 4.
 \MPnumerator=\count110
 \makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks23
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -223,35 +223,37 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-34.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
-)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -259,58 +261,137 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Underfull \hbox (badness 4303) in paragraph at lines 66--67
-[]\OT1/cmr/m/n/10 The Oxygen-Oxygen ra-dial dis-tri-bu-tion func-tion
- []
-
-[1{C:/Users/syfta/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<RDF.png, id=12, 481.8pt x 361.35pt>
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<RDF.png, id=13, 481.8pt x 361.35pt>
 File: RDF.png Graphic file (type png)
  <use RDF.png>
 Package pdftex.def Info: RDF.png used on input line 69.
 (pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
 
-<all_ir.png, id=13, 481.8pt x 361.35pt>
-File: all_ir.png Graphic file (type png)
- <use all_ir.png>
-Package pdftex.def Info: all_ir.png used on input line 77.
-(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
-
 <angular_dist.png, id=14, 481.8pt x 361.35pt>
 File: angular_dist.png Graphic file (type png)
  <use angular_dist.png>
-Package pdftex.def Info: angular_dist.png used on input line 84.
-(pdftex.def)             Requested size: 114.75311pt x 86.06412pt.
+Package pdftex.def Info: angular_dist.png used on input line 95.
+(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
 
 <SDF.png, id=15, 1396.4672pt x 794.97pt>
 File: SDF.png Graphic file (type png)
  <use SDF.png>
-Package pdftex.def Info: SDF.png used on input line 85.
-(pdftex.def)             Requested size: 114.75311pt x 65.3214pt.
- (covalency.bbl [2 <./RDF.png> <./all_ir.png> <./angular_dist.png> <./SDF.png>]
-) [3] (covalency.aux) ) 
+Package pdftex.def Info: SDF.png used on input line 100.
+(pdftex.def)             Requested size: 229.49844pt x 130.64279pt.
+
+<HB_decay.png, id=17, 481.8pt x 361.35pt>
+File: HB_decay.png Graphic file (type png)
+ <use HB_decay.png>
+Package pdftex.def Info: HB_decay.png used on input line 112.
+(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+ [2 <./RDF.png> <./angular_dist.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 123.
+
+<dipole_dist.png, id=32, 481.8pt x 361.35pt>
+File: dipole_dist.png Graphic file (type png)
+ <use dipole_dist.png>
+Package pdftex.def Info: dipole_dist.png used on input line 128.
+(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+
+<all_ir.png, id=33, 481.8pt x 361.35pt>
+File: all_ir.png Graphic file (type png)
+ <use all_ir.png>
+Package pdftex.def Info: all_ir.png used on input line 136.
+(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+
+<ALMO_0_msd.png, id=34, 481.8pt x 361.35pt>
+File: ALMO_0_msd.png Graphic file (type png)
+ <use ALMO_0_msd.png>
+Package pdftex.def Info: ALMO_0_msd.png used on input line 148.
+(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+
+<FULL_SCF_msd.png, id=35, 481.8pt x 361.35pt>
+File: FULL_SCF_msd.png Graphic file (type png)
+ <use FULL_SCF_msd.png>
+Package pdftex.def Info: FULL_SCF_msd.png used on input line 149.
+(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+ [3 <./SDF.png> <./HB_decay.png> <./dipole_dist.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 172.
+
+<aug_ir.png, id=42, 321.2pt x 240.9pt>
+File: aug_ir.png Graphic file (type png)
+ <use aug_ir.png>
+Package pdftex.def Info: aug_ir.png used on input line 174.
+(pdftex.def)             Requested size: 178.50311pt x 133.88118pt.
+
+<aug_rdf.png, id=43, 321.2pt x 240.9pt>
+File: aug_rdf.png Graphic file (type png)
+ <use aug_rdf.png>
+Package pdftex.def Info: aug_rdf.png used on input line 175.
+(pdftex.def)             Requested size: 178.50311pt x 133.88118pt.
+
+<rdf_NVT_CPDNVT.png, id=44, 481.8pt x 361.35pt>
+File: rdf_NVT_CPDNVT.png Graphic file (type png)
+ <use rdf_NVT_CPDNVT.png>
+Package pdftex.def Info: rdf_NVT_CPDNVT.png used on input line 182.
+(pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
+
+<rdf_OH_NVT_CPDNPT.png, id=45, 481.8pt x 361.35pt>
+File: rdf_OH_NVT_CPDNPT.png Graphic file (type png)
+ <use rdf_OH_NVT_CPDNPT.png>
+Package pdftex.def Info: rdf_OH_NVT_CPDNPT.png used on input line 183.
+(pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
+
+<angular_NVT_NPTCP.png, id=46, 481.8pt x 361.35pt>
+File: angular_NVT_NPTCP.png Graphic file (type png)
+ <use angular_NVT_NPTCP.png>
+Package pdftex.def Info: angular_NVT_NPTCP.png used on input line 190.
+(pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
+
+<ir_NVT_NPTCP.png, id=47, 481.8pt x 361.35pt>
+File: ir_NVT_NPTCP.png Graphic file (type png)
+ <use ir_NVT_NPTCP.png>
+Package pdftex.def Info: ir_NVT_NPTCP.png used on input line 195.
+(pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
+ [4 <./all_ir.png> <./ALMO_0_msd.png> <./FULL_SCF_msd.png> <./aug_ir.png> <./au
+g_rdf.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 201.
+
+(./covalency.bbl [5 <./rdf_NVT_CPDNVT.png> <./rdf_OH_NVT_CPDNPT.png> <./angular
+_NVT_NPTCP.png> <./ir_NVT_NPTCP.png>]) [6] (./covalency.aux) ) 
 Here is how much of TeX's memory you used:
- 3836 strings out of 493634
- 51028 string characters out of 3141314
- 129976 words of memory out of 3000000
- 7181 multiletter control sequences out of 15000+200000
- 8234 words of font info for 30 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 40i,6n,25p,1177b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on covalency.pdf (3 pages, 296822 bytes).
+ 3926 strings out of 493029
+ 52308 string characters out of 6136233
+ 132997 words of memory out of 5000000
+ 7412 multiletter control sequences out of 15000+600000
+ 8234 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,13n,24p,1648b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti9.pfb>
+Output written on covalency.pdf (6 pages, 564733 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

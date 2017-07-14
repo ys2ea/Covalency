@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{26}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -171,5 +171,34 @@
   \bibinfo{journal}{The Journal of chemical physics}
   \textbf{\bibinfo{volume}{124}}, \bibinfo{pages}{204105}
   (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Neumann}(1983)}]{neumann1983dipole}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Neumann}},
+  \bibinfo{journal}{Molecular Physics} \textbf{\bibinfo{volume}{50}},
+  \bibinfo{pages}{841} (\bibinfo{year}{1983}).
+
+\bibitem[{\citenamefont{Adams}(1981)}]{adams1981theory}
+\bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Adams}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{293}},
+  \bibinfo{pages}{447} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Brehm and Kirchner}(2012)}]{brehm2012travis}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Brehm}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kirchner}},
+  \bibinfo{journal}{Journal of cheminformatics} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{F1} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Mar{\'e}chal}(2006)}]{marechal2006hydrogen}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Mar{\'e}chal}},
+  \emph{\bibinfo{title}{The hydrogen bond and the water molecule: The physics
+  and chemistry of water, aqueous and bio-media}}
+  (\bibinfo{publisher}{Elsevier}, \bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Horn and Head-Gordon}(2015)}]{horn2015polarization}
+\bibinfo{author}{\bibfnamefont{P.~R.} \bibnamefont{Horn}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Head-Gordon}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{143}}, \bibinfo{pages}{114111}
+  (\bibinfo{year}{2015}).
 
 \end{thebibliography}

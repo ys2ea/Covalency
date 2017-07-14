@@ -26,6 +26,18 @@
   Publisher                = {AIP}
 }
 
+@Article{brehm2012travis,
+  Title                    = {TRAVIS-a free analyzer and visualizer for Monte Carlo and molecular dynamics trajectories},
+  Author                   = {Brehm, Martin and Kirchner, Barbara},
+  Journal                  = {Journal of cheminformatics},
+  Year                     = {2012},
+  Number                   = {S1},
+  Pages                    = {F1},
+  Volume                   = {4},
+
+  Publisher                = {Springer}
+}
+
 @Article{chen1996energy,
   Title                    = {Energy decomposition analyses for many-body interaction and applications to water complexes},
   Author                   = {Chen, Wei and Gordon, Mark S},
@@ -84,6 +96,18 @@
   Volume                   = {100},
 
   Publisher                = {AIP}
+}
+
+@Article{horn2015polarization,
+  Title                    = {Polarization contributions to intermolecular interactions revisited with fragment electric-field response functions},
+  Author                   = {Horn, Paul R and Head-Gordon, Martin},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {2015},
+  Number                   = {11},
+  Pages                    = {114111},
+  Volume                   = {143},
+
+  Publisher                = {AIP Publishing}
 }
 
 @Article{isaacs1999covalency,
@@ -158,6 +182,13 @@
   Publisher                = {Wiley Online Library}
 }
 
+@Book{marechal2006hydrogen,
+  Title                    = {The hydrogen bond and the water molecule: The physics and chemistry of water, aqueous and bio-media},
+  Author                   = {Mar{\'e}chal, Yves},
+  Publisher                = {Elsevier},
+  Year                     = {2006}
+}
+
 @Article{misquitta2003dispersion,
   Title                    = {Dispersion energy from density-functional theory description of monomers},
   Author                   = {Misquitta, Alston J and Jeziorski, Bogumil and Szalewicz, Krzysztof},
@@ -180,6 +211,18 @@
   Volume                   = {112},
 
   Publisher                = {AIP}
+}
+
+@Article{neumann1983dipole,
+  Title                    = {Dipole moment fluctuation formulas in computer simulations of polar systems},
+  Author                   = {Neumann, Martin},
+  Journal                  = {Molecular Physics},
+  Year                     = {1983},
+  Number                   = {4},
+  Pages                    = {841--858},
+  Volume                   = {50},
+
+  Publisher                = {Taylor \& Francis}
 }
 
 @Article{piquemal2005csov,
@@ -228,6 +271,17 @@
   Volume                   = {121},
 
   Publisher                = {ACS Publications}
+}
+
+@Article{weinhold2005resonance,
+  Title                    = {Resonance character of hydrogen-bonding interactions in water and other H-bonded species},
+  Author                   = {Weinhold, F},
+  Journal                  = {Advances in protein chemistry},
+  Year                     = {2005},
+  Pages                    = {121--155},
+  Volume                   = {72},
+
+  Publisher                = {Elsevier}
 }
 
 @Article{weinhold1998natural,

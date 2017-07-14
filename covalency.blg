@@ -1,3 +1,49 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: covalency.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: covalency.aux
 The style file: apsrev.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: covalency.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 26 entries,
+            3411 wiz_defined-function locations,
+            1333 strings with 15200 characters,
+and the built_in function-call counts, 17171 in all, are:
+= -- 1000
+> -- 524
+< -- 79
++ -- 418
+- -- 128
+* -- 2283
+:= -- 1896
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 104
+chr.to.int$ -- 26
+cite$ -- 26
+duplicate$ -- 1562
+empty$ -- 1475
+format.name$ -- 336
+if$ -- 3262
+int.to.chr$ -- 1
+int.to.str$ -- 27
+missing$ -- 244
+newline$ -- 93
+num.names$ -- 78
+pop$ -- 427
+preamble$ -- 1
+purify$ -- 104
+quote$ -- 0
+skip$ -- 641
+stack$ -- 0
+substring$ -- 608
+swap$ -- 1210
+text.length$ -- 64
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 154
+warning$ -- 0
+while$ -- 76
+width$ -- 0
+write$ -- 272
