@@ -2,6 +2,7 @@
 
 \usepackage{epsfig,color,graphicx,amsmath}
 \begin{document}
+\newcommand{\Ang}{\ensuremath{\mathring{\text{A}}}}
 \newcommand{\ltwid}{\mathrel{\raise.3ex\hbox{$<$\kern-.75em\lower1ex\hbox{$\sim$}}}}
 \newcommand{\gtwid}{\mathrel{\raise.3ex\hbox{$>$\kern-.75em\lower1ex\hbox{$\sim$}}}}
 \newcommand{\bra}{\langle}
@@ -20,8 +21,7 @@
 
 \bibliographystyle{apsrev}
 
-\title{Establishing a fundamental connection between the covalent component of the
-hydrogen bonding network and properties of liquid water}
+\title{Contribution of the covalent component of the hydrogen-bond network to the properties of liquid water}
 
 \author{Yifei Shi}
 \affiliation{Department of Chemistry, McGill University, 801 Sherbrooke St. West, Montreal, QC H3A 0B8, Canada}
@@ -29,7 +29,7 @@ hydrogen bonding network and properties of liquid water}
 \author{Hayden Scheiber}
 \affiliation{Department of Chemistry, McGill University, 801 Sherbrooke St. West, Montreal, QC H3A 0B8, Canada}
 
-\author{Rustam Khaliullin}
+\author{Rustam Z. Khaliullin}
 \affiliation{Department of Chemistry, McGill University, 801 Sherbrooke St. West, Montreal, QC H3A 0B8, Canada}
 
 %\date{\today}
@@ -43,65 +43,103 @@ Many remarkable properties of liquid water originate from the ability of water m
 
 \section{Introduction} 
 
-Detailed understanding of the physical nature of hydrogen bonding (HB) between molecules in water is essential to unravel origins of the unique properties of this ubiquitous and important liquid. It has been known since the dawn of quantum mechanics that hydrogen bonding is a complex phenomenon that arises from the interplay of several distinct effects: interaction between molecules’ permanent multipoles (dipoles, quadrupoles, etc.), polarization, dispersion, and donor-acceptor orbital interactions that lead to partial electron transfer between molecules. Recent developments in electronic structure methods have helped to make progress towards solving a long-standing problem of quantifying the individual contributions of these effects to the energy of hydrogen bonding. One last unresolved issue has been the extent of intermolecular charge transfer in hydrogen bonding \cite{isaacs1999covalency,ghanty2000hydrogen,stone2017natural}.
-Natural bond orbital (NBO) analysis\cite{weinhold1998natural} and natural energy decomposition analysis \cite{glendening1994natural} suggest that charge transfer (CT) is predominant \cite{schenter1996natural,glendening2005natural,weinhold2005resonance} because, if charge transfer is neglected, NBO analysis shows no binding at the water-dimer equilibrium geometry. However, other earlier decomposition methods \cite{kitaura1976new,bagus1984new,bagus1992decomposition,stevens1987frozen,chen1996energy} as well as as most recently developed alternatives \cite{mo2000energy,misquitta2003dispersion,khaliullin2007unravelling} estimated that CT contributes only around 20\% of the overall binding energy. After a debate spanning several decades, it is becoming clear that NBO is not optimized to treat intermolecular interactions\cite{stone2017natural}, and covalent donor-acceptor component contributes only a small portion to the overall binding energy between water molecules in small clusters \cite{stevens1987frozen,chen1996energy,piquemal2005csov,khaliullin2009electron,cobar2012examination}.
+Detailed understanding of the physical nature of hydrogen bonding (HB) between molecules in water is essential for unraveling origins of unique physical and chemical properties of this ubiquitous and important liquid. Since the dawn of quantum mechanics, it has been known that hydrogen bonding is a complex phenomenon that arises from the interplay of several distinct effects: interaction between molecules’ permanent multipoles (dipoles, quadrupoles, etc.), polarization, dispersion, and orbital donor-acceptor interactions~\cite{ZZZ}. 
 
+Donor-acceptor interaction leads to the transfer of the electron density between molecules and, therefore, is called the charge-transfer or covalent component of HB. The concept of covalent interactions in HB has always been tremendously useful in chemistry 
+%[and is deeply embedded into the everyday chemistry jargon/language. It helps] 
+as it helps explain, to name only few, water's unique properties as a solvent, its ability to catalyze a wide variety of chemical processes, and strong cooperativity between hydrogen bonds. From the theoretical standpoint, the covalent component of HB has attracted significant attention because of its purely quantum mechanical nature, which, unlike electrostatic and dispersion interactions, is hard to describe with simple analytical potentials~\cite{ZZZ}. 
 
+% ZZZ: NBO - remove abbreviation. Check AIMD, MD, ALMO, DFT,
 
-The success of energy decomposition techniques allowed us to look beyond a simple contribution of charge transfer to the interaction energy and to establish a fundamental connection between physical components and the observed properties of water – an area, in which our knowledge remains rudimentary at best. In this work, we coupled ab initio molecular dynamics to a recently developed energy decomposition method for periodic systems \cite{Khaliullin2013JCTC} to perform an unprecedented computational study that enabled us to quantify the contribution of the covalent component of hydrogen bonding to the structural, dynamical and spectroscopic properties of liquid water at ambient conditions. We showed that even a seemingly insignificant covalent component of hydrogen bonding has a profound effect on the properties of water.
+Recent developments in energy decomposition techniques based on accurate electronic structure methods have helped make substantial progress towards quantifying the individual contributions of various physical effects to the HB energy in small water clusters. However, the extent of intermolecular charge transfer in HB has remained the last unresolved issue until recently~\cite{isaacs1999covalency,ghanty2000hydrogen,stone2017natural}. Natural bond orbital analysis\cite{weinhold1998natural} and natural energy decomposition analysis \cite{glendening1994natural} have suggested that charge transfer is the major component of HB~\cite{schenter1996natural,glendening2005natural,weinhold2005resonance} because, if charge transfer is neglected, these methods show no binding at the water-dimer equilibrium geometry. After a debate spanning several decades, it has been argued that natural bond orbital analysis is not optimal for weak interactions~\cite{stone2017natural}. It appears that the covalent component of HB is better described by early decomposition methods~\cite{kitaura1976new,bagus1984new,bagus1992decomposition,stevens1987frozen,chen1996energy,ZZZ-SAPT} as well as their modern variants~\cite{mo2000energy,misquitta2003dispersion,khaliullin2007unravelling}. According to these methods, charge transfer contributes only around 20\% to the overall binding energy between water molecules in small clusters \cite{stevens1987frozen,chen1996energy,piquemal2005csov,khaliullin2009electron,cobar2012examination}, in agreement with the with chemists' long-held intuitive view of HB.
 
+While energy decomposition methods have helped understand the importance of the charge-transfer for the binding strength in gas-phase water clusters little is known about the contribution of the covalent component of HB to the \emph{observed} properties of liquid water. A great fundamental importance of studying covalency of HB has been pointed in several works that  noted a deep connection between the covalent interactions and features of the X-ray absorption~\cite{NatureComm2013}, infrared~\cite{JPCL2013}, and nuclear magnetic resonance~\cite{NatureComm2015} spectra of liquid water. In this work, we extended a recently developed energy decomposition method for periodic systems~\cite{Khaliullin2013JCTC} to perform an unprecedented \emph{ab initio} molecular dynamics study that measures quantitatively the contribution of the covalent component of HB to the structural, dynamical and spectroscopic properties of liquid water at ambient conditions. Our results show that a seemingly insignificant covalent component of HB is defining of the properties of liquid water. %[has a profound effect on the properties of water].
+
+%In this work, we combined \emph{ab initio} molecular dynamics with a recently developed energy decomposition method for periodic systems~\cite{Khaliullin2013JCTC} to perform an unprecedented computational study that measures quantitatively the contribution of the covalent component of hydrogen bonding to the structural, dynamical and spectroscopic properties of liquid water at ambient conditions. Our results show that a seemingly insignificant covalent component of HB is defining of the properties of liquid water. %[has a profound effect on the properties of water].
 
 \section{Methods}
 
-To isolate the effect of the covalent component of hydrogen bonding on the properties of liquid water, we performed ab initio molecular dynamics simulations using a special version of density functional theory based on absolutely localized molecular orbitals (ALMO)\cite{khaliullin2006efficient,Khaliullin2013JCTC}. In ALMO, each molecular orbital (MO) is expanded in terms of the atomic orbitals (AOs) of a fragment containing a certain number of molecules, thus the charge transfer between molecules can easily be adjusted by changing the number of molecules in the fragment. In this work each fragment will have only one molecule, totally excluding any intermolecular charge transfer. 
-\new{what to say about ALMO MD?} \old
+To quantify the influence of the covalent component of HB on the observed properties of liquid water we compared the properties calculated using \emph{ab initio} molecular dynamics (AIMD) based on two different models. The first model model incorporates the intermolecular covalency fully whereas the second removes it completely.
 
+The first model is the conventional Kohn-Sham density functional theory (DFT), in which electrons of a water molecule delocalize over all neighbors. This model is known to reproduce properties of liquid water reliably, in semi-quantitative agreement with experimental measurements. 
+%The quality of the simulations was verified by comparing the results to the experimentally available data. 
+In this work, this model is referred to as delocalized-electron, reference, or realistic model. % Agreement is semiquantitative
 
-In order to compare properties of liquid water with and without charge transfer, we look at the system described by ALMO with zero charge transfer, and the system described by normal DFT. The former will be refered to as localized system and the latter delocalized or reference system. We use BLYP functional, TZV2P basis set, and D3 dispersion correction for both systems. The density of these systems are set to be 1g/cm$^3$(\new the densities of systems are slightly(within 5\%) different, but I thought it's not necessary to list all of them \old) for a MD simulation with NVT ensemble at a temperature of 298K with periodic boundary condition. Since properties like density or pressure can be affected by covalency, we also look at a third system whose density is determined by a NPT simulation at a constant pressure of 1atm. This system will be denoted by low density localized system.
+The second model is a constrained DFT method based on absolutely localized molecular orbitals (ALMO)~\cite{khaliullin2006efficient}. Unlike conventional DFT, ALMO DFT~\cite{Khaliullin2013JCTC} is able to confine each electron strictly to its own molecule and therefore completely remove the covalent component from intermolecular bonding. Mathematically, this is achieved by expanding Kohn-Sham molecular orbitals \emph{only} in terms of the atomic orbitals of the same molecules~\cite{gian,khaliullin2006efficient, blw}. Such molecular orbitals are called absolutely localized because they are localized on molecules in the same sense as atomic orbitals are localized on atoms. To shorted the discussion, intermolecular interaction without the covalent component are referred to as \emph{devalent} interactions and the ALMO-based model is called localized-electron or \emph{devalent} model. It is important to note that this model retains all other physical effects, including the covalent component of \emph{intramolecular} OH bonds. %were variationally optimized on each AIMD each step to find the electronic ground state of the system.
+To ensure that the covalent component of intermolecular bonding is removed accurately we performed several tests described in the Supplementary Information.
 
+To keep electrons absolutely localized in a course of AIMD simulations, we extended the recently developed ALMO DFT method for  condensed molecular systems~\cite{Khaliullin2013JCTC} so that the analytical forces can be computed directly from the ALMO DFT energies (see Supplementary Information). 
 
-\section{Results}
+All AIMD simulations, with delocalized and localized molecular orbitals, were performed using the dispersion-corrected~\cite{ZZZ} BLYP exchange-correlation functional~\cite{ZZZ} and TZV2P basis set~\cite{ZZZ}. The temperature of simulations was set to 298~K. The size of a periodic cubic simulation box was fixed to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. Since removing intermolecular covalency can affect the density, we also performed a set of simulations for a system, which density was adjusted to 1~atm using constant pressure AIMD. The length of the AIMD simulations was chosen to obtain statistically meaningful results. A detailed description of the calculations is presented in the Supplementary Information.
 
-\textbf{Static properties} The Oxygen-Oxygen radial distribution function (RDF) is shown in Fig~\ref{Fig:RDF}. The position of the peak moved from 2.8$\mathring{\text{A}}$ to 3.1$\mathring{\text{A}}$. It is clear that the molecules in the localized system turns to be further away, since the interaction between molecules are weaker. \new The O-O peak seems to only depend on the interaction strength. Here the density is the same for both systems, but the molecules seem to get further away. While for the results shown in Fig~\ref{Fig:rdf_cp} the densities are different but the peaks are at the same position. How to interpret this? \old
+\new Temperature and potential are ``two peas in a pod''. Removing covalent interactions weakens HBs. Can we recover properties of room-temperature liquid water using the devalent model at lower temperature? The same question can be asked in the following way: is devalent room-temperature water completely equivalent to high-temperature covalent water? We know the exact contribution of covalency to the binding energy of molecules. How much the temperature should be adjusted to keep the average Boltzmann weights the same?\old
+
+\section{Results and discussion}
+
+\new All figures must be in vector format. You could use, for example, the following lines in the gnuplot scripts
+
+set terminal postscript eps color enhanced size Xsize, Ysize
+
+set output 'filename.eps'
+
+\old
+
+\new Do the calculations and plug in the numbers below. \old Variational principle of quantum mechanics guarantees that removing covalent interactions weakens intermolecular bonding. ALMO-based decomposition energy analysis predicts that, in a water dimer, the transfer of ZZZ\% of an electron contributes ZZZ kJ$\cdot$mol$^{-1}$ (ZZZ\%) to the overall stabilization of the hydrogen bond at equilibrium geometry, in agreement with earlier reports~\cite{ZZZ}. This contribution is [slightly] higher/lower in the \emph{cooperative} HB network of liquid water at ambient conditions:  ZZZ\% of electron and ZZZ ~kJ$\cdot$mol$^{-1}$ per hydrogen bond, assuming exactly two HBs per molecule.
+
+\textbf{Molecular structure.} The covalent component of weak intermolecular bonds has only a minor effect on much stronger intramolecular bonds. The average length of intramolecular OH bond changes from ZZZ~\Ang\ in the realistic model to ZZZ~\Ang\ in the devalent model of water. At the same time, the average intramolecular HOH angle changes from ZZZ degrees to ZZZ degrees[, becoming closer to the value calculated for the 298~K gas phase water molecule].
 
 \begin{figure}
-\includegraphics[width=0.4\textwidth]{RDF}
-\caption{Oxygen-Oxygen radial distribution function for localized and delocalized water systems. The calculation was done for  125 water molecules with NVT ensemble. The average distance between molecules and the position of the first solvent shell are all larger for the localized system. \new Add O-H RDF? \old} \label{Fig:RDF}
+\includegraphics[width=0.5\textwidth]{RDF}
+\includegraphics[width=0.5\textwidth]{angular_dist}
+\caption{A. Oxygen-oxygen radial distribution function. \new Add experimental RDF (YYY-send). Color coding throughout the manuscript: realistic - black, devalent - red, experiment - black dash, vapor - blue, devalent NPT - blue (these colors make it easier for color blind persons to read figures and at the same time minimize the publication cost). Legends throughout: ``Realistic model'', ``Devalent model'', ``Experiment''. Decrease panel height. See figure guidlines for Nature Chemistry. \old B. Angular distribution of the H--O$\cdots$O angle. The distribution is computed for hydrogens within ZZZ~\Ang\ from a reference molecule. \new Compute as we discussed. Can we compare the angular distribution to the experimental curve? \old} \label{Fig:RDF}
 \end{figure}
 
+The effect of the covalency on the structure of the HB network is far more pronounced. The oxygen-oxygen radial distribution function (RDF) in Figure~\ref{Fig:RDF}A shows that weaker intermolecular interactions without the covalent component lead to the considerable expansion of the first coordination shell of a water molecule from the ``realistic'' average of 2.8~\Ang\ to 3.1~\Ang. The shift of the first-shell peak is accompanied by its broadening that is indicative of a wider variety configurations available to devalent HBs. 
 
-To understand how the directional feature of HBs depends on covalency, we look at the spacial distribution function of Oxygen atom, and the distribution of the H-O-O angle, shown in Fig~\ref{Fig:ADF}. For the delocalized water molecule, the HBs are strongly directional, favouring the tetrahedronal structure. Without covalency, the water molecules do remain directional, although the peak is much more diffused. The width of the peak increases from $\sim 10 ^{\circ}$ to $\sim 25^{\circ}$, indicating covalent interaction is a major factor in the orientation of water molecules. However, even without covalent interactions water molecule would remain directional. This is further illustrated in Fig~\ref{Fig:SDF}, where the spacial distribution function (SDF) of the Oxygen atom of 2 cross sections are shown. \new It's interesting to note that the oxygen atoms still prefer to stay around the position, indicating that electrostatic and polarization interactions tend to orient water molecules the same way as charge transfer interaction, although the effect is much weaker. \old
+These dramatic changes in the structure of the HB network are consistent with the decrease in the HB strength. It is remarkable, however, that the remaining components of HB -- permanent electrostatic, polarization and dispersion -- are sufficiently strong to retain several characteristic structural features of the network: well-defined coordination shells and directional HBs~\cite{below}.
+%
+%Arunan E, Desiraju G R, Klein R A, Sadlej, ScheinerS, Alkorta I, Clary D C, Crabtree R H, Dannenberg J J,Hobza P, Kjaergaard H G, Legon A C, Mennucci B andNesbitt D J 2011 Pure Appl. Chem. 83 1619.
+%
+Indeed the second coordination peak in the RDF of the devalent model remains clearly visible though shifted to higher distances. The distribution of HB angles still has a maximum at ZZZ$^\circ$ despite becoming broader (Figure~\ref{Fig:ADF}B). 
 
-We also show in Tab~\ref{HBstat}, how many HBs a molecule donate(D) or accept(A), with a geometric criterion that the H-O-O angle is smaller than 30$^{\circ}$ and the O-O distance is smaller than 3.5$\mathring{\text{A}}$. The number of HBs is 35\% less in the localized system.
+The structure of the HB network for both models can also be illustrated with the spacial distribution of oxygen atoms around a reference water molecule (Figure~\ref{Fig:SDF}). It shows that the distorted tetrahedral structure of liquid water is retained without the covalent component (cf. Figure~\ref{Fig:SDF}A and B), indicating that permanent electrostatic and polarization interactions tend to orient water molecules the same way as the charge-transfer interaction. For comparison, if a model neglects electrostatic interactions includes only the Lennard-Jones potential, which represents dispersion interactions and short-distance repulsion, the HB becomes truly non-directional with uniform angular distribution (Figure~\ref{Fig:SDF}C). 
+
+\begin{figure*}
+\includegraphics[width=0.9\textwidth]{SDF}
+\caption{Cross sections of the spacial distribution of oxygen atoms. The upper panels show the cross section of the spacial distribution function in the plane of the reference water molecule, whereas the lower panels show the cross section in the plane disecting the molecule. A. Reference model, B. localized model, C. Modified TIP3P model that include only van der Waals interactions, D. TIP3P model~\cite{TIP3P}: electrostatic interaction between atomic point charges combined this van der Waals interactions~\cite{TIP3P}. \new Ask Hayden to add A.B.C.D. labels and concentric circles at the peaks in RDF (see the JACS paper).\old} \label{Fig:SDF}
+\end{figure*}
+
+==== STOPPED HERE ====
+
+The importance of permanent electrostatics for the structure of liquid water has been used since the birth of molecular mechanics to create and fine-tune electrostatic fixed-charge models of water. Although such models reproduce the structure and many important properties of liquid water they neglect the covalent component of ZZZ.
+
+
+At this point, it is appropriate to comment on the ability of the reference model to reproduce properties of water. [GGA is known to underestimates the energy gap slightly. As a result they overestimate the electron delocalization, overbinds molecules, produces RDF with sharper peaks than those derived in X-ray scattering experiments. Underestimated diffusion constant, overestimated viscosity. However, for all calculated properties the imperfections of the reference model are far less significant than the changes induced by neglecting intermolecular covalency. This is the main reason we are confident that our devalent model is an accurate depiction of the contribution of the covalent component to the properties .]
+
+\new The O-O peak seems to depend only on the interaction strength. Here the density is the same for both systems, but the molecules seem to get further away. While for the results shown in Fig~\ref{Fig:rdf_cp} the densities are different but the peaks are at the same position. How to interpret this? \old
+
+ALMO water Density is decreased by ZZZ \% to ZZZ g/cm3. While this is a noticeable drop It is important to emphasize that the retained components like permanent multipoles and polarization effects are sufficiently strong to keep the NOCOV water liquid. 
+
+We also show in Tab~\ref{HBstat}, how many HBs a molecule donate(D) or accept(A), with a geometric criterion that the H-O-O angle is smaller than 30$^{\circ}$ and the O-O distance is smaller than 3.5\Ang. The number of HBs is 35\% less in the localized system.
 
 \begin{table}
-\caption{HB statistics for localized and delocalized system.}\label{HBstat}
+\caption{HB statistics for liquid water with and without intermolecular covalency. \new Replace with a graph. Two panels one for accpetor, one for donor. 2 lines with points on each panel: covalent and devalent.\old }\label{HBstat}
 \begin{tabular}{l|*{5}{c}}
 \hline
 Num. of HBs              & 0 & 1 & 2 & 3 &mean HBs \\
 \hline
-Localized(D)               & 13.3\% & 46\% & 40.1\% & 0.5\% & 1.277  \\
-Localized(A)               & 15.7\% & 46.4\% & 32.5\% & 5.2\% & 1.266 \\
-Delocalized(D)             & 0.3\% & 9.9\% & 89.4\% & 0.4\% & 1.899\\
-Delocalized(A)             & 0.4\% & 16.3\% & 76.3\% & 6.9\% & 1.896 \\
-
+Realistic (Donors)             & 0\% & 10\% & 89\% & 0\% & 1.90 \\
+Realistic (Acceptors)             & 0\% & 16\% & 76\% & 7\% & 1.90 \\
+Devalent (Donors)               & 13\% & 46\% & 40\% & 0\% & 1.28  \\
+Devalent (Acceptors)               & 16\% & 46\% & 33\% & 5\% & 1.27
+%Realistic (Donors)             & 0.3\% & 9.9\% & 89.4\% & 0.4\% & 1.90 \\
+%Realistic (Acceptors)             & 0.4\% & 16.3\% & 76.3\% & 6.9\% & 1.90 \\
+%Devalent (Donors)               & 13.3\% & 46\% & 40.1\% & 0.5\% & 1.28  \\
+%Devalent (Acceptors)               & 15.7\% & 46.4\% & 32.5\% & 5.2\% & 1.27
 \end{tabular}
-
 \end{table}
 
-
-\begin{figure}
-\includegraphics[width=0.4\textwidth]{angular_dist}
-\caption{Angular distribution of the H-O-O angle, for delocalized and localized systems. The curves are normalized so that the total integral $\int g(\theta)2\pi \text{sin}(\theta)d\theta = 1$. \new All other plots I have seen use the other way to normalize \old} \label{Fig:ADF}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=0.45\textwidth]{SDF}
-\caption{angular and spacial distribution. Cross sections of spacial distribution. The upper half shows the cross section of SDF in the plane parallel to the water molecule, and the lower half shows the cross section perpendicular to the molecule. (a) Delocalized reference system. (b) Localized system. The Oxygen atom still prefer to stay around the positions corresponding to the tetrahedronal structure. (c) Classical simulation with only Van der Waals force. This case the molecules are truely none-directional, and the angular distribution is uniform. (d) Classical simulation with charge and Van der Waals force. This case the water molecules retain the tetrahedronal structure. } \label{Fig:SDF}
-\end{figure}
-
-\textbf{HB life time}
-The HB decay function $C_{HB}(\tau)$ is defined as:
+\textbf{Network statistics and dynamics.} The HB decay function $C_{HB}(\tau)$ is defined as:
 \bea
 C_{HB}(\tau) = \frac{\sum_{i,j}\langle \theta_{ij}(\tau)\theta_{ij}(0) \rangle}{\sum_{i,j}\langle \theta_{ij}(0) \theta_{ij}(0) \rangle} \label{Eq:HBdecay}
 \eea
@@ -114,8 +152,34 @@ where $\theta_{i,j}(\tau)$ equals to 1 if there is a HB formed between molecule 
 
 The calculated HB life time for delocalized system is 0.7ps, and for localized system it becomes 0.08ps, indicating that HB are much less stable without covalent interaction. 
  
-\textbf{Diple and dielectric constant}
-In spite of the ambiguity of the definition of a local dipole moment, we assign each electron to one molecule through the method of maximally localized Wannier centers (MLWC). The resulting dipole distribution in shown in Fig~\ref{Fig:dipoledist}. The average dipole moment of a water molecule is 3.09 Debye for delocalized system and 2.47 Debye for localized system, while for an isolated molecule it is 1.96 Debye. \new Covalent interaction is also partially responsible for the increase of dipole moment from gas to the condensed phase. \old The dielectric constant can be calculated through the fluctuation of the total dipole moment\cite{neumann1983dipole,adams1981theory}:
+ 
+\textbf{Diffusion constant and viscosity.} D and $\eta$ were calculated using the method of ZZZ~\cite{ZZZ}. The result is listed in Tab~\ref{Tab:dfs}. For delocalized reference the calculated viscocity is larger than the experimental value, a consequence of overestimating interaction strength in the XC functional. And it also implies that about 90\% of water's viscosity comes from covalency.
+
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{ALMO_0_msd}
+\includegraphics[width=0.4\textwidth]{FULL_SCF_msd}
+\caption{Diffusion constant as a function of the system size, for 64, 125 and 256 water molecules. \new error bars?\old }\label{Fig:dfs}
+\end{figure} 
+
+\begin{table}
+\caption{Viscosity and diffusion constant}\label{Tab:dfs}
+\begin{tabular}{l*{6}{c}r}
+\hline
+               & $D(\Ang^2/\text{ps})$ & $\eta(\text{Pa}\cdot \text{s})$ \\
+\hline
+Localized                & 0.7188 & 3.5$\times 10^{-4}$ \\
+
+Delocalized              & 0.1069 & 2.95$\times 10^{-3}$\\
+
+Experimental            & 0.239  & 8.9$\times 10^{-3} $
+
+
+\end{tabular}
+
+\end{table}
+ 
+
+\textbf{Molecular dipole moment and dielectric constant.} Water is a unique solvent. In spite of the ambiguity of the definition of a local dipole moment, we assign each electron to one molecule through the method of maximally localized Wannier centers (MLWC). The resulting dipole distribution in shown in Fig~\ref{Fig:dipoledist}. The average dipole moment of a water molecule is 3.09 Debye for delocalized system and 2.47 Debye for localized system, while for an isolated molecule it is 1.96 Debye. \new Covalent interaction is also partially responsible for the increase of dipole moment from gas to the condensed phase. \old The dielectric constant can be calculated through the fluctuation of the total dipole moment\cite{neumann1983dipole,adams1981theory}:
 
 \bea
 \epsilon = 1+\frac{4\pi}{3V k_B T}  (  \langle |\vec{M}|^2 \rangle  - \langle |\vec{M}| \rangle ^2) \label{Eq:dielectric}
@@ -129,58 +193,52 @@ where $V$ is the volume of the system and $\vec{M}$ the total dipole. \new Add r
 \end{figure}
 
 
-\textbf{Infared spectrum.} The infared spectrum for the system is calculated using TRAVIS package \cite{brehm2012travis}. Fig~\ref{Fig:IR} shows the infared(IR) spectrum of the localized and reference systems. For comparison, the IR spectrum of none-interaction water vapor is also shown. The O-H stretch modes(also denoted by $\nu$ band) of the localized system do not show the broadening and shift due to HBs, as in the delocalized system. And now the two peaks for symmetric and asymmetric stretch modes are separate. This implies that these modes are very sensitive to covanlency, and without covanlecy, they are very similar to that of the none-interacting molecules. \new However, the integrated intensity of the $\nu$ band is still $\sim$10 times larger than that of water vapor, which is generally an indication of the existence of HBs. \old Another difference between the localized and delocalized system is the intermolecular modes, they are shifted to lower energy because the intermolecular bonding in localized system is weaker. The bending modes remain roughly the same for localized, delocalized and vapor systems. Since in liquid water, the shift of the centre of $\nu$ band is caused by the coupling between the O-H stretch mode and librations \cite{marechal2006hydrogen}, it then implies that this coupling is mainly through covalent interactions. Furthermore, the narrow spread of $\nu$ band, while the relative position and orientation of neighboring water molecules are larger (as shown in Fig~\ref{Fig:ADF}) also implies that the HBs are now much less sensitive to molecular environment.
+
+
+\textbf{Infared spectrum.} Fig~\ref{Fig:IR} shows the infared(IR) spectrum of the localized and reference systems. For comparison, the IR spectrum of none-interaction water vapor is also shown. The O-H stretch modes(also denoted by $\nu$ band) of the localized system do not show the broadening and shift due to HBs, as in the delocalized system. And now the two peaks for symmetric and asymmetric stretch modes are separate. This implies that these modes are very sensitive to covanlency, and without covanlecy, they are very similar to that of the none-interacting molecules. \new However, the integrated intensity of the $\nu$ band is still $\sim$10 times larger than that of water vapor, which is generally an indication of the existence of HBs. \old Another difference between the localized and delocalized system is the intermolecular modes, they are shifted to lower energy because the intermolecular bonding in localized system is weaker. The bending modes remain roughly the same for localized, delocalized and vapor systems. Since in liquid water, the shift of the centre of $\nu$ band is caused by the coupling between the O-H stretch mode and librations \cite{marechal2006hydrogen}, it then implies that this coupling is mainly through covalent interactions. Furthermore, the narrow spread of $\nu$ band, while the relative position and orientation of neighboring water molecules are larger (as shown in Fig~\ref{Fig:ADF}B) also implies that the HBs are now much less sensitive to molecular environment.
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{all_ir}
 \caption{IR spectrum. For water vapor, localized and delocalized systems. The low wavenumber part of the spectrum for vapor which corresponds to rotational modes are not shown for simplicity.  The O-H stretch mode ($\sim$3600 cm$^{-1}$) for localized system is very similar to vapor which is none-interaction. And the intermolecular modes ($\sim$500 cm$^{-1}$) moves to the left, indicating the intermolecular bonding is weaker. } \label{Fig:IR}
 \end{figure}
 
-\textbf{Diffusion constant and viscosity.} The diffusion constant for a periodic system is known to have strong dependence on the size of the simulation box, due to the interaction of a particle with its periodic images. And the diffusion constant obeys:
+
+
+\textbf{Conclusions.} In this work, we present the effect of the covalent interaction on observable properties of liquid water, and show that although the charge transfer energy only makes up 30\% of the total bonding energy, it plays a dominant rule in some other properties, like the OH stretch mode, viscocity, HB life time. And also significantly changes dipole moment, angular distribution. 
+ 
+Our result also suggest that classical models that don't take account of covalency only have limit applicability, as they fine-tune the parameters only for certain conditions.
+ 
+Implications: shows that ALMO-based AIMD is an excellent tool for the nature of intermolecular bonding in other condensed phase systems. Catalysis, solvation.
+
+\section{Supplementary Information}
+
+\subsection{Detailed description of computational methods}
+
+\textbf{ALMO DFT.} Implementtion of energies and FORCES in CP2K with a quick review of its dual-basis feature.
+
+\textbf{Settings.} All AIMD simulations were performed using the dispersion-corrected~\cite{ZZZ} BLYP exchange-correlation functional~\cite{ZZZ}, large TZV2P Gaussian basis set, ZZZ Ry cut-off energy for the plane basis set, and GTH pseudopotentials~\cite{ZZZ}. The size of a periodic cubic simulation box containing 125 water molecules was set to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. The temperature of simulations was set to 298~K and was controlled by a weakly-coupled canonical velocity re-scaling thermostat~\cite{ZZZ} with the coupling time constant set to ZZZ~fs. A short time step of 0.5~fs ensured accurate integration of the equations of the motion. The total length of simulations for each system was above ZZZ~ps.
+
+The properties of water including the infrared spectrum, ZZZ, and ZZZ were calculated from the MD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
+
+\subsection{Evaluation of the diffusion constant and viscosity coefficient} 
+
+The diffusion constant for a periodic system is known to have strong dependence on the size of the simulation box, due to the interaction of a particle with its periodic images~\cite{ZZZ}. And the diffusion constant obeys:
 
 \bea
 D(\infty) = D(L) + \frac{k_BT\zeta}{6\pi \eta L},
 \eea
-where $D(L)$ is the diffusion constant for a system of size $L$, $\eta$ is the translational shear viscosity, and $\zeta$ is a constant of 2.837. We calculate the diffusion constant from the mean squre deviation of the molecules, for systems of 64, 125, and 256 molecules, and find the viscosity through the dependence of $D(L)$ on $1/L$, which is shown in Fig~\ref{Fig:dfs}. The result is listed in Tab~\ref{Tab:dfs}. For delocalized reference the calculated viscocity is larger than the experimental value, a consequence of overestimating interaction strength in the XC functional. And it also implies that about 90\% of water's viscosity comes from covalency.
+where $D(L)$ is the diffusion constant for a system of size $L$, $\eta$ is the translational shear viscosity, and $\zeta$ is a constant of 2.837. We calculate the diffusion constant from the mean squre deviation of the molecules, for systems of 64, 125, and 256 molecules, and find the viscosity through the dependence of $D(L)$ on $1/L$, which is shown in Fig~\ref{Fig:dfs}. 
 
-\begin{figure}
-\includegraphics[width=0.4\textwidth]{ALMO_0_msd}
-\includegraphics[width=0.4\textwidth]{FULL_SCF_msd}
-\caption{Diffusion constant as a function of the system size, for 64, 125 and 256 water molecules. \new error bars?\old }\label{Fig:dfs}
-\end{figure} 
+\subsection{Density dependence of localized system} 
 
-\begin{table}
-\caption{Viscosity and diffusion constant}\label{Tab:dfs}
-\begin{tabular}{l*{6}{c}r}
-\hline
-               & $D(\mathring{\text{A}}^2/\text{ps})$ & $\eta(\text{Pa}\cdot \text{s})$ \\
-\hline
-Localized                & 0.7188 & 3.5$\times 10^{-4}$ \\
+This system will be denoted by low density localized system.
 
-Delocalized              & 0.1069 & 2.95$\times 10^{-3}$\\
-
-Experimental            & 0.239  & 8.9$\times 10^{-3} $
-
-
-\end{tabular}
-
-\end{table}
-
-
-\textbf{Dependence on basis set} It is know that methods that use localized MOs, like ALMO, would overestimate polarization energies in the overlapping regime, especially in the case of large basis set, and lack a meaningfull limit in complete basis set\cite{horn2015polarization}. To ensure that our results are not effect by the basis set, we also run MD simulation with a larger (aug-TZV2P) basis set, and compare the results with the calculation of TZV2P basis set, which is used otherwise in this work. The results are summarized in Fig~\ref{Fig:basis}.
-
-\begin{figure}
-\includegraphics[width=0.35\textwidth]{aug_ir}
-\includegraphics[width=0.35\textwidth]{aug_rdf}
-\caption{IR and RDF with aug-TZV2P basis set}\label{Fig:basis}
-\end{figure} 
-
-\textbf{Density dependence of localized system} Here we present the calculation of the system at a density of the NPT ensemble at 1atm, which is 0.85g/cm$^3$. The O-O and O-H radial distribution function is shown in Fig~\ref{Fig:rdf_cp}. The position of the peak doesnot move much for the O-O distritution but the peak is more shallow for the low density system. O-H distance tends to be further in the low density system.
+Here we present the calculation of the system at a density of the NPT ensemble at 1atm, which is 0.85g/cm$^3$. The O-O and O-H radial distribution function is shown in Fig~\ref{Fig:rdf_cp}. The position of the peak doesnot move much for the O-O distritution but the peak is more shallow for the low density system. O-H distance tends to be further in the low density system.
 
 \begin{figure}
 \includegraphics[width=0.45\textwidth]{rdf_NVT_CPDNVT}
 \includegraphics[width=0.45\textwidth]{rdf_OH_NVT_CPDNPT}
-\caption{O-O and O-H radial distribution function for the 2 systems. The cutoff for the O-H distance is set to be 2.6$\mathring{A}$.}\label{Fig:rdf_cp}
+\caption{O-O and O-H radial distribution function for the 2 systems. The cutoff for the O-H distance is set to be 2.6\Ang.}\label{Fig:rdf_cp}
 \end{figure} 
 
 Then angular distribution is shown in Fig~\ref{Fig:adfcp}. Although the interaction for the low density system is weaker, the angular distribution is slightly more ordered. The IR spectrum for the 2 systems are almost identical, as shown in Fig~\ref{Fig:ir_cp}.
@@ -195,12 +253,22 @@ Then angular distribution is shown in Fig~\ref{Fig:adfcp}. Although the interact
 \caption{IR spectrum for the 2 systems.}\label{Fig:ir_cp}
 \end{figure} 
 
-\section{Conclusion}
- In this work, we present the effect of the covalent interaction on observable properties of liquid water, and show that although the charge transfer energy only makes up 30\% of the total bonding energy, it plays a dominant rule in some other properties, like the OH stretch mode, viscocity, HB life time. And also significantly changes dipole moment, angular distribution. 
- 
- Our result also suggest that classical models that don't take account of covalency only have limit applicability, as they fine-tune the parameters only for certain conditions.
- 
- 
-\textbf{Acknowledgments.} The research was funded by the Natural Sciences and Engineering Research Council of Canada through the Discovery Grant. The authors are grateful to Compute Canada and McGill HPC Centre for computer time.
+\subsection{Basis set dependence of the results}
+
+It is know that a straightforward utilization of ALMOs in energy decomposition methods may underestimate charge-transfer effects especially if large basis sets are used~\cite{horn2015polarization,herbert2016}. This deficiency arises from the lack a well-defined separation between the polarization and charge transfer effects in the original ALMO EDA method~\cite{EDA} in the complete basis set limit. It has been demonstrated This problematic aspect of ALMO EDA has been recently be corrected by selecting an appropriated subset of acceptor orbitals\cite{horn2015polarization}. To ensure that our results are not effected by changes in the size of the basis set we re-run AIMD simulation with a larger aug-TZV2P basis set. ZZZ and compare the results with the calculation of TZV2P basis set, which is used otherwise in this work. The results are summarized in Fig~\ref{Fig:basis}.
+
+Moreover, TZV2P basis set has been shown to give [quantitatively] accurate description of CT effect in zero-temperature water cluster. It is also important to note that AIMD simulations become unstable if larger basis sets (eg. QZV) are used to model liquid water. This is because of frequent appearance of molecular configuration with linear dpendencies in the basis set.
+
+\begin{figure}
+\includegraphics[width=0.35\textwidth]{aug_ir}
+\includegraphics[width=0.35\textwidth]{aug_rdf}
+\caption{IR and RDF with aug-TZV2P basis set}\label{Fig:basis}
+\end{figure} 
+
+\section{Acknowledgments} 
+
+The research was funded by the Natural Sciences and Engineering Research Council of Canada through the Discovery Grant. The authors are grateful to Compute Canada and McGill HPC Centre for computer time.
+
 \bibliography{covalency}
+
 \end{document}
