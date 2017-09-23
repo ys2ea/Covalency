@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex covalency"] 1506137242 "covalency.aux" "covalency.bbl" "covalency" 1506137243
+["bibtex covalency"] 1506188270 "covalency.aux" "covalency.bbl" "covalency" 1506188270
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex4/apsrev.bst" 1261594643 44155 dc7233506a001aedcd59cfd90f9fe8d7 ""
-  "covalency.aux" 1506137243 9739 ca4adfd52452eb386fc42e9a23a6af10 ""
+  "covalency.aux" 1506188270 9901 a1901ee52bd58300bc8dfa9b48d71521 ""
   "covalency.bcf" 0 -1 0 ""
-  "covalency.bib" 1506137081 18851 8557adeed42d468590829f2c881542c3 ""
+  "covalency.bib" 1506188253 19126 5979fe577a59f132a2436d076f67853c ""
   (generated)
   "covalency.bbl"
   "covalency.blg"
-["pdflatex"] 1506137242 "covalency.tex" "covalency.pdf" "covalency" 1506137243
+["pdflatex"] 1506188270 "covalency.tex" "covalency.pdf" "covalency" 1506188270
   "/etc/texmf/web2c/texmf.cnf" 1480002517 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -81,16 +81,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1503501768 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1503501788 3855064 2b283827ad0903651b2facc4a21ef3c8 ""
-  "ALMO_0_msd.png" 1495594495 11587 42c2cd78e09edc64519fff840d204b2a ""
-  "FULL_SCF_msd.png" 1495594440 10587 c1cfa0d5be98b049bb8d2725478bf07a ""
   "SDF.eps" 1503083830 815540 6eff1c3d1f7e117c231ba5a90f080627 ""
   "angular_NVT_NPTCP.png" 1499982165 6358 435efcc6fedc0566644da5119e389f9d ""
   "aug_ir.png" 1495644053 13973 ce40145046b7fc6b2c866163db0ccd74 ""
   "aug_rdf.png" 1495644161 10918 3fcfb2ceaab71d3b2a020112fc7e81ed ""
-  "covalency.aux" 1506137243 9739 ca4adfd52452eb386fc42e9a23a6af10 ""
-  "covalency.bbl" 1506137242 16414 fe8f3667fc1d00239ac9bc96fe09e813 "bibtex covalency"
-  "covalency.tex" 1506137240 29155 63ae7a8aba73492000093098c746be26 ""
+  "covalency.aux" 1506188270 9901 a1901ee52bd58300bc8dfa9b48d71521 ""
+  "covalency.bbl" 1506188270 16783 175750d759ed7a633feaa7f11fe224e2 "bibtex covalency"
+  "covalency.tex" 1506188268 29241 d2e99472ac296ac9d538a6cf7ad15bf1 ""
   "ir_NVT_NPTCP.png" 1500005402 6571 661c17753fdf9045c51de15eb9a992d4 ""
+  "msd.eps" 1506143801 28013 d8306e8ff1bc26c03cb694b452314a7d ""
   "new_adf.eps" 1502388989 28506 932e35bc7ed22e2b8a9c543d2b5c5f56 ""
   "new_dipole.eps" 1503343162 23198 c5a69aad34ea789921d1b970b6e4e236 ""
   "new_hbdecay.eps" 1503337012 50757 cd6e88d86eee7921a8907e7e436dfdee ""
@@ -100,6 +99,6 @@
   "rdf_NVT_CPDNVT.png" 1499891066 6286 9a8466607bc61d46e6a3d60f0233b490 ""
   "rdf_OH_NVT_CPDNPT.png" 1499980806 6479 2771237b2fbc66cd034dd0796a7472cc ""
   (generated)
+  "covalency.pdf"
   "covalency.log"
   "covalency.aux"
-  "covalency.pdf"

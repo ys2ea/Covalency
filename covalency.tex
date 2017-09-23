@@ -43,7 +43,7 @@ Many remarkable properties of liquid water originate from the ability of water m
 
 \section{Introduction} 
 
-Detailed understanding of the physical nature of hydrogen bonding (HB) between molecules in water is essential for unraveling origins of unique physical and chemical properties of this ubiquitous and important liquid. Since the dawn of quantum mechanics, it has been known that hydrogen bonding is a complex phenomenon that arises from the interplay of several distinct effects: interaction between molecules’ permanent multipoles (dipoles, quadrupoles, etc.), polarization, dispersion, and orbital donor-acceptor interactions~\cite{ZZZ}. 
+Detailed understanding of the physical nature of hydrogen bonding (HB) between molecules in water is essential for unraveling origins of unique physical and chemical properties of this ubiquitous and important liquid. Since the dawn of quantum mechanics, it has been known that hydrogen bonding is a complex phenomenon that arises from the interplay of several distinct effects: interaction between molecules’ permanent multipoles (dipoles, quadrupoles, etc.), polarization, dispersion, and orbital donor-acceptor interactions~\cite{eisenberg2005structure}. 
 
 Donor-acceptor interaction leads to the transfer of the electron density between molecules and, therefore, is called the charge-transfer or covalent component of HB. The concept of covalent interactions in HB has always been tremendously useful in chemistry 
 %[and is deeply embedded into the everyday chemistry jargon/language. It helps] 
@@ -145,9 +145,8 @@ The calculated HB life time for delocalized system is 0.7ps, and for localized s
 \textbf{Diffusion constant and viscosity.} D and $\eta$ were calculated using the method of ZZZ~\cite{dunweg1993molecular}. The result is listed in Tab~\ref{Tab:dfs}. For delocalized reference the calculated viscocity is larger than the experimental value, a consequence of overestimating interaction strength in the XC functional. And it also implies that about 90\% of water's viscosity comes from covalency.
 
 \begin{figure}
-\includegraphics[width=0.4\textwidth]{ALMO_0_msd}
-\includegraphics[width=0.4\textwidth]{FULL_SCF_msd}
-\caption{Diffusion constant as a function of the system size, for 64, 125 and 256 water molecules. \new error bars?\old }\label{Fig:dfs}
+\includegraphics[width=0.5\textwidth]{msd}
+\caption{Diffusion constant as a function of the system size, for 64, 125 and 256 water molecules. The square dots are from simulation and solid line is a linear fit. \new error bars?\old }\label{Fig:dfs}
 \end{figure} 
 
 \begin{table}
@@ -205,9 +204,9 @@ Implications: shows that ALMO-based AIMD is an excellent tool for the nature of 
 
 \textbf{ALMO DFT.} Implementtion of energies and FORCES in CP2K with a quick review of its dual-basis feature.
 
-\textbf{Settings.} All AIMD simulations were performed using the dispersion-corrected~\cite{grimme2010consistent} BLYP exchange-correlation functional~\cite{becke1988density}, large TZV2P Gaussian basis set, 320 Ry cut-off energy for the plane basis set, and GTH pseudopotentials~\cite{goedecker1996separable,krack2005pseudopotentials}. The size of a periodic cubic simulation box containing 125 water molecules was set to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. The temperature of simulations was set to 298~K and was controlled by a weakly-coupled canonical velocity re-scaling thermostat~\cite{bussi2007canonical} with the coupling time constant set to 300~fs. A short time step of 0.5~fs ensured accurate integration of the equations of the motion. The total length of simulations for each system was above 7~ps.
+\textbf{Settings.} All AIMD simulations were performed using the dispersion-corrected~\cite{grimme2010consistent} BLYP exchange-correlation functional~\cite{becke1988density}, large TZV2P Gaussian basis set, 320 Ry cut-off energy for the plane basis set, and GTH pseudopotentials~\cite{goedecker1996separable,krack2005pseudopotentials}. The size of a periodic cubic simulation box containing 125 water molecules was set to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. The temperature of simulations was set to 298~K and was controlled by a weakly-coupled canonical velocity re-scaling thermostat~\cite{bussi2007canonical} with the coupling time constant set to 300~fs. A short time step of 0.5~fs ensured accurate integration of the equations of the motion. The total length of simulations for each system was above 7~ps after a equilibrium period of 1.5 ~ps.
 
-The properties of water including the infrared spectrum, radial distribution, and mean-square deviation were calculated from the MD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
+The properties of water including the infrared spectrum, radial distribution, dipole distribution and mean-square deviation were calculated from the MD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
 
 \subsection{Evaluation of the diffusion constant and viscosity coefficient} 
 

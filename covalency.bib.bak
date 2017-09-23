@@ -108,6 +108,18 @@
   Publisher                = {Royal Society of Chemistry}
 }
 
+@Article{dunweg1993molecular,
+  Title                    = {Molecular dynamics simulation of a polymer chain in solution},
+  Author                   = {D{\"u}nweg, Burkhard and Kremer, Kurt},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {1993},
+  Number                   = {9},
+  Pages                    = {6983--6997},
+  Volume                   = {99},
+
+  Publisher                = {AIP}
+}
+
 @Article{NatureComm2015,
   Title                    = {Covalency of hydrogen bonds in liquid water can be probed by proton nuclear magnetic resonance experiments},
   Author                   = {Elgabarty, Hossam and Khaliullin, Rustam Z and K{\"u}hne, Thomas D},
