@@ -84,7 +84,7 @@ set output 'filename.eps'
 
 \old
 
-\new Do the calculations and plug in the numbers below. \old Variational principle of quantum mechanics guarantees that removing covalent interactions weakens intermolecular bonding. ALMO-based decomposition energy analysis predicts that, in a water dimer, the transfer of 0.27\% of an electron contributes  $\sim$7.0 kJ$\cdot$mol$^{-1}$ (37\%) to the overall stabilization of the hydrogen bond at equilibrium geometry, in agreement with earlier reports~\cite{ZZZ}. This contribution is [slightly] higher/lower in the \emph{cooperative} HB network of liquid water at ambient conditions:  ZZZ\% of electron and ZZZ ~kJ$\cdot$mol$^{-1}$ per hydrogen bond\cite{?}, assuming exactly two HBs per molecule.
+\new Do the calculations and plug in the numbers below. \old Variational principle of quantum mechanics guarantees that removing covalent interactions weakens intermolecular bonding. ALMO-based decomposition energy analysis predicts that, in a water dimer, the transfer of 0.27\% of an electron contributes  $\sim$7.0 kJ$\cdot$mol$^{-1}$ (37\%) to the overall stabilization of the hydrogen bond at equilibrium geometry, in agreement with earlier reports~\cite{stevens1987frozen,chen1996energy,piquemal2005csov}. This contribution is higher in the \emph{cooperative} HB network of liquid water at ambient conditions \new calculated in this work \old:  1.1\% of electron and 19 ~kJ$\cdot$mol$^{-1}$ per hydrogen bond, \new which agrees with previous study \old\cite{kuhne2014nature}.
 
 \textbf{Molecular structure.} The covalent component of weak intermolecular bonds has only a minor effect on much stronger intramolecular bonds. The average length of intramolecular OH bond changes from 2.33~\Ang\ in the realistic model to 2.75~\Ang\ in the devalent model of water. At the same time, the average intramolecular HOH angle changes from 105.5 degrees to 104.3 degrees[, becoming closer to the value calculated for the 298~K gas phase water molecule].
 
@@ -142,7 +142,7 @@ where $\theta_{i,j}(\tau)$ equals to 1 if there is a HB formed between molecule 
 The calculated HB life time for delocalized system is 0.7ps, and for localized system it becomes 0.08ps, indicating that HB are much less stable without covalent interaction. 
  
  
-\textbf{Diffusion constant and viscosity.} D and $\eta$ were calculated using the method of ZZZ~\cite{ZZZ}. The result is listed in Tab~\ref{Tab:dfs}. For delocalized reference the calculated viscocity is larger than the experimental value, a consequence of overestimating interaction strength in the XC functional. And it also implies that about 90\% of water's viscosity comes from covalency.
+\textbf{Diffusion constant and viscosity.} D and $\eta$ were calculated using the method of ZZZ~\cite{dunweg1993molecular}. The result is listed in Tab~\ref{Tab:dfs}. For delocalized reference the calculated viscocity is larger than the experimental value, a consequence of overestimating interaction strength in the XC functional. And it also implies that about 90\% of water's viscosity comes from covalency.
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{ALMO_0_msd}
@@ -174,7 +174,7 @@ Experimental            & 0.239  & 8.9$\times 10^{-3} $
 \epsilon = 1+\frac{4\pi}{3V k_B T}  (  \langle |\vec{M}|^2 \rangle  - \langle |\vec{M}| \rangle ^2) \label{Eq:dielectric}
 \eea
 
-where $V$ is the volume of the system and $\vec{M}$ the total dipole. \new Add results latter.\old
+where $V$ is the volume of the system and $\vec{M}$ the total dipole. The dielectric constant for the realistic model is 70, close to the experimental value of 78. For the devalent model, this value increases to 180.
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_dipole}
@@ -184,7 +184,7 @@ where $V$ is the volume of the system and $\vec{M}$ the total dipole. \new Add r
 
 
 
-\textbf{Infared spectrum.} Fig~\ref{Fig:IR} shows the infared(IR) spectrum of the localized and reference systems. For comparison, the IR spectrum of none-interaction water vapor is also shown. The O-H stretch modes(also denoted by $\nu$ band) of the localized system do not show the broadening and shift due to HBs, as in the delocalized system. And now the two peaks for symmetric and asymmetric stretch modes are separate. This implies that these modes are very sensitive to covanlency, and without covanlecy, they are very similar to that of the none-interacting molecules. \new However, the integrated intensity of the $\nu$ band is still $\sim$10 times larger than that of water vapor, which is generally an indication of the existence of HBs. \old Another difference between the localized and delocalized system is the intermolecular modes, they are shifted to lower energy because the intermolecular bonding in localized system is weaker. The bending modes remain roughly the same for localized, delocalized and vapor systems. Since in liquid water, the shift of the centre of $\nu$ band is caused by the coupling between the O-H stretch mode and librations \cite{marechal2006hydrogen}, it then implies that this coupling is mainly through covalent interactions. Furthermore, the narrow spread of $\nu$ band, while the relative position and orientation of neighboring water molecules are larger (as shown in Fig~\ref{Fig:ADF}B) also implies that the HBs are now much less sensitive to molecular environment.
+\textbf{Infared spectrum.} Fig~\ref{Fig:IR} shows the infared(IR) spectrum of the localized and reference systems. For comparison, the IR spectrum of none-interaction water vapor is also shown. The O-H stretch modes(also denoted by $\nu$ band) of the localized system do not show the broadening and shift due to HBs, as in the delocalized system. And now the two peaks for symmetric and asymmetric stretch modes are separate. This implies that these modes are very sensitive to covanlency, and without covanlecy, they are very similar to that of the none-interacting molecules. \new However, the integrated intensity of the $\nu$ band is still $\sim$10 times larger than that of water vapor, which is generally an indication of the existence of HBs. \old Another difference between the localized and delocalized system is the intermolecular modes, they are shifted to lower energy because the intermolecular bonding in localized system is weaker. The bending modes remain roughly the same for localized, delocalized and vapor systems. Since in liquid water, the shift of the centre of $\nu$ band is caused by the coupling between the O-H stretch mode and librations \cite{marechal2006hydrogen}, it then implies that this coupling is mainly through covalent interactions. Furthermore, the $\nu$ band is very narrow, while the relative position and orientation of neighboring water molecules are larger (as shown in Fig~\ref{Fig:RDF}B), this also implies that the HBs are now much less sensitive to molecular environment.
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_ir}
@@ -205,13 +205,13 @@ Implications: shows that ALMO-based AIMD is an excellent tool for the nature of 
 
 \textbf{ALMO DFT.} Implementtion of energies and FORCES in CP2K with a quick review of its dual-basis feature.
 
-\textbf{Settings.} All AIMD simulations were performed using the dispersion-corrected~\cite{ZZZ} BLYP exchange-correlation functional~\cite{ZZZ}, large TZV2P Gaussian basis set, ZZZ Ry cut-off energy for the plane basis set, and GTH pseudopotentials~\cite{ZZZ}. The size of a periodic cubic simulation box containing 125 water molecules was set to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. The temperature of simulations was set to 298~K and was controlled by a weakly-coupled canonical velocity re-scaling thermostat~\cite{ZZZ} with the coupling time constant set to ZZZ~fs. A short time step of 0.5~fs ensured accurate integration of the equations of the motion. The total length of simulations for each system was above ZZZ~ps.
+\textbf{Settings.} All AIMD simulations were performed using the dispersion-corrected~\cite{grimme2010consistent} BLYP exchange-correlation functional~\cite{becke1988density}, large TZV2P Gaussian basis set, 320 Ry cut-off energy for the plane basis set, and GTH pseudopotentials~\cite{goedecker1996separable,krack2005pseudopotentials}. The size of a periodic cubic simulation box containing 125 water molecules was set to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. The temperature of simulations was set to 298~K and was controlled by a weakly-coupled canonical velocity re-scaling thermostat~\cite{bussi2007canonical} with the coupling time constant set to 300~fs. A short time step of 0.5~fs ensured accurate integration of the equations of the motion. The total length of simulations for each system was above 7~ps.
 
-The properties of water including the infrared spectrum, ZZZ, and ZZZ were calculated from the MD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
+The properties of water including the infrared spectrum, radial distribution, and mean-square deviation were calculated from the MD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
 
 \subsection{Evaluation of the diffusion constant and viscosity coefficient} 
 
-The diffusion constant for a periodic system is known to have strong dependence on the size of the simulation box, due to the interaction of a particle with its periodic images~\cite{ZZZ}. And the diffusion constant obeys:
+The diffusion constant for a periodic system is known to have strong dependence on the size of the simulation box, due to the interaction of a particle with its periodic images~\cite{dunweg1993molecular}. And the diffusion constant obeys:
 
 \bea
 D(\infty) = D(L) + \frac{k_BT\zeta}{6\pi \eta L},
@@ -244,7 +244,7 @@ Then angular distribution is shown in Fig~\ref{Fig:adfcp}. Although the interact
 
 \subsection{Basis set dependence of the results}
 
-It is know that a straightforward utilization of ALMOs in energy decomposition methods may underestimate charge-transfer effects especially if large basis sets are used~\cite{horn2015polarization,herbert2016}. This deficiency arises from the lack a well-defined separation between the polarization and charge transfer effects in the original ALMO EDA method~\cite{EDA} in the complete basis set limit. It has been demonstrated This problematic aspect of ALMO EDA has been recently be corrected by selecting an appropriated subset of acceptor orbitals\cite{horn2015polarization}. To ensure that our results are not effected by changes in the size of the basis set we re-run AIMD simulation with a larger aug-TZV2P basis set. ZZZ and compare the results with the calculation of TZV2P basis set, which is used otherwise in this work. The results are summarized in Fig~\ref{Fig:basis}.
+It is know that a straightforward utilization of ALMOs in energy decomposition methods may underestimate charge-transfer effects especially if large basis sets are used~\cite{horn2015polarization,herbert2016}. This deficiency arises from the lack a well-defined separation between the polarization and charge transfer effects in the original ALMO EDA method~\cite{khaliullin2007unravelling} in the complete basis set limit. It has been demonstrated This problematic aspect of ALMO EDA has been recently be corrected by selecting an appropriated subset of acceptor orbitals\cite{horn2015polarization}. To ensure that our results are not effected by changes in the size of the basis set we re-run AIMD simulation with a larger aug-TZV2P basis set. ZZZ and compare the results with the calculation of TZV2P basis set, which is used otherwise in this work. The results are summarized in Fig~\ref{Fig:basis}.
 
 Moreover, TZV2P basis set has been shown to give [quantitatively] accurate description of CT effect in zero-temperature water cluster. It is also important to note that AIMD simulations become unstable if larger basis sets (eg. QZV) are used to model liquid water. This is because of frequent appearance of molecular configuration with linear dpendencies in the basis set.
 

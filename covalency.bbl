@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{39}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -155,6 +155,30 @@
   \bibinfo{journal}{Physical Chemistry Chemical Physics}
   \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{15328} (\bibinfo{year}{2012}).
 
+\bibitem[{\citenamefont{K{\"u}hne and Khaliullin}(2013)}]{NatureComm2013}
+\bibinfo{author}{\bibfnamefont{T.~D.} \bibnamefont{K{\"u}hne}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~Z.}
+  \bibnamefont{Khaliullin}}, \bibinfo{journal}{arXiv preprint arXiv:1301.4592}
+  (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Zhang et~al.}(2013)\citenamefont{Zhang, Khaliullin,
+  Bovi, Guidoni, and Kühne}}]{JPCL2013}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Zhang}},
+  \bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Bovi}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Guidoni}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.~D.} \bibnamefont{Kühne}},
+  \bibinfo{journal}{The Journal of Physical Chemistry Letters}
+  \textbf{\bibinfo{volume}{4}}, \bibinfo{pages}{3245} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Elgabarty et~al.}(2015)\citenamefont{Elgabarty,
+  Khaliullin, and K{\"u}hne}}]{NatureComm2015}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Elgabarty}},
+  \bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.~D.}
+  \bibnamefont{K{\"u}hne}}, \bibinfo{journal}{Nature communications}
+  \textbf{\bibinfo{volume}{6}} (\bibinfo{year}{2015}).
+
 \bibitem[{\citenamefont{Khaliullin et~al.}(2013)\citenamefont{Khaliullin,
   VandeVondele, and Hutter}}]{Khaliullin2013JCTC}
 \bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
@@ -172,6 +196,63 @@
   \textbf{\bibinfo{volume}{124}}, \bibinfo{pages}{204105}
   (\bibinfo{year}{2006}).
 
+\bibitem[{\citenamefont{Grimme et~al.}(2010)\citenamefont{Grimme, Antony,
+  Ehrlich, and Krieg}}]{grimme2010consistent}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Grimme}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Antony}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Ehrlich}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Krieg}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{132}}, \bibinfo{pages}{154104}
+  (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Becke}(1988)}]{becke1988density}
+\bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{Becke}},
+  \bibinfo{journal}{Physical review A} \textbf{\bibinfo{volume}{38}},
+  \bibinfo{pages}{3098} (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{VandeVondele and
+  Hutter}(2007)}]{vandevondele2007gaussian}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{VandeVondele}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Hutter}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{127}}, \bibinfo{pages}{114105}
+  (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Kühne and Khaliullin}(2014)}]{kuhne2014nature}
+\bibinfo{author}{\bibfnamefont{T.~D.} \bibnamefont{Kühne}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.~Z.} \bibnamefont{Khaliullin}},
+  \bibinfo{journal}{Journal of the American Chemical Society}
+  \textbf{\bibinfo{volume}{136}}, \bibinfo{pages}{3395} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Arunan et~al.}(2011)\citenamefont{Arunan, Desiraju,
+  Klein, Sadlej, Scheiner, Alkorta, Clary, Crabtree, Dannenberg, Hobza
+  et~al.}}]{arunan2011definition}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Arunan}},
+  \bibinfo{author}{\bibfnamefont{G.~R.} \bibnamefont{Desiraju}},
+  \bibinfo{author}{\bibfnamefont{R.~A.} \bibnamefont{Klein}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Sadlej}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Scheiner}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Alkorta}},
+  \bibinfo{author}{\bibfnamefont{D.~C.} \bibnamefont{Clary}},
+  \bibinfo{author}{\bibfnamefont{R.~H.} \bibnamefont{Crabtree}},
+  \bibinfo{author}{\bibfnamefont{J.~J.} \bibnamefont{Dannenberg}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Hobza}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Pure and applied chemistry}
+  \textbf{\bibinfo{volume}{83}}, \bibinfo{pages}{1637} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Mahoney and Jorgensen}(2000)}]{TIP3P}
+\bibinfo{author}{\bibfnamefont{M.~W.} \bibnamefont{Mahoney}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.~L.} \bibnamefont{Jorgensen}},
+  \bibinfo{journal}{The Journal of Chemical Physics}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{8910} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{D{\"u}nweg and Kremer}(1993)}]{dunweg1993molecular}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{D{\"u}nweg}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Kremer}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{99}}, \bibinfo{pages}{6983} (\bibinfo{year}{1993}).
+
 \bibitem[{\citenamefont{Neumann}(1983)}]{neumann1983dipole}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Neumann}},
   \bibinfo{journal}{Molecular Physics} \textbf{\bibinfo{volume}{50}},
@@ -182,17 +263,40 @@
   \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{293}},
   \bibinfo{pages}{447} (\bibinfo{year}{1981}).
 
-\bibitem[{\citenamefont{Brehm and Kirchner}(2012)}]{brehm2012travis}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Brehm}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kirchner}},
-  \bibinfo{journal}{Journal of cheminformatics} \textbf{\bibinfo{volume}{4}},
-  \bibinfo{pages}{F1} (\bibinfo{year}{2012}).
-
 \bibitem[{\citenamefont{Mar{\'e}chal}(2006)}]{marechal2006hydrogen}
 \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Mar{\'e}chal}},
   \emph{\bibinfo{title}{The hydrogen bond and the water molecule: The physics
   and chemistry of water, aqueous and bio-media}}
   (\bibinfo{publisher}{Elsevier}, \bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Goedecker et~al.}(1996)\citenamefont{Goedecker, Teter,
+  and Hutter}}]{goedecker1996separable}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Goedecker}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Teter}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Hutter}},
+  \bibinfo{journal}{Physical Review B} \textbf{\bibinfo{volume}{54}},
+  \bibinfo{pages}{1703} (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Krack}(2005)}]{krack2005pseudopotentials}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Krack}},
+  \bibinfo{journal}{Theoretical Chemistry Accounts: Theory, Computation, and
+  Modeling (Theoretica Chimica Acta)} \textbf{\bibinfo{volume}{114}},
+  \bibinfo{pages}{145} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Bussi et~al.}(2007)\citenamefont{Bussi, Donadio, and
+  Parrinello}}]{bussi2007canonical}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Bussi}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Donadio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Parrinello}},
+  \bibinfo{journal}{The Journal of chemical physics}
+  \textbf{\bibinfo{volume}{126}}, \bibinfo{pages}{014101}
+  (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Brehm and Kirchner}(2012)}]{brehm2012travis}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Brehm}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kirchner}},
+  \bibinfo{journal}{Journal of cheminformatics} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{F1} (\bibinfo{year}{2012}).
 
 \bibitem[{\citenamefont{Horn and Head-Gordon}(2015)}]{horn2015polarization}
 \bibinfo{author}{\bibfnamefont{P.~R.} \bibnamefont{Horn}} \bibnamefont{and}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.24)  14 JUL 2017 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  22 SEP 2017 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -257,141 +257,275 @@ e
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
+
+
+Package natbib Warning: Citation `ZZZ' on page 1 undefined on input line 46.
+
+
+Package natbib Warning: Citation `ZZZ' on page 1 undefined on input line 50.
+
+
+Package natbib Warning: Citation `ZZZ-SAPT' on page 1 undefined on input line 5
+4.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<RDF.png, id=13, 481.8pt x 361.35pt>
-File: RDF.png Graphic file (type png)
- <use RDF.png>
-Package pdftex.def Info: RDF.png used on input line 69.
-(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
 
-<angular_dist.png, id=14, 481.8pt x 361.35pt>
-File: angular_dist.png Graphic file (type png)
- <use angular_dist.png>
-Package pdftex.def Info: angular_dist.png used on input line 95.
-(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+Package natbib Warning: Citation `gian' on page 2 undefined on input line 68.
 
-<SDF.png, id=15, 1396.4672pt x 794.97pt>
-File: SDF.png Graphic file (type png)
- <use SDF.png>
-Package pdftex.def Info: SDF.png used on input line 100.
-(pdftex.def)             Requested size: 229.49844pt x 130.64279pt.
 
-<HB_decay.png, id=17, 481.8pt x 361.35pt>
-File: HB_decay.png Graphic file (type png)
- <use HB_decay.png>
-Package pdftex.def Info: HB_decay.png used on input line 112.
-(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
- [2 <./RDF.png> <./angular_dist.png>]
+Package natbib Warning: Citation `blw' on page 2 undefined on input line 68.
+
+Package epstopdf Info: Source file: <new_rdf.eps>
+(epstopdf)                    date: 2017-08-10 14:07:53
+(epstopdf)                    size: 29717 bytes
+(epstopdf)             Output file: <new_rdf-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-18 17:00:18
+(epstopdf)                    size: 9998 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_rdf-eps-converted-to.p
+df new_rdf.eps>
+(epstopdf)             \includegraphics on input line 92.
+Package epstopdf Info: Output file is already uptodate.
+<new_rdf-eps-converted-to.pdf, id=14, 216.81pt x 144.54pt>
+File: new_rdf-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_rdf-eps-converted-to.pdf>
+Package pdftex.def Info: new_rdf-eps-converted-to.pdf used on input line 92.
+(pdftex.def)             Requested size: 255.0pt x 170.00873pt.
+Package epstopdf Info: Source file: <new_adf.eps>
+(epstopdf)                    date: 2017-08-10 14:16:29
+(epstopdf)                    size: 28506 bytes
+(epstopdf)             Output file: <new_adf-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-18 17:00:18
+(epstopdf)                    size: 10509 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_adf-eps-converted-to.p
+df new_adf.eps>
+(epstopdf)             \includegraphics on input line 93.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_adf-eps-converted-to.pdf, id=15, 216.81pt x 144.54pt>
+File: new_adf-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_adf-eps-converted-to.pdf>
+Package pdftex.def Info: new_adf-eps-converted-to.pdf used on input line 93.
+(pdftex.def)             Requested size: 255.0pt x 170.00873pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 92--94
+ [][] 
+ []
+
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 92--94
+ [] 
+ []
+
+[2]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 123.
+ on input line 106.
 
-<dipole_dist.png, id=32, 481.8pt x 361.35pt>
-File: dipole_dist.png Graphic file (type png)
- <use dipole_dist.png>
-Package pdftex.def Info: dipole_dist.png used on input line 128.
-(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+Package epstopdf Info: Source file: <SDF.eps>
+(epstopdf)                    date: 2017-08-18 15:17:10
+(epstopdf)                    size: 815540 bytes
+(epstopdf)             Output file: <SDF-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-18 17:00:19
+(epstopdf)                    size: 442084 bytes
+(epstopdf)             Command: <repstopdf --outfile=SDF-eps-converted-to.pdf S
+DF.eps>
+(epstopdf)             \includegraphics on input line 108.
+Package epstopdf Info: Output file is already uptodate.
+<SDF-eps-converted-to.pdf, id=22, 519.9425pt x 307.1475pt>
+File: SDF-eps-converted-to.pdf Graphic file (type pdf)
 
-<all_ir.png, id=33, 481.8pt x 361.35pt>
-File: all_ir.png Graphic file (type png)
- <use all_ir.png>
-Package pdftex.def Info: all_ir.png used on input line 136.
-(pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
+<use SDF-eps-converted-to.pdf>
+Package pdftex.def Info: SDF-eps-converted-to.pdf used on input line 108.
+(pdftex.def)             Requested size: 458.99689pt x 271.1436pt.
+Package epstopdf Info: Source file: <new_hbstat.eps>
+(epstopdf)                    date: 2017-08-21 12:26:35
+(epstopdf)                    size: 24254 bytes
+(epstopdf)             Output file: <new_hbstat-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-21 12:27:14
+(epstopdf)                    size: 7328 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_hbstat-eps-converted-t
+o.pdf new_hbstat.eps>
+(epstopdf)             \includegraphics on input line 126.
+Package epstopdf Info: Output file is already uptodate.
 
-<ALMO_0_msd.png, id=34, 481.8pt x 361.35pt>
+<new_hbstat-eps-converted-to.pdf, id=23, 361.35pt x 252.945pt>
+File: new_hbstat-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_hbstat-eps-converted-to.pdf>
+Package pdftex.def Info: new_hbstat-eps-converted-to.pdf used on input line 126
+.
+(pdftex.def)             Requested size: 203.99689pt x 142.7984pt.
+Package epstopdf Info: Source file: <new_hbdecay.eps>
+(epstopdf)                    date: 2017-08-21 13:36:52
+(epstopdf)                    size: 50757 bytes
+(epstopdf)             Output file: <new_hbdecay-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-21 13:37:38
+(epstopdf)                    size: 16221 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_hbdecay-eps-converted-
+to.pdf new_hbdecay.eps>
+(epstopdf)             \includegraphics on input line 138.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_hbdecay-eps-converted-to.pdf, id=24, 216.81pt x 144.54pt>
+File: new_hbdecay-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_hbdecay-eps-converted-to.pdf>
+Package pdftex.def Info: new_hbdecay-eps-converted-to.pdf used on input line 13
+8.
+(pdftex.def)             Requested size: 203.99689pt x 136.00433pt.
+
+<ALMO_0_msd.png, id=25, 481.8pt x 361.35pt>
 File: ALMO_0_msd.png Graphic file (type png)
  <use ALMO_0_msd.png>
 Package pdftex.def Info: ALMO_0_msd.png used on input line 148.
 (pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
 
-<FULL_SCF_msd.png, id=35, 481.8pt x 361.35pt>
+<FULL_SCF_msd.png, id=27, 481.8pt x 361.35pt>
 File: FULL_SCF_msd.png Graphic file (type png)
  <use FULL_SCF_msd.png>
 Package pdftex.def Info: FULL_SCF_msd.png used on input line 149.
 (pdftex.def)             Requested size: 203.99689pt x 152.99553pt.
- [3 <./SDF.png> <./HB_decay.png> <./dipole_dist.png>]
+ [3 <./new_rdf-eps-converted-to.pdf> <./new_adf-eps-converted-to.pdf>] [4 <./SD
+F-eps-converted-to.pdf> <./new_hbstat-eps-converted-to.pdf> <./new_hbdecay-eps-
+converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 172.
+ on input line 178.
 
-<aug_ir.png, id=42, 321.2pt x 240.9pt>
-File: aug_ir.png Graphic file (type png)
- <use aug_ir.png>
-Package pdftex.def Info: aug_ir.png used on input line 174.
-(pdftex.def)             Requested size: 178.50311pt x 133.88118pt.
+Package epstopdf Info: Source file: <new_dipole.eps>
+(epstopdf)                    date: 2017-08-21 15:19:22
+(epstopdf)                    size: 23198 bytes
+(epstopdf)             Output file: <new_dipole-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-21 15:19:51
+(epstopdf)                    size: 7193 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_dipole-eps-converted-t
+o.pdf new_dipole.eps>
+(epstopdf)             \includegraphics on input line 180.
+Package epstopdf Info: Output file is already uptodate.
+<new_dipole-eps-converted-to.pdf, id=75, 216.81pt x 144.54pt>
+File: new_dipole-eps-converted-to.pdf Graphic file (type pdf)
 
-<aug_rdf.png, id=43, 321.2pt x 240.9pt>
-File: aug_rdf.png Graphic file (type png)
- <use aug_rdf.png>
-Package pdftex.def Info: aug_rdf.png used on input line 175.
-(pdftex.def)             Requested size: 178.50311pt x 133.88118pt.
+<use new_dipole-eps-converted-to.pdf>
+Package pdftex.def Info: new_dipole-eps-converted-to.pdf used on input line 180
+.
+(pdftex.def)             Requested size: 203.99689pt x 136.00433pt.
+Package epstopdf Info: Source file: <new_ir.eps>
+(epstopdf)                    date: 2017-08-21 14:05:09
+(epstopdf)                    size: 67126 bytes
+(epstopdf)             Output file: <new_ir-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-08-21 14:05:47
+(epstopdf)                    size: 20586 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_ir-eps-converted-to.pd
+f new_ir.eps>
+(epstopdf)             \includegraphics on input line 190.
+Package epstopdf Info: Output file is already uptodate.
 
-<rdf_NVT_CPDNVT.png, id=44, 481.8pt x 361.35pt>
+<new_ir-eps-converted-to.pdf, id=76, 216.81pt x 144.54pt>
+File: new_ir-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_ir-eps-converted-to.pdf>
+Package pdftex.def Info: new_ir-eps-converted-to.pdf used on input line 190.
+(pdftex.def)             Requested size: 203.99689pt x 136.00433pt.
+
+Underfull \hbox (badness 6110) in paragraph at lines 206--207
+[]\OT1/cmr/bx/n/10 ALMO DFT. \OT1/cmr/m/n/10 Im-ple-ment-tion of en-er-gies and
+
+ []
+
+[5 <./ALMO_0_msd.png> <./FULL_SCF_msd.png> <./new_dipole-eps-converted-to.pdf> 
+<./new_ir-eps-converted-to.pdf>]
+Underfull \hbox (badness 1448) in paragraph at lines 208--209
+\OT1/cmr/m/n/10 us-ing the dispersion-corrected [[]] BLYP exchange-
+ []
+
+<rdf_NVT_CPDNVT.png, id=92, 481.8pt x 361.35pt>
 File: rdf_NVT_CPDNVT.png Graphic file (type png)
  <use rdf_NVT_CPDNVT.png>
-Package pdftex.def Info: rdf_NVT_CPDNVT.png used on input line 182.
+Package pdftex.def Info: rdf_NVT_CPDNVT.png used on input line 228.
 (pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
 
-<rdf_OH_NVT_CPDNPT.png, id=45, 481.8pt x 361.35pt>
+<rdf_OH_NVT_CPDNPT.png, id=93, 481.8pt x 361.35pt>
 File: rdf_OH_NVT_CPDNPT.png Graphic file (type png)
  <use rdf_OH_NVT_CPDNPT.png>
-Package pdftex.def Info: rdf_OH_NVT_CPDNPT.png used on input line 183.
+Package pdftex.def Info: rdf_OH_NVT_CPDNPT.png used on input line 229.
 (pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
 
-<angular_NVT_NPTCP.png, id=46, 481.8pt x 361.35pt>
+<angular_NVT_NPTCP.png, id=94, 481.8pt x 361.35pt>
 File: angular_NVT_NPTCP.png Graphic file (type png)
  <use angular_NVT_NPTCP.png>
-Package pdftex.def Info: angular_NVT_NPTCP.png used on input line 190.
+Package pdftex.def Info: angular_NVT_NPTCP.png used on input line 236.
 (pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
 
-<ir_NVT_NPTCP.png, id=47, 481.8pt x 361.35pt>
+<ir_NVT_NPTCP.png, id=95, 481.8pt x 361.35pt>
 File: ir_NVT_NPTCP.png Graphic file (type png)
  <use ir_NVT_NPTCP.png>
-Package pdftex.def Info: ir_NVT_NPTCP.png used on input line 195.
+Package pdftex.def Info: ir_NVT_NPTCP.png used on input line 241.
 (pdftex.def)             Requested size: 229.49844pt x 172.12273pt.
- [4 <./all_ir.png> <./ALMO_0_msd.png> <./FULL_SCF_msd.png> <./aug_ir.png> <./au
-g_rdf.png>]
+
+
+Package natbib Warning: Citation `herbert2016' on page 6 undefined on input lin
+e 247.
+
+[6 <./rdf_NVT_CPDNVT.png> <./rdf_OH_NVT_CPDNPT.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 201.
+ on input line 248.
 
-(./covalency.bbl [5 <./rdf_NVT_CPDNVT.png> <./rdf_OH_NVT_CPDNPT.png> <./angular
-_NVT_NPTCP.png> <./ir_NVT_NPTCP.png>]) [6] (./covalency.aux) ) 
+<aug_ir.png, id=101, 321.2pt x 240.9pt>
+File: aug_ir.png Graphic file (type png)
+ <use aug_ir.png>
+Package pdftex.def Info: aug_ir.png used on input line 252.
+(pdftex.def)             Requested size: 178.50311pt x 133.88118pt.
+
+<aug_rdf.png, id=102, 321.2pt x 240.9pt>
+File: aug_rdf.png Graphic file (type png)
+ <use aug_rdf.png>
+Package pdftex.def Info: aug_rdf.png used on input line 253.
+(pdftex.def)             Requested size: 178.50311pt x 133.88118pt.
+ (./covalency.bbl
+[7 <./angular_NVT_NPTCP.png> <./ir_NVT_NPTCP.png> <./aug_ir.png> <./aug_rdf.png
+>]
+Missing character: There is no Ì in font cmr9!
+Missing character: There is no ˆ in font cmr9!
+Missing character: There is no Ì in font cmr9!
+Missing character: There is no ˆ in font cmr9!
+)
+
+Package natbib Warning: There were undefined citations.
+
+[8] (./covalency.aux) ) 
 Here is how much of TeX's memory you used:
- 3926 strings out of 493029
- 52308 string characters out of 6136233
- 132997 words of memory out of 5000000
- 7412 multiletter control sequences out of 15000+600000
- 8234 words of font info for 30 fonts, out of 8000000 for 9000
+ 3992 strings out of 493029
+ 54001 string characters out of 6136234
+ 141708 words of memory out of 5000000
+ 7464 multiletter control sequences out of 15000+600000
+ 8580 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,24p,1648b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti9.pfb>
-Output written on covalency.pdf (6 pages, 564733 bytes).
+ 38i,13n,27p,1629b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on covalency.pdf (8 pages, 807185 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 175 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
