@@ -4,46 +4,52 @@ The top-level auxiliary file: covalency.aux
 The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: covalency.bib
+Warning--I didn't find a database entry for "ZZZ"
+Warning--I didn't find a database entry for "ZZZ-SAPT"
+Warning--I didn't find a database entry for "gian"
+Warning--I didn't find a database entry for "blw"
+Warning--I didn't find a database entry for "herbert2016"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 26 entries,
+You've used 40 entries,
             3411 wiz_defined-function locations,
-            1333 strings with 15200 characters,
-and the built_in function-call counts, 17171 in all, are:
-= -- 1000
-> -- 524
-< -- 79
-+ -- 418
-- -- 128
-* -- 2283
-:= -- 1896
-add.period$ -- 26
-call.type$ -- 26
-change.case$ -- 104
-chr.to.int$ -- 26
-cite$ -- 26
-duplicate$ -- 1562
-empty$ -- 1475
-format.name$ -- 336
-if$ -- 3262
+            1421 strings with 17884 characters,
+and the built_in function-call counts, 27102 in all, are:
+= -- 1556
+> -- 877
+< -- 129
++ -- 712
+- -- 214
+* -- 3633
+:= -- 2962
+add.period$ -- 40
+call.type$ -- 40
+change.case$ -- 160
+chr.to.int$ -- 40
+cite$ -- 40
+duplicate$ -- 2459
+empty$ -- 2306
+format.name$ -- 558
+if$ -- 5136
 int.to.chr$ -- 1
-int.to.str$ -- 27
-missing$ -- 244
-newline$ -- 93
-num.names$ -- 78
-pop$ -- 427
+int.to.str$ -- 41
+missing$ -- 382
+newline$ -- 135
+num.names$ -- 120
+pop$ -- 656
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 160
 quote$ -- 0
-skip$ -- 641
+skip$ -- 1033
 stack$ -- 0
-substring$ -- 608
-swap$ -- 1210
-text.length$ -- 64
+substring$ -- 926
+swap$ -- 1918
+text.length$ -- 106
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
+type$ -- 236
 warning$ -- 0
-while$ -- 76
+while$ -- 115
 width$ -- 0
-write$ -- 272
+write$ -- 410
+(There were 5 warnings)
