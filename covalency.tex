@@ -74,19 +74,26 @@ All AIMD simulations, with delocalized and localized molecular orbitals, were pe
 
 %RZK: \new Temperature and potential are ``two peas in a pod''. Removing covalent interactions weakens HBs. Can we recover properties of room-temperature liquid water using the devalent model at lower temperature? The same question can be asked another way: is devalent room-temperature water completely equivalent to high-temperature covalent water? We know the exact contribution of covalency to the binding energy of molecules. How much the temperature should be adjusted to keep the average Boltzmann weights the same?\old
 
+At this point, it is appropriate/important to comment on the ability of the reference model to reproduce properties of real water. [GGA is known to underestimates the energy gap slightly. As a result they overestimate the electron delocalization, overbinds molecules, produces RDF with sharper peaks than those derived in X-ray scattering experiments. Underestimated diffusion constant, overestimated viscosity. However, for all calculated properties the imperfections of the reference model are far less significant than the changes induced by neglecting intermolecular covalency. This is the main reason we are confident that our devalent model is an accurate depiction of the contribution of the covalent component to the properties .]
+
+
 \section{Results and discussion}
 
-Variational principle of quantum mechanics guarantees that removing covalent interactions weakens intermolecular bonding. ALMO-based decomposition energy analysis predicts that, in a water dimer, the transfer of 0.27\% of an electron contributes  $\sim$7.0 kJ$\cdot$mol$^{-1}$ (37\%) to the overall stabilization of the hydrogen bond at equilibrium geometry, in agreement with earlier reports~\cite{stevens1987frozen,chen1996energy,piquemal2005csov}. This contribution is higher in the \emph{cooperative} HB network of liquid water at ambient conditions \new calculated in this work \old:  1.1\% of electron and 19 ~kJ$\cdot$mol$^{-1}$ per hydrogen bond, \new which agrees with previous study \old\cite{kuhne2014nature}.
+Variational principle of quantum mechanics guarantees that removing covalent interactions weakens intermolecular bonding. ALMO-based decomposition energy analysis predicts that, in a water dimer, the transfer of 0.27\% of an electron contributes  7.0 kJ$\cdot$mol$^{-1}$ (37\%) to the overall stabilization of the hydrogen bond at equilibrium geometry, in agreement with earlier reports~\cite{stevens1987frozen,chen1996energy,piquemal2005csov,RZK-khaliullin2009dimer}. This contribution is higher in the \emph{cooperative} HB network of liquid water at ambient conditions: 1.1\% of electron and 19 ~kJ$\cdot$mol$^{-1}$ per hydrogen bond, in agreement with our previous study \cite{kuhne2014nature}.
 
-\textbf{Molecular structure.} The covalent component of weak intermolecular bonds has only a minor effect on the shape of water molecules. The average length of intramolecular OH bond changes from [RZK check values] \new2.33\old~\Ang\ in the realistic model to \new 2.75\old~\Ang\ in the devalent model of water. At the same time, the average intramolecular HOH angle changes from 105.5 degrees to 104.3 degrees[, becoming closer to the value calculated for the 298~K gas phase water molecule].
+\textbf{Molecular structure.} The covalent component of weak intermolecular bonds has only a minor effect on the shape of water molecules. The average length of intramolecular OH bond changes from [RZK the values are wrong- we talk about INTRAmolecular bonds here] \new2.33\old~\Ang\ in the realistic model to \new 2.75\old~\Ang\ in the devalent model of water. At the same time, the average intramolecular HOH angle changes from 105.5 degrees to 104.3 degrees[, becoming closer to the value calculated for the 298~K gas phase water molecule].
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{new_rdf}
 \includegraphics[width=0.5\textwidth]{new_adf}
-\caption{A. Oxygen-oxygen radial distribution function. \new Color coding throughout the manuscript: realistic - black, devalent - red, experiment - black dash, vapor - blue, devalent NPT - blue (these colors make it easier for color blind persons to read figures and at the same time minimize the publication cost). Legends throughout: ``Realistic model'', ``Devalent model'', ``Experiment''. Decrease panel height. See figure guidlines for Nature Chemistry. \old B. Angular distribution of the H--O$\cdots$O angle. The distribution is computed for hydrogens within 2.3~\Ang\ from a reference molecule. \new Compute as we discussed. Can we compare the angular distribution to the experimental curve? \old} \label{Fig:RDF}
+\caption{A. Oxygen-oxygen radial distribution function. B. Angular distribution of the H--O$\cdots$O angle computed for hydrogens within 2.3~\Ang\ from a reference molecule.} \label{Fig:RDF}
+%RZK: Can we compare the angular distribution to the experimental curve? Experimental curves available. See, for example, http://pubs.acs.org/doi/pdf/10.1021/ct3001848 Figure 2.
 \end{figure}
 
-The effect of the covalency on the structure of the HB network is far more pronounced. The oxygen-oxygen radial distribution function (RDF) in Figure~\ref{Fig:RDF}A shows that weaker intermolecular interactions without the covalent component lead to the considerable expansion of the first coordination shell of a water molecule from the ``realistic'' average of 2.8~\Ang\ to 3.1~\Ang. The shift of the first-shell peak is accompanied by its broadening that is indicative of a wider variety of configurations available to devalent HBs. 
+%RZK: Suggested color coding throughout the manuscript: realistic - black, devalent - red, experiment - black dash, vapor - blue, devalent NPT - blue (these colors make it easier for color blind persons to read figures and at the same time minimize the publication cost). Legends throughout: ``Realistic model'', ``Devalent model'', ``Experiment''. 
+%RZK: Decrease panel height. See figure guidlines for Nature Chemistry.
+
+The effect of the covalency on the structure of the HB network is far more pronounced. The oxygen-oxygen radial distribution function (RDF) in Figure~\ref{Fig:RDF}A shows that weaker devalent interactions lead to the considerable expansion of the first coordination shell of a water molecule from the ``realistic'' average of 2.8~\Ang\ to 3.1~\Ang. The shift of the first-shell peak is accompanied by its broadening that is indicative of a wider variety of configurations available to devalent HBs. 
 
 These dramatic changes in the structure of the HB network are consistent with the decrease in the HB strength. It is remarkable, however, that the remaining components of HB -- permanent electrostatic, polarization and dispersion -- are sufficiently strong to retain several characteristic structural features of the network: well-defined coordination shells and directional HBs~\cite{arunan2011definition}.
 %
@@ -94,33 +101,30 @@ These dramatic changes in the structure of the HB network are consistent with th
 %
 Indeed the second coordination peak in the RDF of the devalent model remains clearly visible though shifted to higher distances. The distribution of HB angles also still has a maximum at 0$^\circ$ despite becoming broader (Figure~\ref{Fig:RDF}B). 
 
-The structure of the HB network for both models can also be illustrated with the spacial distribution of oxygen atoms around a reference water molecule (Figure~\ref{Fig:SDF}). It shows that the distorted tetrahedral structure of liquid water is retained without the covalent component (cf. Figure~\ref{Fig:SDF}A and B), indicating that permanent electrostatic and polarization interactions tend to orient water molecules the same way as the charge-transfer interaction. For comparison, if a model neglects electrostatic interactions includes only the Lennard-Jones potential, which represents dispersion interactions and short-distance repulsion, the HB becomes truly non-directional with uniform angular distribution (Figure~\ref{Fig:SDF}C). 
+The structure of the HB network for both models can also be illustrated with the spacial distribution of oxygen atoms around a reference water molecule, cross sections of which are shown in Figure~\ref{Fig:SDF}). It is clear that the distorted tetrahedral structure of liquid water is retained without the covalent component (cf. Figure~\ref{Fig:SDF}A and B), indicating that permanent electrostatic and polarization interactions tend to orient water molecules the same way as the covalent interaction. 
+%[RZK: Notion that covalency is responsible for directional character of HB is not entirely correct.] 
+For comparison, if a model completely neglects electrostatic interactions and retains only dispersion interactions and short-distance repulsion, represented by the Lennard-Jones potential, the HB becomes truly non-directional with uniform angular distribution (Figure~\ref{Fig:SDF}C). 
 
 \begin{figure*}
 \includegraphics[width=0.9\textwidth]{SDF}
 \caption{Cross sections of the spacial distribution of oxygen atoms. The upper panels show the cross section of the spacial distribution function in the plane of the reference water molecule, whereas the lower panels show the cross section in the plane disecting the molecule. A. Reference model, B. localized model, C. Modified TIP3P model that include only van der Waals interactions, D. TIP3P model~\cite{TIP3P}: electrostatic interaction between atomic point charges combined this van der Waals interactions~\cite{TIP3P}.} \label{Fig:SDF}
 \end{figure*}
 
-==== STOPPED HERE ====
-
-The importance of permanent electrostatics for the structure of liquid water has been used since the birth of molecular mechanics to create and fine-tune electrostatic fixed-charge models of water. Although such models reproduce the structure and many important properties of liquid water they neglect the covalent component of ZZZ.
-
-
-At this point, it is appropriate to comment on the ability of the reference model to reproduce properties of water. [GGA is known to underestimates the energy gap slightly. As a result they overestimate the electron delocalization, overbinds molecules, produces RDF with sharper peaks than those derived in X-ray scattering experiments. Underestimated diffusion constant, overestimated viscosity. However, for all calculated properties the imperfections of the reference model are far less significant than the changes induced by neglecting intermolecular covalency. This is the main reason we are confident that our devalent model is an accurate depiction of the contribution of the covalent component to the properties .]
+The importance of permanent electrostatics for describing liquid water is widely recognized and it represents the key component of all analytical molecular mechanics models of water. On the other hand, the equally important covalent component of intermolecular interactions has been neglected in these models and instead compensated by fine-tuning fixed atomic charges to reproduce key properties of water (see Figure~\ref{Fig:SDF}D for example). While such models are very successful in reproduce the structure the failure to include covalent effects properly limits their applicability~\cite{RZK-weinhold}.
 
 \new The O-O peak seems to depend only on the interaction strength. Here the density is the same for both systems, but the molecules seem to get further away. While for the results shown in Fig~\ref{Fig:rdf_cp} the densities are different but the peaks are at the same position. How to interpret this? \old
 
-ALMO water Density is decreased by ZZZ \% to ZZZ g/cm3. While this is a noticeable drop It is important to emphasize that the retained components like permanent multipoles and polarization effects are sufficiently strong to keep the NOCOV water liquid. 
+\textbf{Density of liquid water.} ALMO water Density is decreased by ZZZ \% to ZZZ g/cm3. While this is a noticeable drop It is important to emphasize that the retained components like permanent multipoles and polarization effects are sufficiently strong to keep the NOCOV water liquid. 
 
-We also show in Fig~\ref{fig:HBstat}, how many HBs a molecule donate(D) or accept(A), with a geometric criterion that the H-O-O angle is smaller than 30$^{\circ}$ and the O-O distance is smaller than 3.5\Ang. The number of HBs is 35\% less in the localized system.
+
+\textbf{HB network statistics and dynamics.} We show in Fig~\ref{fig:HBstat} how many HBs a molecule donate(D) or accept(A), with a geometric criterion that the H-O-O angle is smaller than 30$^{\circ}$ and the O-O distance is smaller than 3.5\Ang. The number of HBs is 35\% less in the localized system.
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_hbstat}
-
 \caption{HB statistics for liquid water with and without intermolecular covalency. \new Replace with a graph. Two panels one for accpetor, one for donor. 2 lines with points on each panel: covalent and devalent.\old }\label{fig:HBstat}
 \end{figure}
 
-\textbf{Network statistics and dynamics.} The HB decay function $C_{HB}(\tau)$ is defined as:
+The HB decay function $C_{HB}(\tau)$ is defined as:
 \bea
 C_{HB}(\tau) = \frac{\sum_{i,j}\langle \theta_{ij}(\tau)\theta_{ij}(0) \rangle}{\sum_{i,j}\langle \theta_{ij}(0) \theta_{ij}(0) \rangle} \label{Eq:HBdecay}
 \eea
