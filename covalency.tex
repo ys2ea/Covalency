@@ -53,11 +53,10 @@ Contribution of the covalent component of the hydrogen-bond network to the prope
 
 \begin{abstract}
 Many remarkable properties of liquid water originate from the ability of water molecules to form hydrogen bond, which is a combination of electrostatic, induction, dispersion and covalent interactions. 
-In this work, we developed an ab initio molecular dynamics method that enabled us to adjust the spatial extent of the covalent component of interactions between water molecules in simulations. 
-We show that for room-temperature liquid water, a seemingly small amount of electron transfer has a profound effect on observable properties of liquid water. 
-In particular, the tetrahedronal structure, O-H stretch mode and viscocity are all significantly determined by covalent interactions.
-
-
+In this work, we developed an ab initio molecular dynamics method that enabled us to switch off the covalent component of interactions between water molecules in simulations. 
+We show that for room-temperature liquid water, a seemingly small amount of electron transfer has a profound/spectacular effect on observable properties of liquid water. 
+In particular, the tetrahedronal structure, O-H stretch mode and viscosity are all significantly determined by covalent interactions.
+%RZK: many unique structural characteristics, spectroscopic features, and properties as a solvent are to a large extent determined by covalent interactions.
 \end{abstract}
 \maketitle
 
@@ -181,43 +180,64 @@ A. Reference model, B. localized model, C. Modified TIP3P model that include onl
 
 %RZK: It is interesting that the average intermolecular distance increases significantly when covalent component is switched off (Figure~\ref{Fig:RDF}A) while the density of both reference and devalent models is fixed to be the same. This indicates that 
 
-\textbf{Density of liquid water.} If the density is allowed to fluctuate in a simulation while the pressure is fixed at 1~atm, the average density decreases from ZZZ~g$\cdot$cm$^{-3}$ for the reference model to 0.83~g$\cdot$cm$^{-3}$ for the devalent model or by ZZZ\%. While this is a noticeable drop it is important to note that the devalent water is still liquid at ambient conditions because of strong electrostatic, polarization and dispersion effects. 
+\textbf{Density of liquid water.} If the density is allowed to fluctuate in a simulation while the pressure is fixed at 1~atm, the average density decreases from ZZZ~g$\cdot$cm$^{-3}$ [RZK: I do not have the NPT density] for the reference model to 0.83~g$\cdot$cm$^{-3}$ for the devalent model or by ZZZ\%. 
+While this is a noticeable drop it is important to note that the devalent water is still liquid at ambient conditions because of strong electrostatic, polarization and dispersion effects. 
 
-This decrease in the density corresponds to 0.94\% [RZK: check the number] change of the average intermolecular distance. Nevertheless, the position of peaks in RDF remains the same in the devalent water at two different densities (Figure~S-ZZZ). The only noticeable structural change is that peaks become slightly broader in the low-density constant-pressure model and angular distribution is slightly wider. This indicates that most molecules stay in the same position, corresponding to the minimum of the potential well, when the density is allowed to relax and only a small fraction of them becomes distroted in radial and angular. 
+The ZZZ\% decrease in the density should correspond to a 6\% [RZK: check the number] elongation of intermolecular distances assuming that they all increase uniformly. Nevertheless, the position of peaks in RDF remains the same in the devalent water at two different densities (Figure~S-ZZZ). The only noticeable structural change is that peaks become slightly broader in the low-density constant-pressure model and angular distribution is slightly wider. This indicates that most molecules stay in the same position around the minimum of the potential well when the density is allowed to relax. Only a small fraction of them becomes distorted in the radial and angular directions. 
 
 We will continue discussing properties of the \emph{fixed-density} devalent water further because all key properties obtained for the fixed-pressure model are almost the same (see Supplementary Information).
 
 % RZK: density of butanol is 0.810, 3-Pentanone -- 0.815, 2-Octanol -- 0.824
 
 \textbf{Infared spectrum.} Figure~\ref{Fig:IR} shows the infared (IR) spectra of the devalent and reference systems together with that of ideal water vapor at 298~K. 
-The main difference in the IR spectra is that the O-H stretch modes, denoted by $\nu$, do not exhibit the redshift and broadening that are typical for HBs in liquid water and other systems.
-In addition, the peaks corresponding to the symmetric and asymmetric stretching modes are become separate in the spectrum of devalent model. 
-This implies that these modes are very sensitive to covanlency, and without covanlecy, they are very similar to that of the none-interacting molecules. 
-\new However, the integrated intensity of the $\nu$ band is still $\sim$10 times larger than that of water vapor, which is generally an indication of the existence of HBs. \old 
-Another difference between the localized and delocalized system is the intermolecular modes, they are shifted to lower energy because the intermolecular bonding in localized system is weaker. 
-The bending modes remain roughly the same for localized, delocalized and vapor systems. 
-Since in liquid water, the shift of the centre of $\nu$ band is caused by the coupling between the O-H stretch mode and librations \cite{marechal2006hydrogen}, it then implies that this coupling is mainly through covalent interactions. 
-Furthermore, the $\nu$ band is very narrow, while the relative position and orientation of neighboring water molecules are larger (as shown in Fig~\ref{Fig:RDF}B), this also implies that the HBs are now much less sensitive to molecular environment.
+The most pronounced difference in the IR spectra is in the 3000--4000~cm$^{-1}$ region of intramolecular O--H stretching bands $\nu$. 
+For the devalent model, $\nu$ peaks do not exhibit the redshift and broadening characteristic to hydrogen-bonded O--H groups and clearly seen in the spectrum of the realistic model. 
+Comparison of the spectra of the devalent and gas-phase models indicates that the characteristic redshift is entirely due to covalent interactions. 
+Even the small amount of electron density donated from a neighbor oxygen into the antibonding orbitals localized of an intramolecular O--H bond (see Figure ZZZ in Ref.~\onlinecite{RZK-chem-eur-j-2009}) is sufficient to soften the O--H bond and thus lower its vibrational frequency by ZZZ~cm$^{-1}$. 
+
+This primary role of the covalent component in the broadening of the $\nu$ peaks also becomes apparent. 
+This broadening is normally attributed to a great variation in the strength of hydrogen bonds that leads to a great variation in the magnitude of the redshift. 
+As discussed above the devalent water exhibits greater variation in the geometry of HB structures than the realistic model (compare Figure~\ref{Fig:RDF}A and~\ref{Fig:SDF}B). 
+Despite this variety the $\nu$ peaks of devalent water remain very narrow indicating that without the covalent component 
+the redshift is insignificant. %that the symmetric and asymmetric stretching modes become resolved in the spectrum of devalent model. 
+
+%Since in liquid water, the shift of the centre of $\nu$ band is caused by the coupling between the O-H stretch mode and librations \cite{marechal2006hydrogen}, it then implies that this coupling is mainly through covalent interactions. 
+
+\new 
+%RZK
+How do we explain the integrated intensity? It is not the same as broadening.
+%However, the integrated intensity of the $\nu$ band is still $\sim$10 times larger than that of water vapor, which is generally an indication of the existence of HBs.
+\old 
+
+Unlike stretching modes, the intramolecular bending modes in the region of ZZZ~cm$^{-1}$ are unaffected by intermolecular forces and remain approximately the same for the realistic, devalent, and ideal-gas systems. It is worth noticing that the stretching and bending peaks of the devalent model do not exhibit the additional structure, which is visible in the spectra of gas-phase molecules, because the retained intermolecular forces are sufficiently strong to hinder rotations.
+
+Another significant difference between the realistic and devalent systems is in the peaks below 1000~cm$^{-1}$, which correspond to HB stretching vibrations ($\sim$200~cm$^{-1}$ in realistic model) and molecular librations ($\sim$700~cm$^{-1}$), are shifted in the direction opposite to the intramolecular stretching modes. This is because the intermolecular bonding, unlike intramolecular bonding, becomes softer when the covalent component is switched off, in agreement with a wider variety of geometric configurations accessible in the devalent water. 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{new_ir}
-\caption{IR spectrum. 
-For water vapor, localized and delocalized systems. 
-The low wavenumber part of the spectrum for vapor which corresponds to rotational modes are not shown for simplicity. 
-%The O-H stretch mode ($\sim$3600 cm$^{-1}$) for localized system is very similar to vapor which is none-interaction. 
-%And the intermolecular modes ($\sim$500 cm$^{-1}$) moves to the left, indicating the intermolecular bonding is weaker.
+\caption{Calculated IR spectra. The far infrared part of the spectrum for the ideal-gas system, which corresponds to rotational modes, is not shown for simplicity. 
 } \label{Fig:IR}
 \end{figure}
 
-\textbf{Molecular dipole moment and dielectric constant.} Water's unique properties of a solvent are due to both the high dipole moment of its molecules and its high dielectric constant, which measures the ability of the molecular dipoles to reorient and stabilize charged or polar solutes. The experimentally measured dipole moment of a gas-phase water molecule is 1.85~D~\cite{CRC} and its dielectric constant [at room temperature?] is the record high 78~\cite{RZK}.
+\textbf{Molecular dipole moment and dielectric constant.} Water's unique properties as a solvent are due to both the high dipole moment of its molecules and its high dielectric constant. The latter measures the ability of the molecular dipoles to reorient and stabilize ions and polar solute molecules. The experimentally measured dipole moment of a gas-phase water molecule is 1.85~D~\cite{CRC} and the dielectric constant of liquid water [RZK: at room temperature?] is the record high 78~\cite{CRC?}.
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{acoord}
+\caption{Average positions of atoms (solid circles) and Wannier centers (empty cicles) in a water molecule for the realistic (blue - ZZZ must be black) and devalent (red) models. RZK: can we add isolated molecule? Add charges to all centers: hydrogen +1, Wannier -2, Oxygen +6} \label{Fig:acoord}
+\end{figure}
 
 %RZK: CRC -- Lide, David R. (2003-06-19). CRC Handbook of Chemistry and Physics, 84th Edition. CRC Handbook. CRC Press. 9—Dipole Moments. ISBN 9780849304842.
  
-Despite somewhat ambiguous definition of molecular dipole moments in a condensed phase system, they are typically calculated by assigning electron density to molecules with the help of maximally localized Wannier centers (MLWC)~\cite{RZK}. 
+Because of the continuity of the electron density the definition of molecular dipole moments in condensed phase is somewhat ambiguous. However, molecular dipoles can be estimated by assigning the electron density to molecules using the computed positions of the enters of maximally localized Wannier orbitals (Figure~\ref{Fig:acoord})~\cite{RZK}. 
 The resulting dipole distribution in shown in Figure~\ref{Fig:dipoledist}. 
-The average dipole moment of a water molecule is 3.09 Debye for delocalized system and 2.47 Debye for localized system, while for an isolated molecule it is 1.96 Debye. 
-\new Covalent interaction is also partially responsible for the increase of dipole moment from gas to the condensed phase. \old 
+The average dipole moment of a water molecule is 3.09~Debye for the reference system and 2.47~Debye for the devalent system. For an isolated molecule [RZK: at zero/298~K], it is 1.96~Debye. 
+Thus covalent interactions are only partially responsible for the impressive 1.13~Debye increase of the molecular dipole moment from gas to the condensed phase. 
+Figure~\ref{Fig:acoord} shows that the change in the dipole moment is primarily caused by the change in the position of the lone electron pairs on the oxygen atom.
+\new
+RZK: how do we explain the different spread in molecular moments? In the same way we explain $\mu$?
+\old
+
 The dielectric constant can be calculated through the fluctuation of the total dipole moment\cite{neumann1983dipole,adams1981theory}:
 %
 \bea
@@ -232,7 +252,7 @@ For the devalent model, this value increases to 180.
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_dipole}
-\caption{Dipole distribution of water molecules} \label{Fig:dipoledist}
+\caption{Distribution of dipole moments of water molecules.} \label{Fig:dipoledist}
 \end{figure}
 
 \textbf{HB network statistics and dynamics.} We show in Fig~\ref{fig:HBstat} how many HBs a molecule donate(D) or accept(A), with a geometric criterion that the H-O-O angle is smaller than 30$^{\circ}$ and the O-O distance is smaller than 3.5\Ang. 
