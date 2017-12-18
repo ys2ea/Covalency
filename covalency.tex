@@ -72,7 +72,6 @@ The concept of covalent interactions in HB is tremendously useful in chemistry
 as it helps explain, to name only few, water's unique properties as a solvent, its ability to catalyze a wide variety of chemical processes, and strong cooperativity between hydrogen bonds in systems ranging from nanodroplets to solvated biomolecules. 
 From the theoretical standpoint, the covalent component of HB has attracted significant attention because of its purely quantum mechanical nature, which, unlike electrostatic and dispersion interactions, is hard to describe with simple analytical potentials~\cite{RZK0-Weinhold}.
 
-% RZK: Check that all abbreviations are properly introduced: AIMD, MD, ALMO, DFT, XC, BLYP
 
 Recent developments in energy decomposition techniques based on accurate electronic structure methods have helped make substantial progress towards quantifying the individual contributions of various physical effects to the HB energy in small water clusters. 
 However, the extent of intermolecular charge transfer in HB has remained the last unresolved issue until recently~\cite{isaacs1999covalency,ghanty2000hydrogen,stone2017natural}. 
@@ -134,7 +133,7 @@ That is why the devalent model in this work provides a reasonable semi-quantitat
 
 Variational principle of quantum mechanics guarantees that removing covalent interactions weakens intermolecular bonding. 
 ALMO-based decomposition energy analysis predicts that, in a water dimer, the transfer of 0.27\% of an electron contributes  7.0~kJ$\cdot$mol$^{-1}$ (37\%) to the overall stabilization of the hydrogen bond at equilibrium geometry, in agreement with earlier reports~\cite{stevens1987frozen,chen1996energy,piquemal2005csov,khaliullin2009electron}. 
-% RZK-khaliullin2009dimer: 10.1002/chem.200802107
+
 This contribution is higher in the \emph{cooperative} HB network of liquid water at ambient conditions: 1.1\% of electron and 19 ~kJ$\cdot$mol$^{-1}$ per hydrogen bond, in agreement with our previous study \cite{kuhne2014nature}.
 
 \begin{figure}
@@ -142,6 +141,7 @@ This contribution is higher in the \emph{cooperative} HB network of liquid water
 \caption{Average positions of atoms (solid circles) and Wannier centers (empty cicles) in a water molecule for the realistic (black) and devalent (red) models. 
 %RZK: It is unclear why such small shifts lead to enormous change in the dipole moments. Is it because in dipole vectors "almost compensate" each other?
 %\blue The shift is too small already, adding isolated molecule might make it unreadable. \old
+\blue Yes, the dipoles of the atoms and charges compensate each other. The shift is too small already, adding isolated molecule might make it unreadable. \old
 } \label{Fig:acoord}
 \end{figure}
 
@@ -155,6 +155,10 @@ At the same time, the average intramolecular HOH angle changes from 105.5 degree
 \caption{A. Oxygen-oxygen radial distribution function. B. Angular distribution of the H--O$\cdots$O angle computed for hydrogens within 2.3~\Ang\ from a reference molecule.} \label{Fig:RDF}
 %RZK: I do not remember what type of normalization we use for ADF. Our normalization of the ADF must be mentioned in Computational methods.
 %RZK: It makes sense to keep the angular distribution only if we can compare it to the experimental curve. Otherwise, we have SPD. Experimental curves available. See, for example, http://pubs.acs.org/doi/pdf/10.1021/ct3001848 Figure 2.
+
+\blue
+ADF is normalized so it won't vanish at $\theta=0$. This normalization is different from the experimental curve. Change normalization?
+\old
 \end{figure}
 
 %RZK: Suggested color coding throughout the manuscript: realistic - black, devalent - red, experiment - black dash, vapor - blue, devalent NPT - blue (these colors make it easier for color blind persons to read figures and at the same time minimize the publication cost). Legends throughout: ``Realistic model'', ``Devalent model'', ``Experiment''. 
@@ -231,6 +235,10 @@ How do we explain the integrated intensity? It is not the same as broadening.
 %However, the integrated intensity of the $\nu$ band is still $\sim$10 times larger than that of water vapor, which is generally an indication of the existence of HBs.
 \old 
 
+\blue
+The increase of integrated intensity from isolated water molecule to liquid water can be experimental sign of the existence of HBs, and one may estimate the number of HBs from it(although) very inaccurate. See Chap 4.6 of the book "The hydragen bond and the water molecule"
+\old
+
 Unlike stretching modes, the intramolecular bending modes in the region of 1600~cm$^{-1}$ are unaffected by intermolecular forces and remain approximately the same for the realistic, devalent, and ideal-gas systems. 
 It is worth noticing that the stretching and bending peaks of the devalent model do not exhibit the extensive rotational structure, visible in the spectra of gas-phase molecules, because the retained intermolecular forces are sufficiently strong to hinder rotations.
 
@@ -255,6 +263,10 @@ Figure~\ref{Fig:acoord} shows that the change in the dipole moment is primarily 
 \new
 Figure~\ref{Fig:dipoledist} shows that donor-acceptor orbital interactions lead to a wider spread in the position of point charges (i.e. ions and Wannier centers) in the realistic model [RZK: by how much? position of which charges have higher spread?]. 
 \old 
+
+\blue
+It only makes sense to take about spread of point charge when some atoms as reference. When O atom is fixed, the spread of H atom and wannier center of the OH bond electron is ~50\% more in the realistic model than the devalent model, and the spread of the lone electron pair is ~200\% more. 
+\old
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_dipole}
@@ -282,9 +294,10 @@ where $\theta_{i,j}(\tau)$ equals to 1 if there is a HB formed between molecule 
 In the long-time limit, the survival function decays exponentially and the HB lifetime is defined as the rate of its decay $C_{\text{HB}}(\tau) \sim e^{-\tau/\tau_{\text{HB}}}$. 
 The HB lifetimes calculated from the survival functions shown in Figure~\ref{Fig:HBdecay} are 0.7~ps for the reference model and 0.08~ps for the devalent model. \new RZK: The reference lifetime does not seem to agree with previous calculations (e.g. doi:10.1039/c3cp51039e). Is it because of the different definition of $C_{\text{HB}}(\tau)$ or because of the simple single-exponent model? In any case, we need convincing evidence that our $\tau=0.7$~ps is reliable. One more thing: Should we use ``HB autocorrelation'' instead of ``HB survival''? \old One order of magnitude difference in the HB lifetime indicates that by strengthening HBs covalent interactions also increase energetic barriers on the pathway of their breaking-formation process.
 
-\blue There are different ways to define the HB life time. See 
-https://doi.org/10.1016/S0009-2614(02)02039-0
-I'm using similar definition, and the result seems to agree with experiment \cite{lawrence2003ultrafast} and MD \cite{marti1996molecular,starr1999fast} 
+\blue There are different ways to define the HB life time. See https://doi.org/10.1016/S0009-2614(02)02039-0
+
+I'm using similar definition, and the result seems to agree with experiment \cite{lawrence2003ultrafast} and MD \cite{marti1996molecular,starr1999fast}.
+I think HB autocorrelation is better.
 \old
 
 
