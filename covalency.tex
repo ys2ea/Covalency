@@ -81,6 +81,8 @@ After a debate spanning several decades, it has been argued that natural bond or
 It appears that the covalent component of HB is better described by early decomposition methods~\cite{kitaura1976new,bagus1984new,bagus1992decomposition,stevens1987frozen,chen1996energy,RZK0-SAPT} as well as their modern variants~\cite{mo2000energy,misquitta2003dispersion,khaliullin2007unravelling}. 
 According to these methods, charge transfer contributes only around 20\% to the overall binding energy between water molecules in small clusters \cite{stevens1987frozen,chen1996energy,piquemal2005csov,khaliullin2009electron,cobar2012examination}, in agreement with chemists' long-held intuitive view of HB.
 
+%RZK: Grabowski2011 - 10.1021/cr800346f
+
 While energy decomposition methods have helped understand the importance of the charge-transfer for the binding strength in gas-phase water clusters little [RZK nothing? check literature] is known about the contribution of the covalent component of HB to the \emph{observed} properties of liquid water. 
 A great fundamental importance of studying covalency of HB has been pointed in several works that  noted a deep connection between the covalent interactions and features of the X-ray absorption~\cite{NatureComm2013}, infrared~\cite{JPCL2013}, and nuclear magnetic resonance~\cite{NatureComm2015} spectra of liquid water. 
 In this work, we extended a recently developed energy decomposition method for periodic systems~\cite{Khaliullin2013JCTC} to perform an unprecedented \emph{ab initio} molecular dynamics study that measures quantitatively the contribution of the covalent component of HB to the structural, dynamical and spectroscopic properties of liquid water at ambient conditions. 
@@ -112,7 +114,6 @@ To ensure that the covalent component of intermolecular bonding is removed accur
 To keep electrons absolutely localized in a course of AIMD simulations, we extended the recently developed ALMO DFT method for  condensed molecular systems~\cite{Khaliullin2013JCTC} so that the atomic forces can be computed analytically from the ALMO DFT energies (see Supplementary Information).
 
 All AIMD simulations, with delocalized and localized molecular orbitals, were performed using the dispersion-corrected~\cite{grimme2010consistent} BLYP exchange-correlation functional~\cite{becke1988density, lee1988development} and TZV2P basis set~\cite{vandevondele2007gaussian}. 
-%RZK-LYP: Phys. Rev. B 37, 785 (1988)
 The temperature of simulations was set to 298~K. 
 The size of a periodic cubic simulation box was fixed to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. 
 Since removing intermolecular covalency can affect the density, we also performed a set of simulations for a system, which density was adjusted to 1~atm using constant pressure AIMD. 
@@ -136,8 +137,16 @@ ALMO-based decomposition energy analysis predicts that, in a water dimer, the tr
 % RZK-khaliullin2009dimer: 10.1002/chem.200802107
 This contribution is higher in the \emph{cooperative} HB network of liquid water at ambient conditions: 1.1\% of electron and 19 ~kJ$\cdot$mol$^{-1}$ per hydrogen bond, in agreement with our previous study \cite{kuhne2014nature}.
 
-\textbf{Molecular structure.} The covalent component of weak intermolecular bonds has only a minor effect on the shape of water molecules. 
-The average length of intramolecular OH bond changes from \new  0.992\old~\Ang\ in the realistic model to \new 0.977\old~\Ang\ in the devalent model of water. 
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{acoord}
+\caption{Average positions of atoms (solid circles) and Wannier centers (empty cicles) in a water molecule for the realistic (black) and devalent (red) models. 
+%RZK: It is unclear why such small shifts lead to enormous change in the dipole moments. Is it because in dipole vectors "almost compensate" each other?
+%\blue The shift is too small already, adding isolated molecule might make it unreadable. \old
+} \label{Fig:acoord}
+\end{figure}
+
+\textbf{Molecular structure.} The covalent component of weak intermolecular bonds has only a minor effect on the shape of water molecules (Figure~\ref{Fig:acoord}). 
+The average length of intramolecular OH bond changes from 0.992~\Ang\ in the realistic model to 0.977~\Ang\ in the devalent model of water. 
 At the same time, the average intramolecular HOH angle changes from 105.5 degrees to 104.3 degrees, becoming closer to the value calculated for the 298~K gas phase water molecule.
 
 \begin{figure}
@@ -236,14 +245,6 @@ Another significant difference between the realistic and devalent systems is in 
 
 \textbf{Molecular dipole moment and dielectric constant.} Water's unique properties as a solvent are due to both the high dipole moment of its molecules and its high dielectric constant. 
 The latter measures the ability of the molecular dipoles to reorient and stabilize ions and polar solute molecules. 
-
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{acoord}
-\caption{Average positions of atoms (solid circles) and Wannier centers (empty cicles) in a water molecule for the realistic (black) and devalent (red) models. 
-%RZK: It is unclear why such small shifts lead to enormous change in the dipole moments. Is it because in dipole vectors "almost compensate" each other. Can we add isolated molecule? Add charges to all centers: hydrogen +1, Wannier -2, Oxygen +6. Remove "XY-plain", "ZY-plain" labels.
-\blue The shift is too small already, adding isolated molecule might make it unreadable. \old
-} \label{Fig:acoord}
-\end{figure}
 
 While the definition of molecular dipole moments in condensed phase is somewhat ambiguous because there is no a unique way to assign the continuous electron density to molecules. However, molecular dipoles can be estimated using the positions of the centers of maximally localized Wannier orbitals (Figure~\ref{Fig:acoord})~\cite{marzari1997maximally,sharma2007dipolar}. 
 The resulting dipole distribution in shown in Figure~\ref{Fig:dipoledist}. 
