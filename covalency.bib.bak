@@ -24,6 +24,18 @@
   Volume                   = {83}
 }
 
+@Article{badyal2000electron,
+  Title                    = {Electron distribution in water},
+  Author                   = {Badyal, YS and Saboungi, M-L and Price, DL and Shastri, SD and Haeffner, DR and Soper, AK},
+  Journal                  = {The Journal of Chemical Physics},
+  Year                     = {2000},
+  Number                   = {21},
+  Pages                    = {9206--9208},
+  Volume                   = {112},
+
+  Publisher                = {AIP}
+}
+
 @Article{bagus1984new,
   Title                    = {A new analysis of charge transfer and polarization for ligand--metal bonding: Model studies of Al4CO and Al4NH3},
   Author                   = {Bagus, Paul S and Hermann, K and Bauschlicher Jr, Charles W},
@@ -120,6 +132,13 @@
   Publisher                = {AIP}
 }
 
+@Book{eisenberg2005structure,
+  Title                    = {The structure and properties of water},
+  Author                   = {Eisenberg, David and Kauzmann, Walter},
+  Publisher                = {Oxford University Press on Demand},
+  Year                     = {2005}
+}
+
 @Article{NatureComm2015,
   Title                    = {Covalency of hydrogen bonds in liquid water can be probed by proton nuclear magnetic resonance experiments},
   Author                   = {Elgabarty, Hossam and Khaliullin, Rustam Z and K{\"u}hne, Thomas D},
@@ -178,6 +197,17 @@
   Publisher                = {APS}
 }
 
+@Article{gordon2013accurate,
+  Title                    = {Accurate first principles model potentials for intermolecular interactions},
+  Author                   = {Gordon, Mark S and Smith, Quentin A and Xu, Peng and Slipchenko, Lyudmila V},
+  Journal                  = {Annual review of physical chemistry},
+  Year                     = {2013},
+  Pages                    = {553--578},
+  Volume                   = {64},
+
+  Publisher                = {Annual Reviews}
+}
+
 @Article{grimme2010consistent,
   Title                    = {A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu},
   Author                   = {Grimme, Stefan and Antony, Jens and Ehrlich, Stephan and Krieg, Helge},
@@ -188,6 +218,37 @@
   Volume                   = {132},
 
   Publisher                = {AIP}
+}
+
+@Article{hardy2001isotope,
+  Title                    = {Isotope effect on the translational and rotational motion in liquid water and ammonia},
+  Author                   = {Hardy, Edme H and Zygar, Astrid and Zeidler, Manfred D and Holz, Manfred and Sacher, Frank D},
+  Journal                  = {The Journal of Chemical Physics},
+  Year                     = {2001},
+  Number                   = {7},
+  Pages                    = {3174--3181},
+  Volume                   = {114},
+
+  Publisher                = {AIP}
+}
+
+@Article{harris2004temperature,
+  Title                    = {Temperature and volume dependence of the viscosity of water and heavy water at low temperatures},
+  Author                   = {Harris, Kenneth R and Woolf, Lawrence A},
+  Journal                  = {Journal of Chemical \& Engineering Data},
+  Year                     = {2004},
+  Number                   = {4},
+  Pages                    = {1064--1069},
+  Volume                   = {49},
+
+  Publisher                = {ACS Publications}
+}
+
+@Book{haynes2014crc,
+  Title                    = {CRC handbook of chemistry and physics},
+  Author                   = {Haynes, William M},
+  Publisher                = {CRC press},
+  Year                     = {2014}
 }
 
 @Article{horn2015polarization,
@@ -217,14 +278,18 @@
 @Article{NatureComm2013,
   Title                    = {Electronic signature of the instantaneous asymmetry in the first coordination shell of liquid water},
   Author                   = {K{\"u}hne, Thomas D and Khaliullin, Rustam Z},
-  Journal                  = {arXiv preprint arXiv:1301.4592},
-  Year                     = {2013}
+  Journal                  = {Nature communications},
+  Year                     = {2013},
+  Pages                    = {1450},
+  Volume                   = {4},
+
+  Publisher                = {Nature Publishing Group}
 }
 
 @Article{khaliullin2009electron,
   Title                    = {Electron donation in the water--water hydrogen bond},
   Author                   = {Khaliullin, Rustam Z and Bell, Alexis T and Head-Gordon, Martin},
-  Journal                  = {Chemistry--A European Journal},
+  Journal                  = {Chemistry-A European Journal},
   Year                     = {2009},
   Number                   = {4},
   Pages                    = {851--855},
@@ -305,6 +370,54 @@
   Publisher                = {ACS Publications}
 }
 
+@Article{lawrence2003ultrafast,
+  Title                    = {Ultrafast infrared spectroscopy probes hydrogen-bonding dynamics in liquid water},
+  Author                   = {Lawrence, CP and Skinner, JL},
+  Journal                  = {Chemical physics letters},
+  Year                     = {2003},
+  Number                   = {3},
+  Pages                    = {472--477},
+  Volume                   = {369},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{lawrence2003vibrational,
+  Title                    = {Vibrational spectroscopy of HOD in liquid D 2 O. III. Spectral diffusion, and hydrogen-bonding and rotational dynamics},
+  Author                   = {Lawrence, CP and Skinner, JL},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {2003},
+  Number                   = {1},
+  Pages                    = {264--272},
+  Volume                   = {118},
+
+  Publisher                = {AIP}
+}
+
+@Article{lee2011effects,
+  Title                    = {The effects of charge transfer on the properties of liquid water},
+  Author                   = {Lee, Alexis J and Rick, Steven W},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {2011},
+  Number                   = {18},
+  Pages                    = {184507},
+  Volume                   = {134},
+
+  Publisher                = {AIP}
+}
+
+@Article{lee1988development,
+  Title                    = {Development of the Colle-Salvetti correlation-energy formula into a functional of the electron density},
+  Author                   = {Lee, Chengteh and Yang, Weitao and Parr, Robert G},
+  Journal                  = {Physical review B},
+  Year                     = {1988},
+  Number                   = {2},
+  Pages                    = {785},
+  Volume                   = {37},
+
+  Publisher                = {APS}
+}
+
 @Article{TIP3P,
   Title                    = {A five-site model for liquid water and the reproduction of the density anomaly by rigid, nonpolarizable potential functions},
   Author                   = {Mahoney, Michael W and Jorgensen, William L},
@@ -322,6 +435,42 @@
   Author                   = {Mar{\'e}chal, Yves},
   Publisher                = {Elsevier},
   Year                     = {2006}
+}
+
+@Article{marti1996molecular,
+  Title                    = {Molecular dynamics simulation of liquid water along the coexistence curve: Hydrogen bonds and vibrational spectra},
+  Author                   = {Marti, J and Padro, JA and Guardia, E},
+  Journal                  = {The Journal of chemical physics},
+  Year                     = {1996},
+  Number                   = {2},
+  Pages                    = {639--649},
+  Volume                   = {105},
+
+  Publisher                = {AIP}
+}
+
+@Article{marzari1997maximally,
+  Title                    = {Maximally localized generalized Wannier functions for composite energy bands},
+  Author                   = {Marzari, Nicola and Vanderbilt, David},
+  Journal                  = {Physical review B},
+  Year                     = {1997},
+  Number                   = {20},
+  Pages                    = {12847},
+  Volume                   = {56},
+
+  Publisher                = {APS}
+}
+
+@Article{misquitta2013charge,
+  Title                    = {Charge transfer from regularized symmetry-adapted perturbation theory},
+  Author                   = {Misquitta, Alston J},
+  Journal                  = {Journal of chemical theory and computation},
+  Year                     = {2013},
+  Number                   = {12},
+  Pages                    = {5313--5326},
+  Volume                   = {9},
+
+  Publisher                = {ACS Publications}
 }
 
 @Article{misquitta2003dispersion,
@@ -348,6 +497,18 @@
   Publisher                = {AIP}
 }
 
+@Article{modig2003temperature,
+  Title                    = {Temperature-dependent hydrogen-bond geometry in liquid water},
+  Author                   = {Modig, Kristofer and Pfrommer, Bernd G and Halle, Bertil},
+  Journal                  = {Physical review letters},
+  Year                     = {2003},
+  Number                   = {7},
+  Pages                    = {075502},
+  Volume                   = {90},
+
+  Publisher                = {APS}
+}
+
 @Article{neumann1983dipole,
   Title                    = {Dipole moment fluctuation formulas in computer simulations of polar systems},
   Author                   = {Neumann, Martin},
@@ -372,6 +533,42 @@
   Publisher                = {Wiley Online Library}
 }
 
+@Article{rapaport1983hydrogen,
+  Title                    = {Hydrogen bonds in water: Network organization and lifetimes},
+  Author                   = {Rapaport, DC},
+  Journal                  = {Molecular Physics},
+  Year                     = {1983},
+  Number                   = {5},
+  Pages                    = {1151--1162},
+  Volume                   = {50},
+
+  Publisher                = {Taylor \& Francis}
+}
+
+@Article{rey2002hydrogen,
+  Title                    = {Hydrogen bond dynamics in water and ultrafast infrared spectroscopy},
+  Author                   = {Rey, Rossend and M{\o}ller, Klaus B and Hynes, James T},
+  Journal                  = {The Journal of Physical Chemistry A},
+  Year                     = {2002},
+  Number                   = {50},
+  Pages                    = {11993--11996},
+  Volume                   = {106},
+
+  Publisher                = {ACS Publications}
+}
+
+@Article{rick2016polarizable,
+  Title                    = {A polarizable, charge transfer model of water using the drude oscillator},
+  Author                   = {Rick, Steven W},
+  Journal                  = {Journal of computational chemistry},
+  Year                     = {2016},
+  Number                   = {22},
+  Pages                    = {2060--2066},
+  Volume                   = {37},
+
+  Publisher                = {Wiley Online Library}
+}
+
 @Article{schenter1996natural,
   Title                    = {Natural energy decomposition analysis: The linear response electrical self energy},
   Author                   = {Schenter, Gregory K and Glendening, Eric D},
@@ -382,6 +579,30 @@
   Volume                   = {100},
 
   Publisher                = {ACS Publications}
+}
+
+@Article{sharma2007dipolar,
+  Title                    = {Dipolar correlations and the dielectric permittivity of water},
+  Author                   = {Sharma, Manu and Resta, Raffaele and Car, Roberto},
+  Journal                  = {Physical review letters},
+  Year                     = {2007},
+  Number                   = {24},
+  Pages                    = {247401},
+  Volume                   = {98},
+
+  Publisher                = {APS}
+}
+
+@Article{starr1999fast,
+  Title                    = {Fast and slow dynamics of hydrogen bonds in liquid water},
+  Author                   = {Starr, Francis W and Nielsen, Johannes K and Stanley, H Eugene},
+  Journal                  = {Physical Review Letters},
+  Year                     = {1999},
+  Number                   = {11},
+  Pages                    = {2294},
+  Volume                   = {82},
+
+  Publisher                = {APS}
 }
 
 @Article{stevens1987frozen,
@@ -408,6 +629,18 @@
   Publisher                = {ACS Publications}
 }
 
+@Article{stone1993computation,
+  Title                    = {Computation of charge-transfer energies by perturbation theory},
+  Author                   = {Stone, Anthony J},
+  Journal                  = {Chemical physics letters},
+  Year                     = {1993},
+  Number                   = {1},
+  Pages                    = {101--109},
+  Volume                   = {211},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{vandevondele2007gaussian,
   Title                    = {Gaussian basis sets for accurate calculations on molecular systems in gas and condensed phases},
   Author                   = {VandeVondele, Joost and Hutter, Juerg},
@@ -418,6 +651,18 @@
   Volume                   = {127},
 
   Publisher                = {AIP}
+}
+
+@Article{vega2011simulating,
+  Title                    = {Simulating water with rigid non-polarizable models: a general perspective},
+  Author                   = {Vega, Carlos and Abascal, Jose LF},
+  Journal                  = {Physical Chemistry Chemical Physics},
+  Year                     = {2011},
+  Number                   = {44},
+  Pages                    = {19663--19688},
+  Volume                   = {13},
+
+  Publisher                = {Royal Society of Chemistry}
 }
 
 @Article{weinhold2005resonance,
@@ -450,5 +695,10 @@
   Volume                   = {4},
 
   Publisher                = {ACS Publications}
+}
+
+@Article{,
+  Owner                    = {yshi},
+  Timestamp                = {2017.12.23}
 }
 
