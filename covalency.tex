@@ -4,6 +4,7 @@
 \newcommand*{\MAINTEXT}{}
 
 \usepackage{epsfig,color,graphicx}
+
 \begin{document}
 \newcommand{\Ang}{\ensuremath{\mathring{\text{A}}}}
 \newcommand{\ltwid}{\mathrel{\raise.3ex\hbox{$<$\kern-.75em\lower1ex\hbox{$\sim$}}}}
@@ -61,6 +62,7 @@ We show that for room-temperature liquid water, a seemingly small amount of elec
 In particular, the tetrahedronal structure, O-H stretch mode and viscosity are all significantly determined by covalent interactions.
 %RZK0: many unique structural characteristics, spectroscopic features, and properties as a solvent are to a large extent determined by covalent interactions.
 \end{abstract}
+
 \maketitle
 
 \section{Introduction} 
@@ -179,9 +181,7 @@ The structure of the HB network for both models can also be illustrated with the
 It is clear that the distorted tetrahedral structure of liquid water is retained without the covalent component (cf. Figure~\ref{Fig:SDF}A and \ref{Fig:SDF}AB), indicating that permanent electrostatic and polarization interactions tend to orient water molecules the same way as the covalent interaction. 
 For comparison, if a model retains only dispersion interactions and short-distance repulsion, represented by the Lennard-Jones potential, the HB becomes truly non-directional with uniform angular distribution (Figure~\ref{Fig:SDF}C). 
 That is why, permanent electrostatics is widely recognized as the key component of interaction between water molecules and is included in all analytical molecular mechanics models of water. 
-% RZK0: move to conclusions?
 On the other hand, the equally strong covalent component is neglected in these models and instead compensated by fine-tuning permanent atomic charges (see Figure~\ref{Fig:SDF}D, for example). 
-While such models are very successful in reproducing a wide variety of properties of aqueous systems~\cite{vega2011simulating} [it has been argued that] the failure to include covalent effects properly limits their applicability to RZK~\cite{RZK0}. % RZK: only if covalent interactions are substantially different from fixed electrostatics
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_hbstat}
@@ -311,15 +311,29 @@ Experimental            & 0.239~\cite{hardy2001isotope}  & 8.9 $\times 10^{-4} $
  
 \section{Conclusions}
 
-The amount of intermolecular electron density transfer in a typical HB in liquid water at ambient conditions is on the order of 1\% of an electron. However, this seemingly small covalent component has a profound effect on the strength and stability of individual HBs and, as a result, is responsible for a substantial change in the collective behavior of the HB network and observable properties of liquid water. Simulations show that removing covalency from intermolecular interactions shortens the lifetime of a HB by an order of magnitude and drastically increases mobility of molecules. Without the covalent component, weaker HBs produce a liquid with significantly lower viscosity, comparable to that of acetone. The dipole moment of a water molecule is only slightly lower, if intermolecular charge transfer is forbidden because electron pairs of the oxygen do not extend as far towards neighbor molecules. Despite this the dielectric permittivity of devalent water is significantly increased, mostly because of easier reorientation of mobile molecules, and can be compared to that of hydrocyanic acid. In addition to providing quantitative estimates of the contribution of the covalent component to the properties of liquid water, this work also clearly reveals that it is the intermolecular covalency that is responsible for the large redshift and broadening of the O-H stretching peaks in the IR spectra of liquid water. %RZZ0: intensity? 
+The amount of intermolecular electron density transfer in a typical HB in liquid water at ambient conditions is on the order of 1\% of an electron. 
+However, this seemingly small covalent component has a profound effect on the strength and stability of individual HBs and, as a result, is responsible for a substantial change in the collective behavior of the HB network and observable properties of liquid water. 
+Simulations show that removing covalency from intermolecular interactions shortens the lifetime of a HB by an order of magnitude and drastically increases mobility of molecules. 
+Without the covalent component, weaker HBs produce a liquid with significantly lower viscosity, comparable to that of acetone. 
+The dipole moment of a water molecule is only slightly lower if intermolecular charge transfer is forbidden because electron pairs of the oxygen do not extend as far towards neighbor molecules. 
+Despite this the dielectric permittivity of devalent water is increased two-fold, mostly because of easier reorientation of mobile molecules. 
+In addition to providing a reasonable quantitative estimates of the contribution of the covalent component to properties of water, our work reveals that the intermolecular covalency is entirely responsible for the large redshift and broadening of the O-H stretching peaks in its IR spectra. 
+%RZZ0: Origin of the increased intensity? 
 
-%It is interesting to note that while some changes in the properties can be predicted using the simple rule of equivalence between the strength of intermolecular binding and temperature of the system. The others (shifts in the IR peaks, changes in the dielectric constant) are counterintuitive and results from a nontrivial coupling of the covalent component to the other electronic degrees of freedom (i.e. position of the Wannier centers) and nuclear motion. %%RZK: \new Temperature and potential are ``two peas in a pod''. Removing covalent interactions weakens HBs. Can we recover properties of room-temperature liquid water using the devalent model at lower temperature? The same question can be asked another way: is devalent room-temperature water completely equivalent to high-temperature covalent water? We know the exact contribution of covalency to the binding energy of molecules. How much the temperature should be adjusted to keep the average Boltzmann weights the same?\old
+It is interesting to note that some properties of devalent water with its weaker HBs resemble those of real water at higher temperature (e.g. diffusion coefficient, viscosity, HB lifetime). 
+This can be expected because of the equivalence of energy and temperature in the Boltzmann factor. However, many properties, such as the power spectrum and dielectric constant, respond to the removal of the intermolecular covalency differently in a less intuitive way. 
+For example, the dielectric constant of high-temperature real water is lower that room-temperature real water whereas room-temperature devalent water has a much higher dielectric constant. 
+This response originates from a nontrivial coupling of the covalent component of HBs to the other electronic degrees of freedom (e.g. intramoleclar position of the Wannier centers) and nuclear motion.
 
-%The results of this work imply that the success of fine-tuned empirical water models is limited to systems in which fine-tuned electrostatic terms correctly compensate the . These purely electrostatic models will start deviating from the experimental observations once the strength of intermolecular covalent interactions changes (e.g. simulations of high-pressure systems, solutes that interact strongly with water) [once thermodynamics states with the different magnitude of covalent interactions are sampled].  
+While the small covalent component of HBs strongly affects many properties of water there are intermolecular forces of different nature (frozen electrostatics, polarization, dispersion) but similar importance that hold water molecules together. 
+Our simulations show that, after removal of the HB covalency, water remains liquid and keeps the structure and properties similar to those of real water. 
+This result explains the success of empirical force fields that do not include small charge transfer explicitly but instead artificially strengthen intermolecular interaction by increasing permanent atomic charges~\cite{Rick2016}. 
+%RZZ: Rick2016 -- 10.1002/jcc.24426. 
+While such simple empirical models reproduce a wide variety of properties of aqueous systems~\cite{vega2011simulating} they will perform poorly for thermodynamic states of water with a different amount of intermolecular charge transfer (e.g. high-pressure water phases, aqueous interfaces with various materials) that will not be fully compensated by fixed empirical electrostatics.
+Our data implies that even small changes in the degree of covalent interactions will lead to substantial errors in the properties obtained using fixed empirical models.
 
-%RZK: The quantitative study described here shows that, from the fundamental point of view, this work extends our understanding of [not only the liquid water but of] hydrogen bonding in general. It places reliable order-of-magnitude estimates/limits on the expected changes in various properties if one modifies HB by adjusting the strength of donor-acceptor through various chemical substituents. Implications: shows that ALMO-based AIMD is an excellent tool for the nature of intermolecular bonding in other condensed phase systems. Catalysis, solvation.
-
-%From the practical perspective, %RZK: Impact on water modeling. Small CT explains why it can be neglected [and replaced by simple fine-tuned electrostatic corrections] in all empirical models without noticeable deterioration to their accuracy. Cite: 10.1002/jcc.24426. Our result also suggest that classical models that don't take account of covalency only have limit applicability, as they fine-tune the parameters only for certain conditions.  %RZK: Furthermore, the CT is fairly insensitive to intermolecular rotation of the water molecules, which helps to account for the success of empirical potentials that do not include charge transfer explicitly.
+To conclude, this work demonstrates that ALMO-based \emph{ab initio} molecular dynamics is a promising new tool for establishing a fundamental connection between the donor-acceptor component of intermolecular bonding and observable properties of condensed phase molecular systems. 
+The reliable estimate of the contribution of the covalent component of HBs to properties of liquid water provided in this study expands our knowledge about the nature of hydrogen bonding and can facilitate interpretation of solvation and catalytic effects in aqueous systems, thus aiding the design of molecules and materials with desirable HB interactions. 
  
 \section{Computational methods}
 
@@ -350,8 +364,8 @@ To ensure that the results are not affected by the size of the basis set a short
 %
 \begin{equation}
 \begin{split}
-\mathbf{R} = \mathbf{T} \mathbf{T}^{\dagger} &\rightarrow \mathbf{R}_{\text{ALMO}} = \mathbf{T} (\mathbf{T}^{\dagger} \mathbf{S} \mathbf{T})^{-1}\mathbf{T}^{\dagger} \\
-\mathbf{W} = \mathbf{T} \mathbf{\epsilon} \mathbf{T}^{\dagger} &\rightarrow \mathbf{W}_{\text{ALMO}}  = \mathbf{R}_{\text{ALMO}} \mathbf{F} \mathbf{R}_{\text{ALMO}}
+\mathbf{R} = \mathbf{T} \mathbf{T}^{\dagger} \quad &\rightarrow \quad \mathbf{R}_{\text{ALMO}} = \mathbf{T} (\mathbf{T}^{\dagger} \mathbf{S} \mathbf{T})^{-1}\mathbf{T}^{\dagger} \\
+\mathbf{W} = \mathbf{T} \mathbf{\epsilon} \mathbf{T}^{\dagger} \quad &\rightarrow \quad \mathbf{W}_{\text{ALMO}}  = \mathbf{R}_{\text{ALMO}} \mathbf{F} \mathbf{R}_{\text{ALMO}}
 \end{split}
 \end{equation}
 %
@@ -372,7 +386,8 @@ Grants (RGPIN-2016-0505). The authors are grateful to Compute Canada and, in par
 
 %RZZ0: references to all sections from the main text and Computational Methods
 
-\newpage
+%\maketitle
+%\newpage
 \clearpage
 %\widetext
 \setcounter{figure}{0}
