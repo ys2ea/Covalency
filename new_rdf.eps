@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0 EPSF-2.0
 %%Title: new_rdf.eps
 %%Creator: gnuplot 5.0 patchlevel 3
-%%CreationDate: Thu Aug 10 14:07:53 2017
+%%CreationDate: Sat Dec 23 23:02:04 2017
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 266 194
 %%EndComments
@@ -429,6 +429,49 @@ Level1 {Level1PatternFill} {Level2PatternFill} ifelse
 dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
 currentdict end definefont pop
 %
+%
+% Encoding for ISO-8859-1 (also called Latin1)
+%
+/reencodeISO {
+dup dup findfont dup length dict begin
+{ 1 index /FID ne { def }{ pop pop } ifelse } forall
+currentdict /CharStrings known {
+	CharStrings /Idieresis known {
+		/Encoding ISOLatin1Encoding def } if
+} if
+currentdict end definefont
+} def
+/ISOLatin1Encoding [
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright
+/parenleft/parenright/asterisk/plus/comma/minus/period/slash
+/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon
+/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N
+/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright
+/asciicircum/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m
+/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright/asciitilde
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/dotlessi/grave/acute/circumflex/tilde/macron/breve
+/dotaccent/dieresis/.notdef/ring/cedilla/.notdef/hungarumlaut
+/ogonek/caron/space/exclamdown/cent/sterling/currency/yen/brokenbar
+/section/dieresis/copyright/ordfeminine/guillemotleft/logicalnot
+/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
+/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
+/guillemotright/onequarter/onehalf/threequarters/questiondown
+/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex
+/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute
+/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
+/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex
+/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis
+/yacute/thorn/ydieresis
+] def
 /MFshow {
    { dup 5 get 3 ge
      { 5 get 3 eq {gsave} {grestore} ifelse }
@@ -457,6 +500,7 @@ currentdict end definefont pop
   Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
 /XYsave    { [( ) 1 2 true false 3 ()] } bind def
 /XYrestore { [( ) 1 2 true false 4 ()] } bind def
+/Helvetica reencodeISO def
 Level1 SuppressPDFMark or 
 {} {
 /SDict 10 dict def
@@ -470,7 +514,7 @@ SDict begin [
   /Author (yshi)
 %  /Producer (gnuplot)
 %  /Keywords ()
-  /CreationDate (Thu Aug 10 14:07:53 2017)
+  /CreationDate (Sat Dec 23 23:02:04 2017)
   /DOCINFO pdfmark
 end
 } ifelse
@@ -611,7 +655,7 @@ LCb setrgbcolor
 0 -63 V
 stroke
 686 448 M
-[ [(Helvetica) 160.0 0.0 true true 0 ( 100)]
+[ [(Helvetica) 160.0 0.0 true true 0 ( 1)]
 ] -53.3 MCshow
 1.000 UL
 LTb
@@ -622,7 +666,7 @@ LCb setrgbcolor
 0 -63 V
 stroke
 1250 448 M
-[ [(Helvetica) 160.0 0.0 true true 0 ( 200)]
+[ [(Helvetica) 160.0 0.0 true true 0 ( 2)]
 ] -53.3 MCshow
 1.000 UL
 LTb
@@ -633,7 +677,7 @@ LCb setrgbcolor
 0 -63 V
 stroke
 1813 448 M
-[ [(Helvetica) 160.0 0.0 true true 0 ( 300)]
+[ [(Helvetica) 160.0 0.0 true true 0 ( 3)]
 ] -53.3 MCshow
 1.000 UL
 LTb
@@ -644,7 +688,7 @@ LCb setrgbcolor
 0 -63 V
 stroke
 2377 448 M
-[ [(Helvetica) 160.0 0.0 true true 0 ( 400)]
+[ [(Helvetica) 160.0 0.0 true true 0 ( 4)]
 ] -53.3 MCshow
 1.000 UL
 LTb
@@ -655,7 +699,7 @@ LCb setrgbcolor
 0 -63 V
 stroke
 2940 448 M
-[ [(Helvetica) 160.0 0.0 true true 0 ( 500)]
+[ [(Helvetica) 160.0 0.0 true true 0 ( 5)]
 ] -53.3 MCshow
 1.000 UL
 LTb
@@ -666,7 +710,7 @@ LCb setrgbcolor
 0 -63 V
 stroke
 3504 448 M
-[ [(Helvetica) 160.0 0.0 true true 0 ( 600)]
+[ [(Helvetica) 160.0 0.0 true true 0 ( 6)]
 ] -53.3 MCshow
 1.000 UL
 LTb
@@ -677,7 +721,7 @@ LCb setrgbcolor
 0 -63 V
 stroke
 4067 448 M
-[ [(Helvetica) 160.0 0.0 true true 0 ( 700)]
+[ [(Helvetica) 160.0 0.0 true true 0 ( 7)]
 ] -53.3 MCshow
 1.000 UL
 LTb
@@ -700,6 +744,7 @@ LCb setrgbcolor
 currentpoint gsave translate -270 rotate 0 0 moveto
 [ [(Helvetica) 160.0 0.0 true true 0 (g)]
 [(Helvetica) 128.0 -48.0 true true 0 (oo)]
+[(Helvetica) 160.0 0.0 true true 0 (\(r\))]
 ] -37.3 MCshow
 grestore
 LTb
@@ -707,7 +752,7 @@ LCb setrgbcolor
 2376 238 M
 [ [(Helvetica) 160.0 0.0 true true 0 (r)]
 [(Helvetica) 128.0 -48.0 true true 0 (oo)]
-[(Helvetica) 160.0 0.0 true true 0 (\(pm\))]
+[(Helvetica) 160.0 0.0 true true 0 (\(\305\))]
 ] -37.3 MCshow
 LTb
 % Begin plot #1
