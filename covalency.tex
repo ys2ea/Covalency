@@ -111,12 +111,7 @@ In this work, this model is referred to as delocalized-electron, reference, or r
 
 The second model is a constrained DFT method based on absolutely localized molecular orbitals (ALMO)~\cite{khaliullin2006efficient}. 
 Unlike conventional DFT, ALMO DFT~\cite{Khaliullin2013JCTC} is able to confine each electron strictly to its own molecule and therefore completely remove the covalent component from intermolecular bonding. 
-Mathematically, this is achieved by expanding Kohn-Sham molecular orbitals \emph{only} in terms of the atomic orbitals of the same molecules~\cite{stoll,khaliullin2006efficient, blw}.
-%RZK: blw - https://doi.org/10.1063/1.481185
-%
-%RZK: stoll - Stoll, H., Wagenblast, G. & Preuβ, H. Theoret. Chim. Acta (1980) 57: 169. https://doi.org/10.1007/BF00574903
-%
-%RZK: herbert2016 - 10.1021/acs.jctc.6b00155
+Mathematically, this is achieved by expanding Kohn-Sham molecular orbitals \emph{only} in terms of the atomic orbitals of the same molecules~\cite{stoll1980use,khaliullin2006efficient, mo2000energy}.
 Such molecular orbitals are called absolutely localized because they are localized on molecules in the same sense as atomic orbitals are localized on atoms. 
 To shorten the discussion, intermolecular interaction without covalent component are referred to as \emph{devalent} interactions and the ALMO-based model is called localized-electron or \emph{devalent} model. 
 It is important to note that this model retains all other physical effects, including the covalent component of \emph{intramolecular} OH bonds. %were variationally optimized on each AIMD each step to find the electronic ground state of the system.
@@ -198,7 +193,8 @@ A. Reference model, B. localized model, C. Modified TIP3P model that include onl
 %\Yifei: I did the integral, they are close, but not exactly the same, maybe due to finite width of the bins.  
 % When the cut off is half the system size, the integral for realistic model: 212, devalent: 209. 
 % RZK: The values are close enough to each other. Did you take into account the 4 \pi r^2 factor during the integration? I assume that the total number of molecules in the cell is 125. At half-size the integral must be less than 125 (unaccounted oxygen atoms in the corners of the cubic cell), not more than 125.
-
+%\Yifei: I was not sure how the rdf is normalized, and tried both with and without the r^2 factor. The previous one was without the factor, with the factor, realistic 721, devalent 713. 
+ 
 \textbf{HB statistics.} The drastic difference in the structure of the HB network of the realistic and devalent models is confirmed by analysis of the HB statistics. 
 The commonly accepted, though somewhat arbitrary, binary geometric definition of a HB is utilized: the H--O$\cdots$O angle must be smaller than 30$^{\circ}$ and the O-O distance must be shorter than 3.5\Ang~\cite{rey2002hydrogen,lawrence2003vibrational}. 
 The distribution of molecules according to the number of donated or accepted HBs in Figure~\ref{fig:HBstat} shows that switching off intermolecular covalency leads to an increase of single-donor and single-acceptor molecules. 
@@ -215,7 +211,6 @@ We will continue discussing properties of the \emph{fixed-density} devalent wate
 % density of butanol is 0.810, 3-Pentanone -- 0.815, 2-Octanol -- 0.824
 
 \textbf{Infared spectrum.} Figure~\ref{Fig:IR} shows the infared (IR) spectra of the devalent and reference systems together with that of ideal water vapor at 298~K. The spectra are calculated entirely from the time-dependent positions of atoms and Wannier centers (Figure~\ref{Fig:acoord}) as described in Ref.~\onlinecite{thomas2013computing}.
-%RZK: thomas2013computing -- 10.1039/C3CP44302G
 
 The most pronounced difference in the IR spectra is in the 3000--4000~cm$^{-1}$ region of intramolecular O--H stretching band $\nu_s$. 
 For the devalent model, $\nu_s$ peak does not exhibit the redshift and broadening characteristic to hydrogen-bonded O--H groups and clearly seen in the spectrum of the realistic model. 
@@ -230,9 +225,9 @@ Despite this increased variety the $\nu_s$ peak of devalent water remains very n
 
 %Yifei: The integrated intensity is discussed in Eq 5.1 of the book "The HB and the water molecule".
 
-Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to liquid phase is not entirely due to the intermolecular electron transfer as has been usually assumed~(see Chapter 5 in Ref.~\onlinecite{HBbook}). 
+Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to liquid phase is not entirely due to the intermolecular electron transfer as has been usually assumed~(see Chapter 5 in Ref.~\onlinecite{marechal2006hydrogen}). 
 It is known that the integrated intensity is proportional to $\left({\partial \mu}/{\partial q}\right)^2$ -- derivative of the dipole moment with respect to the coordinate of the vibrational mode (i.e. intramolecular O--H distance) -- and the change in the integrated intensity arises mostly from the change in this derivative. 
-The change in the derivative is attributed to decoupling of the motion electrons from that of the nuclei in HB systems: stretching of a HB-bonded O--H group causes the electrons (i.e. Wannier centers in Figure~\ref{Fig:acoord}) not to follow the H-atom as much as when O--H does not establish a HB~\cite{HBbook}. 
+The change in the derivative is attributed to decoupling of the motion electrons from that of the nuclei in HB systems: stretching of a HB-bonded O--H group causes the electrons (i.e. Wannier centers in Figure~\ref{Fig:acoord}) not to follow the H-atom as much as when O--H does not establish a HB~\cite{marechal2006hydrogen}. 
 Our data shows that the derivative changes both from the gas-phase to devalent model and from the devalent to realistic model. 
 This means that a mere presence of neighbor's lone pairs leads to decoupling while the intermolecular electron transfer makes this effect more pronounced.
 
@@ -251,7 +246,6 @@ Another significant difference between the realistic and devalent systems is in 
 \includegraphics[width=0.5\textwidth]{new_ir}
 \caption{Calculated IR spectra. The far infrared part of the spectrum for the ideal-gas system, which corresponds to rotational modes, is not shown for simplicity. 
 } \label{Fig:IR}
-%RZK: Label vertical axis: "Absorbance per molecule". Remove tick labels in y-axis. I assume that vapor intensity is normlized to the same number of molecules.
 \end{figure}
 
 \textbf{Molecular dipole moment and dielectric constant.} Water's unique properties as a solvent are due to both the high dipole moment of its molecules and its high dielectric constant. 
@@ -274,7 +268,6 @@ To be precise, intermolecular charge transfer increases the standard deviation f
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_dipole}
 \caption{Distribution of dipole moments of water molecules.} \label{Fig:dipoledist}
-%RZK: Y-axis label "Relative frequency", remove tick labels "0.0, 0.5, etc."
 \end{figure}
 
 The dielectric constant can be calculated through the fluctuation of the total dipole moment of the system~\cite{neumann1983dipole,adams1981theory}:
@@ -353,10 +346,9 @@ A short time step of 0.5~fs ensured accurate integration of the equations of the
 The total length of simulations for each system was above 35~ps after a equilibrium period of 1.5~ps. 
 %Yifei: Only systems with 125 molecules are calculated for that long. Others sizes are around 7ps. 
 %RZK: Got it. 1.5 ps is an extremely short equilibration time. A careful reviewer will point this out.  
-The properties of water including the infrared spectrum, radial distribution, dipole distribution and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2011travis}.  
-% RZK: brehm2011travis -- 10.1021/ci200217w
+The properties of water including the infrared spectrum, radial distribution, dipole distribution and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
 
-\textbf{Removal of intermolecular covalency.} A straightforward utilization of ALMOs in an energy decomposition analysis (EDA) method~\cite{khaliullin2007unravelling} leads to significantly underestimated charge-transfer (i.e. covalency) effects if large basis sets are used~\cite{horn2015polarization,herbert2016}. 
+\textbf{Removal of intermolecular covalency.} A straightforward utilization of ALMOs in an energy decomposition analysis (EDA) method~\cite{khaliullin2007unravelling} leads to significantly underestimated charge-transfer (i.e. covalency) effects if large basis sets are used~\cite{horn2015polarization,lao2016energy}. 
 This problem arises from the lack of a well-defined separation between the polarization and charge-transfer terms in the complete basis set limit~\cite{misquitta2013charge,horn2015polarization}. 
 This deficiency of the original ALMO EDA~\cite{khaliullin2007unravelling} can be corrected by, for example, selecting an optimal but limited subset of acceptor orbitals~\cite{horn2015polarization} from a large number of functions available in large basis sets. 
 
@@ -423,7 +415,6 @@ and $N_R$ is the number of HBs in all bins.
 \includegraphics[width=0.45\textwidth]{cp_rdf}
 \includegraphics[width=0.45\textwidth]{cp_oh_rdf}
 \caption{Oxygen-oxygen and oxygen-hydrogen radial distribution functions for the fixed-density and relaxed-density systems.}\label{Fig:rdf_cp}
-% RZK: change two axis labels from "OO" to "OH" in the second panel. Change legend to "Fixed-density devalent" and "Relaxed-density devalent" in all Figures
 \end{figure} 
 
 In order to study effect of intermolecular covalency on the density of liquid water, NPT-ensemble simulations were performed at 1~atm and 298~K with intermolecular charge transfer switched off. The average density of this system was determined to be 0.85~g$\cdot$cm$^{-3}$. 
@@ -436,7 +427,6 @@ The positions of the peaks do not change significantly and the peaks become less
 \includegraphics[width=0.45\textwidth]{cp_adf}
 \includegraphics[width=0.45\textwidth]{cp_ir}
 \caption{Angular distribution function and IR spectra for the fixed-density and relaxed-density systems.}\label{Fig:ir_cp}
-% RZK: Change legend to "Fixed-density devalent" and "Relaxed-density devalent". Label vertical axis: "Absorbance per molecule". Remove tick labels in y-axis.
 \end{figure} 
 
 Although the changes in the angular distribution functions are not significant either (Figure~\ref{Fig:ir_cp}) the distribution of HB angles becomes narrower in the relaxed-density system. The IR spectra for the two systems are almost identical (Figure~\ref{Fig:ir_cp}).
