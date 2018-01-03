@@ -56,14 +56,11 @@ Contribution of the covalent component of the hydrogen-bond network to the prope
 \ifdefined\MAINTEXT
 
 \begin{abstract}
-%Many remarkable properties of liquid water originate from the ability of water molecules to form hydrogen bond, which is a combination of electrostatic, induction, dispersion and covalent interactions. 
-%In this work, we developed an ab initio molecular dynamics method that enabled us to switch off the covalent component of interactions between water molecules in simulations. 
-%We show that for room-temperature liquid water, a seemingly small amount of electron transfer has a profound/spectacular effect on observable properties of liquid water. 
+Many remarkable properties of liquid water originate from the ability of its molecules to form hydrogen bonds, each of which is a combination of electrostatic, polarization, dispersion, and covalent interactions. 
+In this work, a purpose-built \emph{ab initio} molecular dynamics method is utilized to switch off the covalent component of interactions between water molecules in simulations. 
+Comparison of simulations with and without covalency shows that a small amount of intermolecular electron transfer between two molecules has a profound effect on the structure and dynamics of the hydrogen-bond network and observable properties of room-temperature liquid water. 
 %In particular, the tetrahedronal structure, O-H stretch mode and viscosity are all significantly determined by covalent interactions.
-Many remarkable properties of liquid water originate from the ability of water molecules to form hydrogen bonds, each of which is a combination of electrostatic, polarization, dispersion, and covalent interactions. 
-In this work, an \emph{ab initio} molecular dynamics method with restricted electrons is utilized to switch off the covalent component of interactions between water molecules in simulations. 
-Comparison of simulations with restricted and unrestricted electrons shows that a small amount of intermolecular electron transfer between two molecules has a profound effect on the structure and dynamics of the hydrogen-bond network and observable properties of room-temperature liquid water. 
-The findings of this study deepen our knowledge about the nature of hydrogen bonding and will facilitate the development of more reliable water models and aid interpretation of solvation and catalytic effects in aqueous systems.
+The findings of this study do not only deepen our knowledge about the nature of hydrogen bonding but will also facilitate the development of more reliable water models and aid interpretation of solvation and catalytic effects in aqueous systems.
 \end{abstract}
 
 %The reliable estimate of the contribution of the covalent component of HBs to properties of liquid water provided in this study expands our knowledge about the nature of hydrogen bonding and can facilitate interpretation of solvation and catalytic effects in aqueous systems.
@@ -93,9 +90,9 @@ According to these methods, charge transfer contributes only around 20--30\% to 
 %RZK0 this is QAIM: Grabowski2011 - 10.1021/cr800346f
 
 While energy decomposition methods have helped understand the importance of the charge-transfer for the binding strength in gas-phase water clusters nothing is known about the contribution of the covalent component of HB to the \emph{observed} properties of liquid water. 
-A great fundamental importance of studying covalency of HB has been pointed in several works that noted a deep connection between the covalent interactions and features of the X-ray absorption~\cite{NatureComm2013}, infrared~\cite{JPCL2013}, and nuclear magnetic resonance~\cite{NatureComm2015} spectra of liquid water. 
+A deep connection between the covalent interactions and features of the X-ray absorption~\cite{NatureComm2013}, infrared~\cite{JPCL2013}, and nuclear magnetic resonance~\cite{NatureComm2015} spectra of liquid water has been pointed in several recent articles. 
 In this work, we extended a recently developed energy decomposition method for periodic systems~\cite{Khaliullin2013JCTC} to perform an unprecedented \emph{ab initio} molecular dynamics study that measures quantitatively the contribution of the covalent component of HB to the structural, dynamical and spectroscopic properties of liquid water at ambient conditions. 
-Our results show that a seemingly insignificant covalent component of HB is defining of the properties of liquid water. 
+Our results show that a seemingly insignificant covalent component of HB is defining for many properties of liquid water. 
 %[has a profound effect on the properties of water].
 
 
@@ -123,7 +120,7 @@ Mathematically, this is achieved by expanding Kohn-Sham molecular orbitals \emph
 Such molecular orbitals are called absolutely localized because they are localized on molecules in the same sense as atomic orbitals are localized on atoms. 
 To shorten the discussion, intermolecular interaction without covalent component are referred to as \emph{devalent} interactions and the ALMO-based model is called localized-electron or \emph{devalent} model. 
 It is important to note that this model retains all other physical effects, including the covalent component of \emph{intramolecular} OH bonds. %were variationally optimized on each AIMD each step to find the electronic ground state of the system.
-Theoretical methods that ensure that the covalent component of intermolecular bonding is removed accurately and pertinent accuracy tests are described in Computational Methods.
+Theoretical methods that ensure that the covalent component of intermolecular bonding is removed accurately are described in Computational Methods together with pertinent accuracy tests.
 
 To keep electrons absolutely localized in a course of AIMD simulations, we extended the recently developed ALMO DFT method for  condensed molecular systems~\cite{Khaliullin2013JCTC} so that the atomic forces can be computed analytically from the ALMO DFT energies (see Computational Methods).
 
@@ -163,7 +160,7 @@ At the same time, the average intramolecular HOH angle changes from 105.5 degree
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{new_rdf}
 \includegraphics[width=0.5\textwidth]{new_adf}
-\caption{A. Oxygen-oxygen radial distribution function. B. Distribution of HB angles $\phi \equiv O_{\text{ref}} \cdots O-H$ computed for hydrogens within 2.3~\Ang\ from a reference atom. The angular distribution function is normalized to account for the $\phi$-dependent volume and correctly emphasize the energetic preference for linear HBs. The experimental curve is taken from Ref.~\onlinecite{modig2003temperature}.} \label{Fig:RDF}
+\caption{A. Oxygen-oxygen radial distribution function. B. Distribution of HB angles $\phi \equiv O_{\text{ref}} \cdots O-H$ computed for hydrogens within 2.3~\Ang\ from a reference atom. The angular distribution function is normalized to account for the $\phi$-dependent volume and correctly emphasize the energetic preference for linear HBs (see Supplementary Information). The experimental curve is taken from Ref.~\onlinecite{modig2003temperature}.} \label{Fig:RDF}
 \end{figure}
 
 %RZK0: Suggested color coding throughout the manuscript: realistic - black, devalent - red, experiment - black dash, vapor - blue, devalent NPT - blue (these colors make it easier for color blind persons to read figures and at the same time minimize the publication cost). Legends throughout: ``Realistic model'', ``Devalent model'', ``Experiment''. 
@@ -211,7 +208,7 @@ In total, there are 35\% fewer HBs in the devalent than in the reference model o
 \textbf{Density.} If the density is allowed to fluctuate in a simulation while the pressure is fixed at 1~atm, the average density decreases from 0.99~g$\cdot$cm$^{-3}$ for the reference model to 0.85~g$\cdot$cm$^{-3}$ for the devalent model or by 14\%. 
 While this is a noticeable drop it is important to note that the devalent water is still liquid at ambient conditions because of strong electrostatic, polarization and dispersion effects. 
 
-The 14\% decrease in the density should correspond to a 5\% elongation of intermolecular distances assuming that they all increase uniformly. Nevertheless, the position of peaks in RDF remains the same in the devalent water at two different densities (Figure~\ref{Fig:rdf_cp} in Supplementary Information). The only noticeable structural change is that peaks become slightly broader in the low-density constant-pressure model and angular distribution is more narrow (Figure~\ref{Fig:adfcp}). This indicates that most molecules stay in the same position around the minimum of the potential well when the density is allowed to relax. Only a small fraction of them becomes distorted in the radial and angular directions. 
+The 14\% decrease in the density should correspond to a 5\% elongation of intermolecular distances assuming that they all increase uniformly. Nevertheless, the position of peaks in RDF remains the same in the devalent water at two different densities (Figure~\ref{Fig:rdf_cp} in Supplementary Information). The only noticeable structural change is that peaks become slightly broader in the low-density constant-pressure model and angular distribution is more narrow (Figure~\ref{Fig:ir_cp}). This indicates that most molecules stay in the same position around the minimum of the potential well when the density is allowed to relax. Only a small fraction of them becomes distorted in the radial and angular directions. 
 
 We will continue discussing properties of the \emph{fixed-density} devalent water further because all key properties obtained for the \emph{fixed-pressure} model are almost the same while calculations are more difficult for the latter (see Supplementary Information).
 
@@ -223,7 +220,7 @@ We will continue discussing properties of the \emph{fixed-density} devalent wate
 The most pronounced difference in the IR spectra is in the 3000--4000~cm$^{-1}$ region of intramolecular O--H stretching band $\nu_s$. 
 For the devalent model, $\nu_s$ peak does not exhibit the redshift and broadening characteristic to hydrogen-bonded O--H groups and clearly seen in the spectrum of the realistic model. 
 Comparison of the spectra of the devalent and gas-phase models indicates that the characteristic redshift is entirely due to intermolecular covalent interactions. 
-Apparently even small amount of electron density transferred into the antibonding orbitals of the intramolecular O--H bond (see Figure~2 in Ref.~\onlinecite{khaliullin2009electron}) is sufficient to ``soften'' the O--H bond and thus lower its vibrational frequency by 600~cm$^{-1}$.
+Apparently even small amount of electron density transferred into the antibonding orbitals of the intramolecular O--H bond (see Figure~2 in Ref.~\onlinecite{khaliullin2009electron}) is sufficient to ``soften'' the O--H bond and lower its vibrational frequency by 600~cm$^{-1}$.
 
 The primary role of the covalent component in the broadening of the $\nu_s$ peak also becomes apparent from Figure~\ref{Fig:IR}. 
 The broadening of $\nu_s$ is normally attributed to a great variation in the strength of HBs ni liquid water, with stronger HBs leading to the redshift of larger magnitude. 
@@ -233,7 +230,11 @@ Despite this increased variety the $\nu_s$ peak of devalent water remains very n
 
 %Yifei: The integrated intensity is discussed in Eq 5.1 of the book "The HB and the water molecule".
 
-Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to liquid phase is not entirely due to the intermolecular electron transfer as has been usually assumed~(see Chapter 5 in Ref.~\onlinecite{HBbook}). It is known that the integrated intensity is proportional to $\left({\partial \mu}/{\partial q}\right)^2$ -- derivative of the dipole moment with respect to the coordinate of the vibrational mode (i.e. intramolecular O--H distance) -- and the change in the integrated intensity arises mostly from the change in this derivative. The change in the derivative is attributed to decoupling of the motion electrons from that of the nuclei in HB systems: stretching of a HB-bonded O--H group causes the electrons (i.e. Wannier centers in Figure~\ref{Fig:acoord}) not to follow the H-atom as much as when O--H does not establish a HB~\cite{HBbook}. Our data shows that the derivative changes both from the gas-phase to devalent model and from the devalent to realistic model. This means that the mere presence of neighbor lone pairs leads to decoupling while the intermolecular electron transfer makes it more pronounced.
+Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to liquid phase is not entirely due to the intermolecular electron transfer as has been usually assumed~(see Chapter 5 in Ref.~\onlinecite{HBbook}). 
+It is known that the integrated intensity is proportional to $\left({\partial \mu}/{\partial q}\right)^2$ -- derivative of the dipole moment with respect to the coordinate of the vibrational mode (i.e. intramolecular O--H distance) -- and the change in the integrated intensity arises mostly from the change in this derivative. 
+The change in the derivative is attributed to decoupling of the motion electrons from that of the nuclei in HB systems: stretching of a HB-bonded O--H group causes the electrons (i.e. Wannier centers in Figure~\ref{Fig:acoord}) not to follow the H-atom as much as when O--H does not establish a HB~\cite{HBbook}. 
+Our data shows that the derivative changes both from the gas-phase to devalent model and from the devalent to realistic model. 
+This means that a mere presence of neighbor's lone pairs leads to decoupling while the intermolecular electron transfer makes this effect more pronounced.
 
 %\[ M_0 \propto \left( \frac{\partial \mu}{\partial q} \right)^{2} \vert \langle 0 \vert q-q_0 \vert 1 \rangle \vert ^{2}
 %\]
@@ -243,7 +244,7 @@ Finally, a comparison of the stretching bands for the three models shows that th
 Unlike stretching modes, the intramolecular bending modes in the region of 1600~cm$^{-1}$ are unaffected by intermolecular forces and remain approximately the same for the realistic, devalent, and ideal-gas systems. 
 It is worth noticing that the stretching and bending peaks of the devalent model do not exhibit the extensive rotational structure, visible in the spectra of gas-phase molecules, because the retained intermolecular forces are sufficiently strong to hinder rotations.
 
-Another significant difference between the realistic and devalent systems is in the peaks below 1000~cm$^{-1}$, which correspond to HB stretching vibrations ($\sim$200~cm$^{-1}$ in realistic model) and molecular librations ($\sim$700~cm$^{-1}$), are shifted in the direction opposite to the intramolecular stretching modes. This is because the intermolecular bonding, unlike intramolecular bonding, becomes softer when the covalent component is switched off, in agreement with a wider variety of geometric configurations accessible in the devalent water. 
+Another significant difference between the realistic and devalent systems is in the peaks below 1000~cm$^{-1}$, which correspond to HB stretching vibrations and molecular librations ($\sim$200~cm$^{-1}$ and $\sim$700~cm$^{-1}$ in realistic model, respectively). They are shifted in the direction opposite to the intramolecular stretching modes. This is because the intermolecular bonding, unlike intramolecular bonding, becomes softer when the covalent component is switched off, in agreement with the observed variety of geometric configurations accessible in the devalent water. 
 
 \begin{figure}
 \centering
@@ -296,10 +297,10 @@ The 0.7~ps HB lifetime calculated for the realsitic model agrees well with exper
 %I'm using similar definition, and the result seems to agree with experiment \cite{lawrence2003ultrafast} and MD %\cite{marti1996molecular,starr1999fast}.
 
 The importance of covalent interactions in the HB dynamics is also reflected in its influence on the self-diffusion coefficient and shear viscosity. 
-Here, both of these quantities are calculated using the method of D\"unweg and Kremer~\cite{dunweg1993molecular}, which corrects for strong finite-size effects in the calculated quantities, and listed in Table~\ref{Tab:dfs}. 
+Here, both of these quantities are calculated using the method of D\"unweg and Kremer~\cite{dunweg1993molecular}, which corrects for strong finite-size effects in the calculated quantities (see Supplementary Information), and listed in Table~\ref{Tab:dfs}. 
 While the calculated reference values for the self-diffusion coefficient and shear viscosity are somewhat different from the experimental measured values, this is and expected consequence of overestimated interaction strength in the XC functional (see 
 Computational Methods). 
-Despite this inaccuracy it is clear that in devalent water diffuse much faster and approximately 90\% of water's shear viscosity originates from covalent interactions between molecules.
+Despite this inaccuracy it is clear that molecules in devalent water diffuse much faster and approximately 90\% of water's shear viscosity originates from covalent interactions between molecules.
 
 \begin{table}
 \caption{Viscosity, diffusion, and dielectric constants of liquid water at ambient conditions.}\label{Tab:dfs}
@@ -323,19 +324,19 @@ Simulations show that removing covalency from intermolecular interactions shorte
 Without the covalent component, weaker HBs produce a liquid with significantly lower viscosity, comparable to that of acetone. 
 The dipole moment of a water molecule is only slightly lower if intermolecular charge transfer is forbidden because electron pairs of the oxygen do not extend as far towards neighbor molecules. 
 Despite this the dielectric permittivity of devalent water is increased two-fold, mostly because of easier reorientation of mobile molecules. 
-In addition to providing a reasonable quantitative estimates of the contribution of the covalent component to properties of water, our work reveals that the intermolecular covalency is entirely responsible for the large redshift and broadening of the O-H stretching peaks in its IR spectra. 
-%RZK0: Origin of the increased intensity? 
+In addition to providing a reasonable quantitative estimates of the contribution of the covalent component to properties of water, our work reveals that the intermolecular covalency is entirely responsible for the large redshift and broadening of the O-H stretching peaks in its IR spectra. It is only partially responsible for a dramatic increase in the intensity of these peaks. 
 
 It is interesting to note that some properties of devalent water with its weaker HBs resemble those of real water at higher temperature (e.g. diffusion coefficient, viscosity, HB lifetime). 
 This can be expected because of the equivalence of energy and temperature in the Boltzmann factor. However, many properties, such as the power spectrum and dielectric constant, respond to the removal of the intermolecular covalency differently in a less intuitive way. 
-For example, the dielectric constant of high-temperature real water is lower that room-temperature real water whereas room-temperature devalent water has a much higher dielectric constant. 
+For example, the dielectric constant of high-temperature real water is lower than that of room-temperature real water whereas room-temperature devalent water has a much higher dielectric constant. 
 This response originates from a nontrivial coupling of the covalent component of HBs to the other electronic degrees of freedom (e.g. intramoleclar position of the Wannier centers) and nuclear motion.
 
-While the small covalent component of HBs strongly affects many properties of water there are intermolecular forces of different nature (frozen electrostatics, polarization, dispersion) but similar importance that hold water molecules together. 
+While the small covalent component of HBs strongly affects many properties of water, there are other intermolecular forces of different nature (frozen electrostatics, polarization, dispersion) that strongly hold water molecules together. 
 Our simulations show that, after removal of the HB covalency, water remains liquid and keeps the structure and properties similar to those of real water. 
 This result explains the success of empirical force fields that do not include small charge transfer explicitly but instead artificially strengthen intermolecular interaction by increasing permanent atomic charges~\cite{rick2016polarizable}. 
-While such simple empirical models reproduce a wide variety of properties of aqueous systems~\cite{vega2011simulating} they will perform poorly for thermodynamic states of water with a different amount of intermolecular charge transfer (e.g. high-pressure water phases, aqueous interfaces with various materials) that will not be fully compensated by fixed empirical electrostatics.
-Our data implies that even small changes in the degree of covalent interactions will lead to substantial errors in the properties obtained using fixed empirical models.
+While such simple empirical models reproduce a wide variety of properties of aqueous systems~\cite{vega2011simulating} they will perform poorly for thermodynamic states of water with a different amount of intermolecular charge transfer (e.g. high-pressure water phases, aqueous interfaces with various materials). 
+This is because the varying covalent interactions will not be fully compensated by fixed empirical electrostatics.
+Our data implies that even small mismatch will lead to substantial errors in the properties obtained using fixed empirical models.
 
 To conclude, this work demonstrates that ALMO-based \emph{ab initio} molecular dynamics is a promising new tool for establishing a fundamental connection between the donor-acceptor component of intermolecular bonding and observable properties of condensed phase molecular systems. 
 The reliable estimate of the contribution of the covalent component of HBs to properties of liquid water provided in this study expands our knowledge about the nature of hydrogen bonding and can facilitate interpretation of solvation and catalytic effects in aqueous systems, thus aiding the design of molecules and materials with desirable HB interactions. 
@@ -384,13 +385,11 @@ where $\mathbf{T}$ -- matrix of the expansion coefficients for \emph{occupied} m
 The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery
 Grants (RGPIN-2016-0505). The authors are grateful to Compute Canada and, in particular, the McGill HPC Centre for computer time.
 
-%RZK0: make sure that all references are formatted correctly. It is very likely that the formatting will change if the manuscript is not accepted by our top-choice journal. It is, therefore, better to make sure everything can be reformatted with one click.
+%RZK: make sure that all references are formatted correctly. It is very likely that the formatting will change if the manuscript is not accepted by our top-choice journal. It is, therefore, better to make sure everything can be reformatted with one click.
 \bibliography{covalency}
 
 %RZK0: uncomment the switch to separate SI from the main text
 %\else % maintext - SI switch
-
-%RZK0: references to all sections from the main text and Computational Methods
 
 %\maketitle
 %\newpage
@@ -417,6 +416,38 @@ V_R(\phi) &= \int_0^{2 \pi} d\Theta \int_{\phi}^{\phi+\Delta} \sin \phi\, d\phi 
 \eea
 %
 and $N_R$ is the number of HBs in all bins.
+
+\section{Density dependence of the devalent system} 
+
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{cp_rdf}
+\includegraphics[width=0.45\textwidth]{cp_oh_rdf}
+\caption{Oxygen-oxygen and oxygen-hydrogen radial distribution functions for the fixed-density and relaxed-density systems.}\label{Fig:rdf_cp}
+% RZK: change two axis labels from "OO" to "OH" in the second panel. Change legend to "Fixed-density devalent" and "Relaxed-density devalent" in all Figures
+\end{figure} 
+
+In order to study effect of intermolecular covalency on the density of liquid water, NPT-ensemble simulations were performed at 1~atm and 298~K with intermolecular charge transfer switched off. The average density of this system was determined to be 0.85~g$\cdot$cm$^{-3}$. 
+This system will be denoted by relaxed-density devalent system as opposed to the fixed-density devalent system used throughout the article. 
+
+The oxygen-oxygen and oxygen-hydrogen radial distribution functions for the fixed-density and relaxed-density systems are shown in Figure~\ref{Fig:rdf_cp} for comparison. 
+The positions of the peaks do not change significantly and the peaks become less pronounced after density relaxation.
+
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{cp_adf}
+\includegraphics[width=0.45\textwidth]{cp_ir}
+\caption{Angular distribution function and IR spectra for the fixed-density and relaxed-density systems.}\label{Fig:ir_cp}
+% RZK: Change legend to "Fixed-density devalent" and "Relaxed-density devalent". Label vertical axis: "Absorbance per molecule". Remove tick labels in y-axis.
+\end{figure} 
+
+Although the changes in the angular distribution functions are not significant either (Figure~\ref{Fig:ir_cp}) the distribution of HB angles becomes narrower in the relaxed-density system. The IR spectra for the two systems are almost identical (Figure~\ref{Fig:ir_cp}).
+
+%\begin{figure}
+%\caption{Angular distribution function for the 2 systems.}\label{Fig:adfcp}
+%\end{figure} 
+%
+%\begin{figure}
+%\caption{IR spectrum for the 2 systems.}\label{Fig:ir_cp}
+%\end{figure} 
 
 \section{Calculation of the HB lifetime} 
 
@@ -453,38 +484,6 @@ We calculate the diffusion constant $D(\infty)$ using the least square fitting t
 \caption{Diffusion constant as a function of the system size, for 64, 125 and 256 water molecules. 
 The square dots are from simulation and the solid line is a linear fit.}\label{Fig:dfs}
 \end{figure} 
-
-\section{Density dependence of the devalent system} 
-
-\begin{figure}
-\includegraphics[width=0.45\textwidth]{cp_rdf}
-\includegraphics[width=0.45\textwidth]{cp_oh_rdf}
-\caption{Oxygen-oxygen and oxygen-hydrogen radial distribution functions for the fixed-density and relaxed-density systems.}\label{Fig:rdf_cp}
-% RZK: change two axis labels from "OO" to "OH" in the second panel. Change legend to "Fixed-density devalent" and "Relaxed-density devalent"
-\end{figure} 
-
-In order to study effect of intermolecular covalency on the density of liquid water, NPT-ensemble simulations were performed at 1~atm and 298~K with intermolecular charge transfer switched off. The average density of this system was determined to be 0.85~g$\cdot$cm$^{-3}$. 
-This system will be denoted by relaxed-density devalent system as opposed to the fixed-density devalent system used throughout the article. 
-
-The oxygen-oxygen and oxygen-hydrogen radial distribution functions for the fixed-density and relaxed-density systems are shown in Figure~\ref{Fig:rdf_cp} for comparison. 
-The positions of the peaks do not change significantly and the peaks become less pronounced after density relaxation.
-
-\begin{figure}
-\includegraphics[width=0.45\textwidth]{cp_adf}
-\includegraphics[width=0.45\textwidth]{cp_ir}
-\caption{Angular distribution function and IR spectra for the fixed-density and relaxed-density systems.}\label{Fig:ir_cp}
-% RZK: Change legend to "Fixed-density devalent" and "Relaxed-density devalent". Label vertical axis: "Absorbance per molecule". Remove tick labels in y-axis.
-\end{figure} 
-
-Although the changes in the angular distribution functions are not significant either (Figure~\ref{Fig:ir_cp}) the distribution of HB angles becomes narrower in the relaxed-density system. The IR spectra for the two systems are almost identical (Figure~\ref{Fig:ir_cp}).
-
-%\begin{figure}
-%\caption{Angular distribution function for the 2 systems.}\label{Fig:adfcp}
-%\end{figure} 
-%
-%\begin{figure}
-%\caption{IR spectrum for the 2 systems.}\label{Fig:ir_cp}
-%\end{figure} 
 
 \section{Basis set dependence of the results} 
 
