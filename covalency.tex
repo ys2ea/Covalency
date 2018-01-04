@@ -1,4 +1,4 @@
-\documentclass[aps,prl,reprint,amsmath,amssymb]{revtex4-1}
+\documentclass[aps,prl,reprint,amsmath,amssymb,nature]{revtex4-1}
 
 % define variable that compiles the main text (as opposed to SI text)
 \newcommand*{\MAINTEXT}{}
@@ -26,7 +26,7 @@
 %\newcommand{\eea}{\end{split} \end{equation}}
 \def\nn{\nonumber\\}
 
-\bibliographystyle{apsrev}
+\bibliographystyle{naturemag}
 
 %\ifdefined\MAINTEXT
 %\else
@@ -346,7 +346,7 @@ A short time step of 0.5~fs ensured accurate integration of the equations of the
 The total length of simulations for each system was above 35~ps after a equilibrium period of 1.5~ps. 
 %Yifei: Only systems with 125 molecules are calculated for that long. Others sizes are around 7ps. 
 %RZK: Got it. 1.5 ps is an extremely short equilibration time. A careful reviewer will point this out.  
-The properties of water including the infrared spectrum, radial distribution, dipole distribution and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
+The properties of water including the infrared spectrum, radial distribution, dipole distribution and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2011travis}.  
 
 \textbf{Removal of intermolecular covalency.} A straightforward utilization of ALMOs in an energy decomposition analysis (EDA) method~\cite{khaliullin2007unravelling} leads to significantly underestimated charge-transfer (i.e. covalency) effects if large basis sets are used~\cite{horn2015polarization,lao2016energy}. 
 This problem arises from the lack of a well-defined separation between the polarization and charge-transfer terms in the complete basis set limit~\cite{misquitta2013charge,horn2015polarization}. 
