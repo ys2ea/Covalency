@@ -56,15 +56,17 @@ Contribution of the covalent component of the hydrogen-bond network to the prope
 \ifdefined\MAINTEXT
 
 \begin{abstract}
-Many remarkable properties of liquid water originate from the ability of its molecules to form hydrogen bonds, each of which is a combination of electrostatic, polarization, dispersion, and covalent interactions. 
-In this work, a purpose-built \emph{ab initio} molecular dynamics method is utilized to switch off the covalent component of interactions between water molecules in simulations. 
-Comparison of simulations with and without covalency shows that a small amount of intermolecular electron transfer between two molecules has a profound effect on the structure and dynamics of the hydrogen-bond network and observable properties of room-temperature liquid water. 
+%Many remarkable properties of liquid water originate from the ability of its molecules to form hydrogen bonds, each of which is a combination of electrostatic, polarization, dispersion, and covalent interactions. 
+Many remarkable properties of liquid water originate from the ability of its molecules to form hydrogen bonds, each of which emerges as an intertwined combination of electrostatic, polarization, dispersion, and donor-acceptor or covalent interactions.
+In this work, \emph{ab initio} molecular dynamics is tuned to disentangle and switch off the covalent component of interactions between water molecules in simulations. 
+Comparison of simulations with and without covalency shows that a small amount of intermolecular electron transfer has a profound effect on the structure and dynamics of the hydrogen-bond network and thus on observable properties of room-temperature liquid water. 
 %In particular, the tetrahedronal structure, O-H stretch mode and viscosity are all significantly determined by covalent interactions.
-The findings of this study do not only deepen our knowledge about the nature of hydrogen bonding, but will also facilitate the development of more reliable water models and aid interpretation of solvation and catalytic effects in aqueous systems.
+The findings of this study do not only deepen our knowledge about the fundamental nature of hydrogen bonding, but can also aid interpretation of spectroscopic response, catalytic behavior, and solvation properties of aqueous systems.
 \end{abstract}
 
-%The reliable estimate of the contribution of the covalent component of HBs to properties of liquid water provided in this study expands our knowledge about the nature of hydrogen bonding and can facilitate interpretation of solvation and catalytic effects in aqueous systems.
-
+% features effects, phenomena
+%and facilitate the development of more reliable models of systems with hydrogen bonding
+ 
 \maketitle
 
 \section{Introduction} 
@@ -361,7 +363,7 @@ To ensure that the results are not affected by the size of the basis set, a shor
 
 %RZK0: Comment on small effect of BSSE.
 
-\textbf{\textit{Ab initio} molecular dynamics without intermolecular covalency.} In the devalent model of water, the molecular orbitals that describe absolutely localized electrons are completely optimized within the subspaces spanned by atomic orbitals of their own molecules~\cite{khaliullin2006efficient}. Since these subspaces do not change over the course of a simulation, the atomic forces are well defined and can be easily computed by invoking the Hellmann-Feynman theorem. This allowed us to reuse the existing CP2K code for the calculation of the atomic forces with only minor modifications that were necessary to take into account the fact that ALMOs are nonorthogonal and not canonical. Specifically, the subroutines that calculate the density matrix $\mathbf{R}$ and the energy-weighted density matrix $\mathbf{W}$ had to be modified according to the following equations:
+\textbf{\textit{Ab initio} molecular dynamics without intermolecular covalency.} In the devalent model of water, the molecular orbitals that describe absolutely localized electrons are completely optimized within the subspaces spanned by atomic orbitals of their own molecules~\cite{khaliullin2006efficient}. Since these subspaces do not change over the course of a simulation, the atomic forces are well defined and can be easily computed by invoking the Hellmann-Feynman theorem. This allowed us to reuse the existing CP2K code for the calculation of the atomic forces with only minor modifications that were necessary to take into account the fact that ALMOs are nonorthogonal and not canonical. Specifically, the subroutines that calculate the density matrix $\mathbf{R}$ and  energy-weighted density matrix $\mathbf{W}$ had to be modified according to the following equations:
 %
 \begin{equation}
 \begin{split}
@@ -377,7 +379,7 @@ where $\mathbf{T}$ is the matrix of the expansion coefficients for \emph{occupie
 \section{Acknowledgments} 
 
 The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery
-Grants (RGPIN-2016-0505). The authors are grateful to Compute Canada and---in particular---the McGill HPC Centre for computer time.
+Grants (RGPIN-2016-0505). The authors are grateful to Compute Canada and, in particular, the McGill HPC Centre for computer time.
 
 %RZK: make sure that all references are formatted correctly. It is very likely that the formatting will change if the manuscript is not accepted by our top-choice journal. It is, therefore, better to make sure everything can be reformatted with one click.
 \bibliography{covalency}
