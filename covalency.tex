@@ -1,7 +1,7 @@
 \documentclass[aps,prl,reprint,amsmath,amssymb]{revtex4-1}
 
 % define variable that compiles the main text (as opposed to SI text)
-%\newcommand*{\MAINTEXT}{}
+\newcommand*{\MAINTEXT}{}
 
 \usepackage{epsfig,color,graphicx}
 
@@ -179,6 +179,7 @@ On the other hand, the equally strong covalent component is neglected in these m
 \end{figure}
 
 \begin{figure*}
+%RZK: figure is low quality
 \includegraphics[width=0.9\textwidth]{SDF}
 \caption{Cross sections of the spacial distribution of oxygen atoms. 
 The upper panels show the cross section of the spacial distribution function in the plane of the reference water molecule, whereas the lower panels show the cross section in the plane bisecting the molecule. 
@@ -373,7 +374,9 @@ where $\mathbf{T}$ is the matrix of the expansion coefficients for \emph{occupie
 The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery
 Grants (RGPIN-2016-0505). The authors are grateful to Compute Canada and, in particular, the McGill HPC Centre for computer time.
 
-\else % maintext - SI switch
+\bibliography{covalency}
+
+%\else % maintext - SI switch
 
 \maketitle
 \newpage
@@ -483,8 +486,8 @@ The results of both simulations shown in Figure~\ref{Fig:basis} are practically 
 This indicates that TZV2P results are sufficiently stable with respect to a moderate increase in the basis set size. 
 For larger basis sets, the role of intermolecular covalency will be spuriously decreased.
 
-\fi % maintext - SI switch
+%\bibliography{covalency}
 
-\bibliography{covalency}
+\fi % maintext - SI switch
 
 \end{document}
