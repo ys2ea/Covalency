@@ -193,7 +193,11 @@ In total, there are 35\% fewer HBs in the devalent than in the reference model o
 \textbf{Density.} If the density is allowed to fluctuate in a simulation while the pressure is fixed at 1~atm, the average density decreases from 0.99~g$\cdot$cm$^{-3}$ for the reference model to 0.85~g$\cdot$cm$^{-3}$ for the devalent model, a decrease of 14\%. 
 While this is a noticeable drop, it is important to note that the devalent water is still liquid at ambient conditions because of the strong electrostatic, polarization, and dispersion effects. 
 
-The 14\% decrease in density should correspond to a 5\% elongation in intermolecular distances, assuming a uniform increase. Nevertheless, the position of peaks in the RDF remains unchanged in the devalent water at the two different densities (Figure~\ref{ext1-Fig:rdf_cp} in Supplementary Information). The only noticeable structural changes are that peaks in the RDF become slightly broader in the low-density constant-pressure model (Figure~\ref{ext1-Fig:rdf_cp}), and the angular distribution is more narrow (Figure~\ref{ext1-Fig:ir_cp}). This indicates that most molecules stay in the same position around the minimum of the potential well when the density is allowed to relax. Only a small fraction of them become distorted radially or angularly. 
+The 14\% decrease in density would correspond to a 5\% increase in distances if all intermolecular bonds were stretched uniformly. 
+Nevertheless, the RDF of the devalent water remains largely unchanged as the density is allowed to relax (Figure~\ref{ext1-Fig:rdf_cp} in Supplementary Information). 
+The only noticeable structural changes are the RDF peaks becoming slightly broader (Figure~\ref{ext1-Fig:rdf_cp}) and the angular distribution becoming narrower (Figure~\ref{ext1-Fig:ir_cp}) in the low-density constant-pressure model. 
+This indicates that most molecules stay in the same position around the minimum of the potential well when the density is relaxed. 
+Only a small fraction of them become distorted radially or angularly. 
 
 We will continue discussing properties of the \emph{fixed-density} devalent water further because all key properties obtained for the \emph{fixed-pressure} model are almost the same, while calculations are more difficult for the latter (see Supplementary Information).
 
@@ -331,7 +335,8 @@ The Becke-Lee-Yang-Parr generalized gradient approximation~\cite{becke1988densit
 The size of a periodic cubic simulation box containing 125 water molecules was set to reproduce the experimental 0.997~g$\cdot$cm$^{-3}$ density of ambient liquid water. 
 The temperature of simulations was set to 298~K and was controlled by a weakly-coupled canonical velocity re-scaling thermostat~\cite{bussi2007canonical} with the coupling time constant set to 300~fs. 
 A short time step of 0.5~fs ensured accurate integration of the equations of the motion. 
-The total length of simulations for each system was above 35~ps, after an equilibrium period of 1.5~ps. 
+The system was equilibrated for 3~ps using a strongly coupled canonical velocity re-scaling thermostat and then for additional 1.5~ps using the final a weakly coupled thermostat. 
+The total length of simulations for each system was above 35~ps. 
 The properties of water including the infrared spectrum, radial distribution, dipole distribution, and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2011travis}.  
 
 \textbf{Removal of intermolecular covalency.} A straightforward utilization of ALMOs in an energy decomposition analysis (EDA) method~\cite{khaliullin2007unravelling} leads to significantly underestimated charge-transfer (i.e. covalency) effects if large basis sets are used~\cite{horn2015polarization,lao2016energy}. 
