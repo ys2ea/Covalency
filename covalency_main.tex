@@ -266,8 +266,8 @@ The latter accounts for the ability of the molecular dipoles to reorient stabili
 
 Molecular dipole moments in condensed phases cannot be defined unambiguously, because there is not a unique way to assign a continuous electron density to molecules.
 Here, we utilized a standard procedure that estimates molecular dipoles using the positions of the centers of maximally localized Wannier orbitals (Figure~\ref{Fig:acoord})~\cite{marzari1997maximally,sharma2007dipolar}. 
-It is important to clarify that all types of interactions---frozen density, polarization and covalent--- contribute to the distribution of electrons around molecules and, therefore, the magnitude of molecular dipoles. 
-Moreover, the presence of covalent component dramatically changes configurations with what dipole moments are sampled in the course of simulations. 
+It is important to clarify that all types of interactions---frozen density, polarization and covalent--- contribute to the distribution of electrons around molecules and, therefore, determine the magnitude of molecular dipoles. The dipoles resulting exclusively from frozen density calculations are typically called permanent dipoles. 
+The presence of covalent component dramatically changes configurations with what dipole moments are sampled in the course of simulations. 
 Hence, the final distribution of dipole moments is expected to be different in the realistic and devalent simulations. 
 
 \begin{figure}
@@ -287,22 +287,10 @@ To be precise, intermolecular charge transfer increases the standard deviation f
 % Realist: H 0.0045 WC(top) 0.0016 WC(bottom) 0.0029
 % Devalent: H 0.0032 WC(top) 0.0011 WC(bottom) 0.0007
 
-% RZK: Converging the Dielectric constant to get precise might require a significantly longer tranjectory. Our trajectory is sufficient to see drastic qualitative difference between the two models.
-
-%RZK RW2 The statistical errors in dielectric constants are estimated to be 70±3, 180±5 for realistic and devalent models, respectively. This uncertainty is calculated from the fluctuations in the dielectric constant during the last 10 ps. It is not uncommon that relatively short trajectories can be sufficient to evaluate the dielectric constant. For example, R. Car et al. [Phys. Rev. Lett. 2007, 98, 247401] used a 20 ps simulation with PBE functional to compute the dielectric constant of water.
-
-%RZK RW3  I do not agree with the argument presented by the authors regarding the convergence of the dielectric constant. The fact that previous, and relatively old, studies used very short trajectories to calculate the dielectric constant, without actually demonstrating any convergence, seems not to represent a particularly strong justification. The authors may want to consider the discussion presented in Phys. Rev. B 93, 144201 (2016) and references 3-26 therein. In particular, Ref. 25 of this PRB paper (J. Chem. Phys. 140, 124504 (2014)) clearly shows that several nanoseconds are needed to converge the dielectric constant. This implies that both values and error bars reported by the authors are, at least,  questionable.
-
-The dielectric constant can be calculated using the fluctuation of the total dipole moment of the system~\cite{neumann1983dipole,adams1981theory}:
-%
-\bea
-\epsilon = 1+\frac{4\pi}{3V k_B T}  (  \langle |\vec{M}|^2 \rangle  - \langle |\vec{M}| \rangle ^2) \label{Eq:dielectric}
-\eea
-%
-where $V$ and $\vec{M}$ are the volume and total dipole of the simulation box, respectively. 
-While the dielectric constant for the reference model is 70, in good agreement with the experimental value of 78, this value increases to a remarkable 180 for the devalent model.
+Although it is difficult to obtain precise values of the dielectric constant in our simulations, this constant is estimated to be several times larger for the devalent than for the reference model (see Supplementary Information). 
+%While the dielectric constant for the reference model is 70, in good agreement with the experimental value of 78, this value increases to a remarkable 180 for the devalent model.
 We attribute this dramatic increase to the facile reorientation and greater mobility of molecules in the devalent model, which are not held as strongly by the weakened HBs. 
-Thus despite its smaller molecular dipoles, devalent water would be a solvent of unprecedented strength for dissolving polar solutes.
+Thus, despite its smaller molecular dipoles, devalent water would be a solvent of unprecedented strength for dissolving polar solutes.
 
 \textbf{HB dynamics, diffusion, and viscosity.} In order to describe the influence of intermolecular covalency on the dynamics of the HB network, the HB lifetime $\tau_{\text{HB}}$ was calculated from the \emph{continuous} HB time autocorrelation function as described in the Supplementary Information. The lifetime obtained from the continuous autocorrelation function measures the ability of a HB to survive without being broken, even fleetingly.
 
@@ -315,46 +303,61 @@ The 0.7~ps HB lifetime calculated for the realsitic model agrees well with exper
 The importance of covalent interactions in HB dynamics is also reflected by its influence on the self-diffusion coefficient and shear viscosity. 
 Here, both of these quantities are calculated using the method of D\"unweg and Kremer~\cite{dunweg1993molecular}, which corrects for strong finite-size effects in the calculated quantities (see Supplementary Information). The results are listed in Table~\ref{Tab:dfs}. 
 While the calculated reference values for the self-diffusion coefficient and shear viscosity are somewhat different from the experimental measured values, this is an expected consequence of the overestimated interaction strength in the XC functional (see Computational Methods). 
-Despite this inaccuracy, it is clear that molecules in devalent water diffuse much faster and approximately 90\% of water's shear viscosity originates from covalent interactions between molecules.
+Despite this inaccuracy, it is clear that molecules in devalent water diffuse much faster and most of water's shear viscosity originates from covalent interactions between molecules.
+
+%\begin{table}
+%\caption{Diffusion, viscosity, and dielectric constants of liquid water at ambient conditions.}\label{Tab:dfs}
+%\begin{tabular}{l*{6}{c}r}
+%\hline
+%               & $D (\Ang^2/\text{ps})$ & $\eta (\text{Pa}\cdot \text{s})$ & $\epsilon$ \\
+%\hline
+%Devalent model                & 0.7188 & 3.5$\times 10^{-4}$ & 180 \\
+%%
+%Realistic model              & 0.1069 & 29.5$\times 10^{-4}$ & 70 \\
+%%
+%Experimental            & 0.239~\cite{hardy2001isotope}  & 8.9 $\times 10^{-4} $~\cite{harris2004temperature} & 78~\cite{haynes2014crc}
+%\end{tabular}
+%\end{table}
 
 \begin{table}
-\caption{Diffusion, viscosity, and dielectric constants of liquid water at ambient conditions.}\label{Tab:dfs}
+\caption{Diffusion and viscosity constants of liquid water at ambient conditions.}\label{Tab:dfs}
 \begin{tabular}{l*{6}{c}r}
 \hline
-               & $D (\Ang^2/\text{ps})$ & $\eta (\text{Pa}\cdot \text{s})$ & $\epsilon$ \\
+               & $D (\Ang^2/\text{ps})$ & $\eta (\text{Pa}\cdot \text{s})$ \\
 \hline
-Devalent model                & 0.7188 & 3.5$\times 10^{-4}$ & 180 \\
+Devalent model                & 0.7188 & 3.5$\times 10^{-4}$ \\
 %
-Realistic model              & 0.1069 & 29.5$\times 10^{-4}$ & 70 \\
+Realistic model              & 0.1069 & 29.5$\times 10^{-4}$ \\
 %
-Experimental            & 0.239~\cite{hardy2001isotope}  & 8.9 $\times 10^{-4} $~\cite{harris2004temperature} & 78~\cite{haynes2014crc}
+Experimental            & 0.239 (Ref.~\cite{hardy2001isotope})  & 8.9 $\times 10^{-4} $ (Ref.~\cite{harris2004temperature})
 \end{tabular}
 \end{table}
+ 
  
 \section{Conclusions}
 
 The amount of intermolecular electron density transfer in a typical HB of liquid water at ambient conditions is on the order of 1\% of an electron. 
 However, this seemingly small covalent component has a profound effect on the strength and stability of individual HBs and---as a result---is responsible for a substantial change in the collective behavior of the HB network and observable properties of liquid water. 
-Simulations show that removing covalency from intermolecular interactions shortens the lifetime of a HB by an order of magnitude and drastically increases the mobility of molecules. 
+Simulations show that removing covalency from intermolecular interactions shortens the lifetime of a HB by almost an order of magnitude and drastically increases the mobility of molecules. 
 Without the covalent component, weaker HBs produce a liquid with significantly lower viscosity---comparable to that of acetone. 
-The dipole moment of the average water molecule is slightly lower if intermolecular charge transfer is forbidden, because electron pairs on oxygen atoms do not extend as far towards neighboring molecules. 
-Despite this, the dielectric permittivity of devalent water is increased two-fold, mostly due to the ease reorientation for mobile molecules. 
-In addition to providing an estimate of the contribution of the covalent component on the properties of water, our work reveals that intermolecular covalency is entirely responsible for the large redshift and broadening of the O-H stretching peaks in its IR spectra. It is only partially responsible for a dramatic increase in the intensity of these peaks. 
+The dipole moment of an average water molecule is slightly lower if intermolecular charge transfer is forbidden, because electron pairs on oxygen atoms do not extend as far towards neighboring molecules. 
+Despite this, the dielectric permittivity of devalent water is increased, mostly due to the ease reorientation of mobile molecules. 
+In addition to providing an estimate of the contribution of the covalent component to the properties of water, our work reveals that intermolecular covalency is responsible for the large redshift and broadening of the O-H stretching peaks in its IR spectra. It is only partially responsible for a dramatic increase in the intensity of these peaks. 
 
 It is interesting to note that some properties of devalent water---with its weaker HBs---resemble those of real water at a higher temperature (e.g. diffusion coefficient, viscosity, and HB lifetime). 
 This is to be expected because of the equivalence of binding energy and temperature in the Boltzmann factor. However many properties, such as the IR spectrum and dielectric constant, respond to the removal of intermolecular covalency in a less intuitive way. 
-For example, the dielectric constant of high-temperature real water is lower than that of room-temperature real water, whereas room-temperature devalent water has a much higher dielectric constant. 
+For example, the dielectric constant of high-temperature real water is lower than that of room-temperature real water, whereas room-temperature devalent water has a higher dielectric constant. 
 This response originates from a nontrivial coupling of the covalent component of HBs to the other electronic degrees of freedom (e.g. intramoleclar position of the Wannier centers) and nuclear motion.
 
 While the small covalent component of HBs strongly affect many properties of water, there are other intermolecular forces of different nature (frozen electrostatics, polarization, and dispersion) that strongly hold water molecules together. 
-Our simulations show that, upon removal of the HB covalency, water remains liquid and maintains its structure and properties overall similar to those of real water. 
+Our simulations show that, upon removal of the HB covalency, water remains liquid and maintains its structure and properties similar to those of real water. 
 This result explains the success of empirical force fields that do not include small charge transfer explicitly, but instead artificially strengthen intermolecular interaction by increasing permanent atomic charges~\cite{rick2016polarizable}. 
 While such simple empirical models reproduce a wide variety of properties in aqueous systems~\cite{vega2011simulating}, they will perform poorly for thermodynamic states of water with different amounts of intermolecular charge transfer, such as high-pressure water phases or aqueous interfaces with various materials. 
 This is because the varying covalent interactions will not be fully compensated for by fixed empirical electrostatics.
 Our data implies that even a small mismatch will lead to substantial errors in the properties obtained by using fixed-charge empirical models.
 
 To conclude, this work demonstrates that ALMO-based \emph{ab initio} molecular dynamics is a promising new tool for establishing a fundamental connection between the donor-acceptor component of intermolecular bonding and the observable properties of condensed phase molecular systems. 
-The reliable estimate of the contribution of the covalent component of HBs to properties of liquid water provided in this study expands our knowledge about the nature of HB and can facilitate interpretation of spectroscopic response, catalytic behavior, and solvation properties of aqueous systems, thus aiding the design of molecules and materials with desirable HB interactions. 
+The contribution of the covalent component of HBs to properties of liquid water examined in this study expands our knowledge about the nature of HB and can facilitate interpretation of spectroscopic response, catalytic behavior, and solvation properties of aqueous systems, thus aiding the design of molecules and materials with desirable HB interactions. 
  
 \section{Computational methods}
 
@@ -366,7 +369,7 @@ The size of a periodic cubic simulation box containing 125 water molecules was s
 The temperature of simulations was set to 298~K and was controlled by a weakly-coupled canonical velocity re-scaling thermostat~\cite{bussi2007canonical} with the coupling time constant set to 300~fs. 
 A short time step of 0.5~fs ensured accurate integration of the equations of the motion. 
 The system was equilibrated for 3~ps using a strongly coupled canonical velocity re-scaling thermostat and then for additional 1.5~ps using the final a weakly coupled thermostat. 
-The total length of simulations for each system was above 35~ps. 
+The total length of production runs for each system was 35~ps. 
 The properties of water including the infrared spectrum, radial distribution, dipole distribution, and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2011travis}.  
 
 \textbf{Removal of intermolecular covalency.} A straightforward utilization of ALMOs in an energy decomposition analysis (EDA) method~\cite{khaliullin2007unravelling} leads to significantly underestimated charge-transfer (i.e. covalency) effects if large basis sets are used~\cite{horn2015polarization,lao2016energy}. 
