@@ -31,7 +31,8 @@ Contribution of the covalent component of the hydrogen-bond network to the prope
 \author{Yifei Shi}
 \affiliation{Department of Chemistry, McGill University, 801 Sherbrooke St. West, Montreal, QC H3A 0B8, Canada}
 \author{Hayden Scheiber}
-\affiliation{Department of Chemistry, University of British Columbia, 2036 Main Mall, Vancouver, BC V6T 1Z1, Canada}
+%\affiliation{Department of Chemistry, University of British Columbia, 2036 Main Mall, Vancouver, BC V6T 1Z1, Canada}
+\affiliation{Department of Chemistry, McGill University, 801 Sherbrooke St. West, Montreal, QC H3A 0B8, Canada}
 \author{Rustam Z. Khaliullin}
 \email{rustam.khaliullin@mcgill.ca}
 \affiliation{Department of Chemistry, McGill University, 801 Sherbrooke St. West, Montreal, QC H3A 0B8, Canada}
@@ -62,12 +63,12 @@ Detailed understanding of the physical nature of hydrogen bonding (HB) between m
 Since the dawn of quantum mechanics, it has been known that HB is a complex phenomenon that arises from the interplay of several distinct effects: interaction between molecules' permanent multipoles (dipoles, quadrupoles, etc.), polarization, dispersion, and orbital donor-acceptor interactions~\cite{eisenberg2005structure}.
 
 Donor-acceptor interaction leads to the transfer of electron density between molecules and is therefore known as the charge-transfer or covalent component of HB. 
-The concept of intermolecular covalency, described canonically as lone electron pairs of oxygen atoms donated to nearby hydrogens, has been tremendously useful to describe physics and chemistry of water.
+The concept of intermolecular covalency, described canonically as lone electron pairs of oxygen atoms donated to nearby hydrogens, has been tremendously useful to describe physics and chemistry of water~\cite{RZK}.
 %[and is deeply embedded into the everyday chemistry jargon/language.] 
-It helps explain water's unique properties as a solvent and its ability to catalyze a wide variety of chemical processes. Covalent interactions can also explain the strong cooperativity between hydrogen bonds in systems ranging from nanodroplets to solvated biomolecules. 
+It helps explain water's unique properties as a solvent and its ability to catalyze a wide variety of chemical processes~\cite{RZK}. Covalent interactions can also explain the strong cooperativity between hydrogen bonds in systems ranging from nanodroplets to solvated biomolecules~\cite{RZK}. 
 From a theoretical standpoint, the covalent component of HB has attracted significant attention because of its purely quantum mechanical nature, which---unlike electrostatic and dispersion interactions---is difficult to describe with simple analytical force-field models~\cite{lee2011effects, gordon2013accurate}.
 
-Recent developments in energy decomposition techniques based on accurate electronic structure methods have helped make substantial progress towards quantifying the individual contributions of various physical effects on the HB energy in small water clusters~\cite{ZZZ}. 
+Recent developments in energy decomposition techniques based on accurate electronic structure methods have helped make substantial progress towards quantifying the individual contributions of various physical effects on the HB energy in small water clusters~\cite{RZK}. 
 The extent of intermolecular charge transfer in HB has remained the last unresolved issue until recently~\cite{isaacs1999covalency,ghanty2000hydrogen,stone2017natural}. 
 Natural bond orbital analysis~\cite{weinhold1998natural} and natural energy decomposition analysis \cite{glendening1994natural} have suggested that charge transfer is the major component of HB~\cite{schenter1996natural,glendening2005natural,weinhold2005resonance} because---when charge transfer is neglected---these methods yield no binding at the water-dimer equilibrium geometry. 
 After a debate spanning several decades, it has been argued that natural bond orbital analysis is not optimal for weak interactions~\cite{stone2017natural}. 
@@ -77,12 +78,12 @@ According to these methods, charge transfer contributes only around 20--30\% of 
 %RZK0 this is QAIM: Grabowski2011 - 10.1021/cr800346f
 
 While energy decomposition methods have helped us understand the importance of charge-transfer in the binding strength of gas-phase water clusters, nothing is known about the contribution of the covalent component of the HB network to the \emph{observed} properties of liquid water. 
-A deep connection between the covalent interactions and features of the X-ray absorption~\cite{NatureComm2013,ZZZ}, infrared~\cite{JPCL2013,Faraday2011}, and nuclear magnetic resonance~\cite{NatureComm2015,ZZZ} spectra of liquid water and small water clusters has been pointed out in several recent articles. 
+A deep connection between the covalent interactions and features of the X-ray absorption~\cite{NatureComm2013,ZZZ}, infrared~\cite{JPCL2013,Faraday2011,ZZZ}, and nuclear magnetic resonance~\cite{NatureComm2015,ZZZ} spectra of liquid water and small water clusters has been pointed out in several recent articles. 
 In this work, we extended a recently developed energy decomposition method for periodic systems~\cite{Khaliullin2013JCTC} to perform an unprecedented \emph{ab initio} molecular dynamics study that estimates the contribution of the covalent component of HB to the structural, dynamical, and spectroscopic properties of liquid water at ambient conditions. 
 Our results show that the seemingly insignificant covalent component of HB is defining for many properties of liquid water. 
-
+%
 %Faraday2011: E. Ramos-Cordoba, D. S. Lambrecht, M. Head-Gordon, Charge-transfer and the hydrogen bond: Spectroscopic and structural implications from electronic structure calculations, Faraday Discuss. 150, 345, 2011.
-% ZZZ We need more citations! "charge transfer" "IR shift" "XAS is different for distorted bonds bonds"
+% ZZZ means that we need more citations on: what is known about the strength of local interactions and properties. Properties are not necessarily those mentioned in the list.
 
 \section{Methodology}
 
@@ -113,19 +114,21 @@ The length of the AIMD simulations were chosen to obtain statistically meaningfu
 A detailed description of the calculations is presented in Computational Methods.
 
 \textbf{Accuracy of the reference model.} It is important to comment on the ability of the reference model to reproduce properties of real water. 
-Unfortunately, modern exchange-correlation functionals cannot describe the energetics of intermolecular interactions precisely and, therefore, can reproduce properties of liquid water only in \emph{semi-quantitative} agreement with experimental measurements. 
+Unfortunately, the existing exchange-correlation functionals can reproduce properties of liquid water only in \emph{semi-quantitative} agreement with experimental measurements. 
 Thus this work aims only at capturing major \emph{qualitative} changes in water properties induced by the elimination of the covalent component from intermolecular bonding. 
 
-Like most generalized gradient approximation (GGA) and meta-GGA functionals, BLYP is known to underestimate the energy gap of water molecules~\cite{PNAS2017, JPCL2012}.
-% ZZZ - add the following
+Like most generalized gradient approximation (GGA)~\cite{ZZZ} and meta-GGA~\cite{PNAS2017} functionals, BLYP is known to underestimate the energy gap of water molecules~\cite{JPCL2012}.
+% ZZZ: any reviews of predicted water gaps?
 % PNAS, 2017, 114 (41), 10846
 % J. Phys. Chem. Lett., 2012, 3 (23), 3411.
-Because of this, the strength of intermolecular binding is overestimated and computed radial (angular) distribution functions have  sharper peaks than those derived from X-ray (NMR) scattering experiments~\cite{ZZZ}. 
-The overbinding effect also results in a somewhat underestimated diffusion constant~\cite{ZZZ}, overestimated viscosity~\cite{ZZZ}, and red-shifted peaks in the high-frequency region of the IR spectrum~\cite{ZZZ}. 
+Because of this, the strength of intermolecular binding is slightly overestimated and computed radial (angular) distribution functions have sharper peaks than those derived from X-ray (NMR) scattering experiments~\cite{gillan2016perspective, ma2012ab}.
+% ma2012ab - JOURNAL OF CHEMICAL PHYSICS 137, 044506 (2012)
+% gillan2016perspective: Gillan, Alfe, and Michaelides J. Chem. Phys. 144, 130901 (2016)
+The overbinding effect also results in an underestimated diffusion constant~\cite{ZZZ}, overestimated viscosity~\cite{ZZZ}, and red-shifted peaks in the high-frequency region of the IR spectrum~\cite{ZZZ}. 
 Despite these imperfections, the magnitude of errors in the reference model is much smaller than the magnitude of changes induced by neglecting intermolecular covalency. 
 This implies that the effects of covalency are large enough to be captured qualitatively with dispersion-corrected BLYP functional. 
 
-We note in passing that, to quantify the contribution of covalent interactions to the properties of liquid water precisely, it would be necessary to perform molecular dynamics simulations using the forces obtained from constrained coupled-cluster wavefunctions. While coupled-cluster energy decomposition methods already exist~\cite{azar2012,azar2015}, coupling them to a dynamical engine and performing simulations on sufficiently large length- and time-scales remains infeasible. Nevertheless, such simulations can be done in the future as an interesting quantitative extension of the present work.
+We note in passing that, to quantify the contribution of covalent interactions to the properties of liquid water precisely, it would be necessary to perform molecular dynamics simulations using the forces obtained from constrained coupled-cluster wavefunctions. While coupled-cluster energy decomposition methods already exist~\cite{azar2012,azar2015}, coupling them to a dynamical engine and performing simulations on sufficiently large length- and time-scales is difficult. Nevertheless, such simulations can be done in the future as an interesting quantitative extension of the present work.
 %Azar, R. Julian; Head-Gordon, Martin, JOURNAL OF CHEMICAL PHYSICS   Volume: 136   Issue: 2     Article Number: 024103
 %Azar, R. Julian; Head-Gordon, Martin, JOURNAL OF CHEMICAL PHYSICS   Volume: 142   Issue: 20   Article Number: 204101
 
@@ -151,7 +154,7 @@ The shift of the first-shell peak is accompanied by broadening that is indicativ
 %HOS: "A" and "B" labels not present in these plots
 \includegraphics[width=0.5\textwidth]{new_rdf}
 \includegraphics[width=0.5\textwidth]{new_adf}
-\caption{A. Oxygen-oxygen radial distribution function. B. Distribution of HB angles $\phi \equiv O_{\text{ref}} \cdots O-H$ computed for hydrogens within 2.3~\Ang\ from a reference atom. The angular distribution function is normalized to account for the $\phi$-dependent volume and to correctly emphasize the energetic preference for linear HBs (see Supplementary Information). The experimental curve is taken from Ref.~\citenum{modig2003temperature}.} \label{Fig:RDF}
+\caption{A. Oxygen-oxygen radial distribution function. The experimental curve is taken from Ref.~\citenum{ZZZ}. B. Distribution of HB angles $\phi \equiv O_{\text{ref}} \cdots O-H$ computed for hydrogens within 2.3~\Ang\ from a reference atom. The angular distribution function is normalized to account for the $\phi$-dependent volume and to correctly emphasize the energetic preference for linear HBs (see Supplementary Information). The experimental curve is taken from Ref.~\citenum{modig2003temperature}.} \label{Fig:RDF}
 \end{figure}
 
 These dramatic changes in the structure of the HB network are consistent with the decrease in HB strength. 
@@ -185,7 +188,7 @@ A. Reference model, B. localized model, C. Modified TIP3P model that includes on
 The commonly accepted---though somewhat arbitrary---binary geometric definition of a HB is utilized: the H--O$\cdots$O angle must be smaller than 30$^{\circ}$ and the O-O distance must be shorter than 3.5\Ang~\cite{rey2002hydrogen,lawrence2003vibrational}. 
 The distribution of molecules according to the number of donated or accepted HBs in Figure~\ref{fig:HBstat} shows that switching off intermolecular covalency leads to an increase of single-donor and single-acceptor molecules. 
 The increase is so drastic that single-donor and single-acceptor molecules outnumber those with two HBs.
-In total, there are 35\% fewer HBs in the devalent than in the reference model of water.
+In total, the number of HBs in the devalent is reduced by approximately a third.
 
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{new_hbstat}
@@ -197,7 +200,7 @@ In total, there are 35\% fewer HBs in the devalent than in the reference model o
 While this is a noticeable drop, it is important to note that the devalent water is still liquid at ambient conditions because of the strong electrostatic, polarization, and dispersion effects. 
 
 The 15\% decrease in density would correspond to a 5\% increase in distances if all intermolecular bonds were stretched uniformly. 
-Nevertheless, the RDF of the devalent water remains largely unchanged as the density is allowed to relax (Figure~\ref{ext1-Fig:rdf_cp} in Supplementary Information). 
+However, intermolecular distance do not change uniformely with the size of the simulation box and the RDF of the devalent water remains largely unchanged if the density is allowed to relax (Figure~\ref{ext1-Fig:rdf_cp} in Supplementary Information). 
 The only noticeable structural changes are the RDF peaks becoming slightly broader (Figure~\ref{ext1-Fig:rdf_cp}) and the angular distribution becoming narrower (Figure~\ref{ext1-Fig:ir_cp}) in the low-density constant-pressure model. 
 This indicates that most molecules stay in the same position around the minimum of the potential well when the density is relaxed. 
 Only a small fraction of them become distorted radially or angularly. 
@@ -226,23 +229,23 @@ The most pronounced difference between the IR spectra is in the high-frequency r
 It is important to note that it is extremely difficult to reproduce the high-frequency region of the IR spectrum of liquid water in quantitative agreement with experiment even by taking into account nuclear quantum effects~\cite{marsalek2017quantum} and by describing electrons with hybrid functionals or correlated wavefunction methods~\cite{medders2015infrared}. 
 % medders2015infrared: J. Chem. Theory Comput., 2015, 11, 1145
 % marsalek2017quantum: J. Phys. Chem. Lett., 2017, 8, 1545
-However, several interesting qualitative conclusions can be drawn from the models employed in this work, without resorting to high-level calculations. 
+However, several interesting qualitative conclusions can be drawn from the models employed in this work, without resorting to quantitatively accurate calculations. 
 % we acknowledge that the agreement between our the reference simulations and experiment might be partially due to a cancellation of errors: the neglect of nuclear quantum effects can compensate deficiencies of the XC functional. Figure 3 in Ref.~\cite{marsalek2017quantum} suggests that the magnitude of the compensated error is only around 100 cm-1 and, importantly, its sign does not change our conclusions. 
-%
+
 For the reference liquid model, the $\nu_s$ peak is redshifted relative to that of gas-phase molecules -- a typical feature of hydrogen-bonded O--H groups.
 At the same time, comparison of the spectra of the devalent and gas-phase models shows that the redshift disappears completely. 
 This observation indicates that this feature of $\nu_s$ peak is entirely due to the covalent component of intermolecular interactions. 
 Apparently, even the small amount of electron density transferred to the antibonding orbitals of intramolecular O--H bonds (see Figure~2 in Ref.~\citenum{khaliullin2009electron}) is sufficient to ``soften'' the O--H bond---that is, decrease its force constant---and lower its vibrational frequency. 
 
 The primary role of the covalent component in the broadening of the $\nu_s$ peak is also apparent from Figure~\ref{Fig:IR}. 
-The broadening of $\nu_s$ is normally attributed to a great variation in the strength of HBs in liquid water, with stronger HBs leading to redshifts of larger magnitude. 
+The broadening of $\nu_s$ is normally attributed to a great variation in the strength of HBs in liquid water, with stronger HBs leading to redshifts of larger magnitude~\cite{ZZZ}. 
 As discussed above, devalent water exhibits greater variation in the geometry of HB structures than the reference model (compare Figures~\ref{Fig:SDF}A and~\ref{Fig:SDF}B). 
-Despite this increased variety, the $\nu_s$ peak of devalent water remains very narrow. This shows that the variety of HB configurations does not matter because a HB without the covalent component does not generate a redshift. 
-%that the symmetric and asymmetric stretching modes become resolved in the spectrum of devalent model?
+Despite this increased variety, the $\nu_s$ peak of devalent water remains very narrow. This shows that the variety of HB configurations alone is of little importance: a wider variety of HB without the covalent component simply does not generate a redshift and thus cannot result in peak broadening. 
 
 %Yifei: The integrated intensity is discussed in Eq 5.1 of the book "The HB and the water molecule".
 
-Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to the liquid phase is not entirely due to the intermolecular electron transfer as was previously assumed~(see Chapter 5 in Ref.~\citenum{marechal2006hydrogen}). 
+Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to the liquid phase is not entirely due to the intermolecular electron transfer as was previously assumed~(see Chapter 5 in Ref.~\citenum{marechal2006hydrogen}, ZZZ). 
+% ZZZ any original papers here? 
 It is well known that the integrated intensity is proportional to $\left({\partial \mu}/{\partial q}\right)^2$---the derivative of the dipole moment with respect to the coordinate of the vibrational mode (i.e. the intramolecular O--H distance)---and any change in the integrated intensity arises mostly from the change in this derivative. 
 The change in this derivative is attributed to decoupling of the motion of electrons from that of the nuclei in HB systems: stretching of a hydrogen bonded O--H group causes the electrons (i.e. Wannier centers in Figure~\ref{Fig:acoord}) not to follow the H-atom as closely as when no HB is established~\cite{marechal2006hydrogen}. 
 Our data shows that the derivative changes both from the gas-phase to the devalent model and from the devalent to the reference model. 
@@ -260,14 +263,15 @@ It is worth noticing, however, that the stretching and bending peaks of the deva
 Another significant difference between the reference and devalent systems is in the peaks below 1000~cm$^{-1}$, which correspond to HB stretching vibrations and molecular librations ($\sim$200~cm$^{-1}$ and $\sim$700~cm$^{-1}$ in the reference model, respectively). These peaks are shifted in the direction opposite to the intramolecular stretching modes. This is because intermolecular bonding---unlike intramolecular bonding---becomes ``softer'' when the covalent component of the interaction is switched off.%, in agreement with the observed variety of geometric configurations accessible in the devalent water. 
 
 \textbf{Molecular dipole moment and dielectric constant.} Water's unique properties as a solvent are due to both the high dipole moment of its molecules and its high dielectric constant. 
-The latter accounts for the ability of the molecular dipoles to reorient stabilizing ions and polar solute molecules. 
+The latter accounts for the ability of the molecular dipoles to reorient and to stabilize ions and polar solute molecules. 
 
 % RZK: Remind that the dipole is a result of all three types of interactions.
 
 Molecular dipole moments in condensed phases cannot be defined unambiguously, because there is not a unique way to assign a continuous electron density to molecules.
 Here, we utilized a standard procedure that estimates molecular dipoles using the positions of the centers of maximally localized Wannier orbitals (Figure~\ref{Fig:acoord})~\cite{marzari1997maximally,sharma2007dipolar}. 
-It is important to clarify that all types of interactions---frozen density, polarization and covalent--- contribute to the distribution of electrons around molecules and, therefore, determine the magnitude of molecular dipoles. The dipoles resulting exclusively from frozen density calculations are typically called permanent dipoles. 
-The presence of covalent component dramatically changes configurations with what dipole moments are sampled in the course of simulations. 
+It is important to clarify that all types of interactions---frozen density, polarization, and covalent--- contribute to the distribution of electrons around molecules and, therefore, determine the final magnitude of molecular dipoles. 
+%The dipoles resulting exclusively from gas-phase or frozen-density calculations are typically called permanent dipoles because they are not affected by molecule's environment.
+Moreover, the presence of covalent component dramatically changes configurations with what dipole moments are sampled in the course of simulations. 
 Hence, the final distribution of dipole moments is expected to be different in the realistic and devalent simulations. 
 
 \begin{figure}
@@ -280,15 +284,14 @@ The calculated average dipole moment of water molecules are 3.09~D for the refer
 These values are in good agreement with the experimentally measured 2.9$\pm$0.6~D~\cite{badyal2000electron} and 1.85~D~\cite{haynes2014crc} dipole moments, respectively. 
 For comparison, the average dipole moment of molecules in the devalent system is 2.47~D indicating that covalent interactions are only partially responsible for the impressive $\sim$1~D increase in the molecular dipole moment from the gas to condensed phase. 
 Figure~\ref{Fig:acoord} shows that the change in the dipole moment is caused primarily by the change in the position of lone electron pairs on the oxygen atom. 
-At the same time, the wider spread of dipole moments in the reference model (Figure~\ref{Fig:dipoledist}) is attributable to the four-fold increase in the spread of positions of electron lone pair centers. 
-To be precise, intermolecular charge transfer increases the standard deviation from the average position of the lone pair centers from 0.07~pm in the devalent model to 0.29~pm in the reference model.
+At the same time, the wider spread of dipole moments in the reference model (Figure~\ref{Fig:dipoledist}) can be attributed to the four-fold increase in the spread of positions of electron lone pair centers. 
+To be precise, intermolecular charge transfer increases this spread from 0.07~pm in the devalent model to 0.29~pm in the reference model.
 %
 %Yifei: The standard deviation of positions of atoms in Angstrom: 
 % Realist: H 0.0045 WC(top) 0.0016 WC(bottom) 0.0029
 % Devalent: H 0.0032 WC(top) 0.0011 WC(bottom) 0.0007
 
-Although it is difficult to obtain precise values of the dielectric constant in our simulations, this constant is estimated to be several times larger for the devalent than for the reference model (see Supplementary Information). 
-%While the dielectric constant for the reference model is 70, in good agreement with the experimental value of 78, this value increases to a remarkable 180 for the devalent model.
+Although it is difficult to obtain precise values of the dielectric constant in our relatively short simulations, this constant is estimated to be several times larger for the devalent than for the reference model (see Supplementary Information for the justification). 
 We attribute this dramatic increase to the facile reorientation and greater mobility of molecules in the devalent model, which are not held as strongly by the weakened HBs. 
 Thus, despite its smaller molecular dipoles, devalent water would be a solvent of unprecedented strength for dissolving polar solutes.
 
@@ -325,11 +328,11 @@ Despite this inaccuracy, it is clear that molecules in devalent water diffuse mu
 \hline
                & $D (\Ang^2/\text{ps})$ & $\eta (\text{Pa}\cdot \text{s})$ \\
 \hline
-Devalent model                & 0.7188 & 3.5$\times 10^{-4}$ \\
+Devalent model                & 0.72 & 3.5$\times 10^{-4}$ \\
 %
-Realistic model              & 0.1069 & 29.5$\times 10^{-4}$ \\
+Realistic model              & 0.11 & 29.5$\times 10^{-4}$ \\
 %
-Experimental            & 0.239 (Ref.~\cite{hardy2001isotope})  & 8.9 $\times 10^{-4} $ (Ref.~\cite{harris2004temperature})
+Experimental            & 0.22 (Ref.~\citenum{hardy2001isotope})  & 8.9 $\times 10^{-4} $ (Ref.~\citenum{harris2004temperature})
 \end{tabular}
 \end{table}
  
