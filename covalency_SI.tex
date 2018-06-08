@@ -88,7 +88,7 @@ The positions of the peaks do not change significantly and the peaks become less
 
 \begin{figure}
 %\includegraphics[width=0.45\textwidth]{cp_adf}
-\includegraphics[width=0.45\textwidth]{cp_ir}
+\includegraphics[width=0.7\textwidth]{cp_ir}
 \caption{
 %Angular distribution function and 
 IR spectra for the fixed-density and relaxed-density systems.}\label{Fig:ir_cp}
@@ -118,15 +118,20 @@ Obtaining accurate values of $\epsilon$ for water from \emph{ab initio} molecula
 However, water molecules diffuse and rotate much faster in devalent simulations than in the reference runs. As shown in the main text, the diffusion coefficient of devalent water is approximately 7 times larger and the HB lifetime is almost one order of magnitude shorter than those of the reference model. This makes it possible to obtain reasonable estimates of $\epsilon$ over picosecond-long trajectories~\cite{pan2013dielectric}. 
 % pan2013dielectric -- PNAS April 23, 2013. 110 (17) 6646-6650; https://doi.org/10.1073/pnas.1221581110
 
-The dielectric constant for the devalent model was estimated to be a remarkable 180. Figure~\ref{ZZZ-Fig:dielectric} shows that this value is reasonably well-converged. This value should be compared to the dielectric constant of 70 for the reference model. While the latter value is less reliable it is in good agreement with previous \emph{ab initio} calculations~\cite{sharma2007dipolar} and the experimental value of 78~\cite{haynes2014crc}.
+The dielectric constant for the devalent model was estimated to be a remarkable 180. Figure~\ref{Fig:dielectric} shows that this value is reasonably well-converged. This value should be compared to the dielectric constant of 70 for the reference model. While the latter value is less reliable it is in good agreement with previous \emph{ab initio} calculations~\cite{sharma2007dipolar} and the experimental value of 78~\cite{haynes2014crc}.
 % sharma2007dipolar -- Phys. Rev. Lett. 2007, 98, 247401
+
+\begin{figure}[t]
+\includegraphics[width=0.7\textwidth]{dielectric}
+\caption{Dielectric constant of the reference and devalent models as a function of simulation time.}\label{Fig:dielectric}
+\end{figure} 
 
 %RZK RW2 The statistical errors in dielectric constants are estimated to be 70±3, 180±5 for realistic and devalent models, respectively. This uncertainty is calculated from the fluctuations in the dielectric constant during the last 10 ps. It is not uncommon that relatively short trajectories can be sufficient to evaluate the dielectric constant. For example, R. Car et al. [Phys. Rev. Lett. 2007, 98, 247401] used a 20 ps simulation with PBE functional to compute the dielectric constant of water.
 
 \section{Self-diffusion coefficient and shear viscosity} 
 
 \begin{figure}[t]
-\includegraphics[width=0.47\textwidth]{msd}
+\includegraphics[width=0.7\textwidth]{msd}
 \caption{Diffusion constant as a function of the system size, for 64, 125 and 256 water molecules. 
 The square dots are from simulation and the solid line is a linear fit.}\label{Fig:dfs}
 \end{figure} 
@@ -155,7 +160,7 @@ The HB lifetime is defined as the rate of its decay $C_{\text{HB}}(\tau) \sim e^
 
 
 \begin{figure}
-\includegraphics[width=0.4\textwidth]{new_hbdecay}
+\includegraphics[width=0.8\textwidth]{new_hbdecay}
 \caption{HB time autocorrelation function for the reference and devalent systems.} \label{Fig:HBdecay}
 \end{figure}
 

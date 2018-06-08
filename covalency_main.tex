@@ -40,11 +40,11 @@ Contribution of the covalent component of the hydrogen-bond network to the prope
 
 \begin{document}
 
-\begin{tocentry}
-\begin{center}
-\includegraphics[height=3.5cm]{TOC/TOC}
-\end{center}
-\end{tocentry}
+%\begin{tocentry}
+%\begin{center}
+%\includegraphics[height=3.5cm]{TOC/TOC}
+%\end{center}
+%\end{tocentry}
 
 
 \begin{abstract}
@@ -78,7 +78,7 @@ According to these methods, charge transfer contributes only around 20--30\% of 
 %RZK0 this is QAIM: Grabowski2011 - 10.1021/cr800346f
 
 While energy decomposition methods have helped us understand the importance of charge-transfer in the binding strength of gas-phase water clusters, nothing is known about the contribution of the covalent component of the HB network to the \emph{observed} properties of liquid water. 
-A deep connection between the covalent interactions and features of the X-ray absorption~\cite{NatureComm2013,ZZZ}, infrared~\cite{JPCL2013,Faraday2011,ZZZ}, and nuclear magnetic resonance~\cite{NatureComm2015,ZZZ} spectra of liquid water and small water clusters has been pointed out in several recent articles. 
+A deep connection between the covalent interactions and features of the X-ray absorption~\cite{fransson2016x, NatureComm2013}, infrared~\cite{JPCL2013,Faraday2011,lenz2006theoretical,auer2008ir}, and nuclear magnetic resonance~\cite{NatureComm2015} spectra of liquid water and small water clusters has been pointed out in several recent articles. 
 In this work, we extended a recently developed energy decomposition method for periodic systems~\cite{Khaliullin2013JCTC} to perform an unprecedented \emph{ab initio} molecular dynamics study that estimates the contribution of the covalent component of HB to the structural, dynamical, and spectroscopic properties of liquid water at ambient conditions. 
 Our results show that the seemingly insignificant covalent component of HB is defining for many properties of liquid water. 
 %
@@ -117,18 +117,18 @@ A detailed description of the calculations is presented in Computational Methods
 Unfortunately, the existing exchange-correlation functionals can reproduce properties of liquid water only in \emph{semi-quantitative} agreement with experimental measurements. 
 Thus this work aims only at capturing major \emph{qualitative} changes in water properties induced by the elimination of the covalent component from intermolecular bonding. 
 
-Like most generalized gradient approximation (GGA)~\cite{ZZZ} and meta-GGA~\cite{PNAS2017} functionals, BLYP is known to underestimate the energy gap of water molecules~\cite{JPCL2012}.
+Like most generalized gradient approximation (GGA)~\cite{cheng2012alignment} and meta-GGA~\cite{chen2017ab} functionals, BLYP is known to underestimate the energy gap of water molecules~\cite{adriaanse2012aqueous}.
 % ZZZ: any reviews of predicted water gaps?
 % PNAS, 2017, 114 (41), 10846
 % J. Phys. Chem. Lett., 2012, 3 (23), 3411.
 Because of this, the strength of intermolecular binding is slightly overestimated and computed radial (angular) distribution functions have sharper peaks than those derived from X-ray (NMR) scattering experiments~\cite{gillan2016perspective, ma2012ab}.
 % ma2012ab - JOURNAL OF CHEMICAL PHYSICS 137, 044506 (2012)
 % gillan2016perspective: Gillan, Alfe, and Michaelides J. Chem. Phys. 144, 130901 (2016)
-The overbinding effect also results in an underestimated diffusion constant~\cite{ZZZ}, overestimated viscosity~\cite{ZZZ}, and red-shifted peaks in the high-frequency region of the IR spectrum~\cite{ZZZ}. 
+The overbinding effect also results in an underestimated diffusion constant~\cite{bankura2014structure}, overestimated viscosity~\cite{khaliullin2013microscopic}, and red-shifted peaks in the high-frequency region of the IR spectrum~\cite{lee2007dynamical}. 
 Despite these imperfections, the magnitude of errors in the reference model is much smaller than the magnitude of changes induced by neglecting intermolecular covalency. 
 This implies that the effects of covalency are large enough to be captured qualitatively with dispersion-corrected BLYP functional. 
 
-We note in passing that, to quantify the contribution of covalent interactions to the properties of liquid water precisely, it would be necessary to perform molecular dynamics simulations using the forces obtained from constrained coupled-cluster wavefunctions. While coupled-cluster energy decomposition methods already exist~\cite{azar2012,azar2015}, coupling them to a dynamical engine and performing simulations on sufficiently large length- and time-scales is difficult. Nevertheless, such simulations can be done in the future as an interesting quantitative extension of the present work.
+We note in passing that, to quantify the contribution of covalent interactions to the properties of liquid water precisely, it would be necessary to perform molecular dynamics simulations using the forces obtained from constrained coupled-cluster wavefunctions. While coupled-cluster energy decomposition methods already exist~\cite{schneider2016decomposition,azar2012energy,azar2015similarity}, coupling them to a dynamical engine and performing simulations on sufficiently large length- and time-scales is difficult. Nevertheless, such simulations can be done in the future as an interesting quantitative extension of the present work.
 %Azar, R. Julian; Head-Gordon, Martin, JOURNAL OF CHEMICAL PHYSICS   Volume: 136   Issue: 2     Article Number: 024103
 %Azar, R. Julian; Head-Gordon, Martin, JOURNAL OF CHEMICAL PHYSICS   Volume: 142   Issue: 20   Article Number: 204101
 
@@ -151,10 +151,9 @@ The oxygen-oxygen radial distribution function (RDF) in Figure~\ref{Fig:RDF}A sh
 The shift of the first-shell peak is accompanied by broadening that is indicative of a wider variety of configurations available to devalent HBs.
 
 \begin{figure}
-%HOS: "A" and "B" labels not present in these plots
 \includegraphics[width=0.5\textwidth]{new_rdf}
 \includegraphics[width=0.5\textwidth]{new_adf}
-\caption{A. Oxygen-oxygen radial distribution function. The experimental curve is taken from Ref.~\citenum{ZZZ}. B. Distribution of HB angles $\phi \equiv O_{\text{ref}} \cdots O-H$ computed for hydrogens within 2.3~\Ang\ from a reference atom. The angular distribution function is normalized to account for the $\phi$-dependent volume and to correctly emphasize the energetic preference for linear HBs (see Supplementary Information). The experimental curve is taken from Ref.~\citenum{modig2003temperature}.} \label{Fig:RDF}
+\caption{A. Oxygen-oxygen radial distribution function. The experimental curve is taken from Ref.~\citenum{skinner2013benchmark}. B. Distribution of HB angles $\phi \equiv O_{\text{ref}} \cdots O-H$ computed for hydrogens within 2.3~\Ang\ from a reference atom. The angular distribution function is normalized to account for the $\phi$-dependent volume and to correctly emphasize the energetic preference for linear HBs (see Supplementary Information). The experimental curve is taken from Ref.~\citenum{modig2003temperature}.} \label{Fig:RDF}
 \end{figure}
 
 These dramatic changes in the structure of the HB network are consistent with the decrease in HB strength. 
@@ -191,7 +190,7 @@ The increase is so drastic that single-donor and single-acceptor molecules outnu
 In total, the number of HBs in the devalent is reduced by approximately a third.
 
 \begin{figure}
-\includegraphics[width=0.4\textwidth]{new_hbstat}
+\includegraphics[width=0.7\textwidth]{new_hbstat}
 %HOS: Increase text size to match figure 2?
 \caption{HB statistics for liquid water with and without intermolecular covalency.}\label{fig:HBstat}
 \end{figure}
@@ -238,13 +237,13 @@ This observation indicates that this feature of $\nu_s$ peak is entirely due to 
 Apparently, even the small amount of electron density transferred to the antibonding orbitals of intramolecular O--H bonds (see Figure~2 in Ref.~\citenum{khaliullin2009electron}) is sufficient to ``soften'' the O--H bond---that is, decrease its force constant---and lower its vibrational frequency. 
 
 The primary role of the covalent component in the broadening of the $\nu_s$ peak is also apparent from Figure~\ref{Fig:IR}. 
-The broadening of $\nu_s$ is normally attributed to a great variation in the strength of HBs in liquid water, with stronger HBs leading to redshifts of larger magnitude~\cite{ZZZ}. 
+The broadening of $\nu_s$ is normally attributed to a great variation in the strength of HBs in liquid water, with stronger HBs leading to redshifts of larger magnitude~\cite{joseph2007red}. 
 As discussed above, devalent water exhibits greater variation in the geometry of HB structures than the reference model (compare Figures~\ref{Fig:SDF}A and~\ref{Fig:SDF}B). 
 Despite this increased variety, the $\nu_s$ peak of devalent water remains very narrow. This shows that the variety of HB configurations alone is of little importance: a wider variety of HB without the covalent component simply does not generate a redshift and thus cannot result in peak broadening. 
 
 %Yifei: The integrated intensity is discussed in Eq 5.1 of the book "The HB and the water molecule".
 
-Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to the liquid phase is not entirely due to the intermolecular electron transfer as was previously assumed~(see Chapter 5 in Ref.~\citenum{marechal2006hydrogen}, ZZZ). 
+Finally, a comparison of the stretching bands for the three models shows that the spectacular enhancement of the integrated intensity from the gas to the liquid phase is not entirely due to the intermolecular electron transfer as was previously assumed~(see Ref.~\citenum{iogansen1999direct} and Chapter 5 in Ref.~\citenum{marechal2006hydrogen}). 
 % ZZZ any original papers here? 
 It is well known that the integrated intensity is proportional to $\left({\partial \mu}/{\partial q}\right)^2$---the derivative of the dipole moment with respect to the coordinate of the vibrational mode (i.e. the intramolecular O--H distance)---and any change in the integrated intensity arises mostly from the change in this derivative. 
 The change in this derivative is attributed to decoupling of the motion of electrons from that of the nuclei in HB systems: stretching of a hydrogen bonded O--H group causes the electrons (i.e. Wannier centers in Figure~\ref{Fig:acoord}) not to follow the H-atom as closely as when no HB is established~\cite{marechal2006hydrogen}. 
@@ -257,7 +256,7 @@ This means that the mere presence of a neighbor's lone pairs leads to decoupling
 %where $q$ is the distance between H and Y in a X-H...Y bond, $q_0$ is the equilibrium position, $\mu$ is the dipole of the X-H...Y systems. $\vert \langle 0 \vert q-q_0 \vert 1 \rangle \vert \sim h\omega/2$ for harmonic osillator and doesn't change much. So the change is mainly from $\frac{\partial \mu}{\partial q}$, which means that in the reference model when stretching the X-H bond electron won't follow the H atom as much, or in the reference model the electron are more detatched to the H atoms than the devalent model, due to electron transfer.
 
 Unlike stretching modes, the intramolecular bending modes in the region of 1600~cm$^{-1}$ are mostly unaffected by intermolecular forces and remain approximately the same for the reference, devalent, and ideal-gas systems. 
-In IR experiments, the bending mode is blue shifted in liquid water compared to the gas phase. However, the difference between them is less than 50 cm-1, much smaller than the width of the rotational sub-bands in the gas phase~\cite{ZZZ-the-HB-book}. Since the focus of our work is on liquid water, we did not attempt to resolve the rotational structure and determine the exact position of the bending peak for a gas-phase molecule.
+In IR experiments, the bending mode is blue shifted in liquid water compared to the gas phase. However, the difference between them is less than 50 cm-1, much smaller than the width of the rotational sub-bands in the gas phase~\cite{marechal2006hydrogen}. Since the focus of our work is on liquid water, we did not attempt to resolve the rotational structure and determine the exact position of the bending peak for a gas-phase molecule.
 It is worth noticing, however, that the stretching and bending peaks of the devalent model do not exhibit the extensive rotational structure---visible in the spectra of gas-phase molecules---because the retained intermolecular forces are sufficiently strong to hinder rotations.
 
 Another significant difference between the reference and devalent systems is in the peaks below 1000~cm$^{-1}$, which correspond to HB stretching vibrations and molecular librations ($\sim$200~cm$^{-1}$ and $\sim$700~cm$^{-1}$ in the reference model, respectively). These peaks are shifted in the direction opposite to the intramolecular stretching modes. This is because intermolecular bonding---unlike intramolecular bonding---becomes ``softer'' when the covalent component of the interaction is switched off.%, in agreement with the observed variety of geometric configurations accessible in the devalent water. 
@@ -272,7 +271,7 @@ Here, we utilized a standard procedure that estimates molecular dipoles using th
 It is important to clarify that all types of interactions---frozen density, polarization, and covalent--- contribute to the distribution of electrons around molecules and, therefore, determine the final magnitude of molecular dipoles. 
 %The dipoles resulting exclusively from gas-phase or frozen-density calculations are typically called permanent dipoles because they are not affected by molecule's environment.
 Moreover, the presence of covalent component dramatically changes configurations with what dipole moments are sampled in the course of simulations. 
-Hence, the final distribution of dipole moments is expected to be different in the realistic and devalent simulations. 
+Hence, the final distribution of dipole moments is expected to be different in the reference and devalent simulations. 
 
 \begin{figure}
 \includegraphics[width=0.45\textwidth]{new_dipole}
@@ -330,7 +329,7 @@ Despite this inaccuracy, it is clear that molecules in devalent water diffuse mu
 \hline
 Devalent model                & 0.72 & 3.5$\times 10^{-4}$ \\
 %
-Realistic model              & 0.11 & 29.5$\times 10^{-4}$ \\
+Reference model              & 0.11 & 29.5$\times 10^{-4}$ \\
 %
 Experimental            & 0.22 (Ref.~\citenum{hardy2001isotope})  & 8.9 $\times 10^{-4} $ (Ref.~\citenum{harris2004temperature})
 \end{tabular}
@@ -373,7 +372,7 @@ The temperature of simulations was set to 298~K and was controlled by a weakly-c
 A short time step of 0.5~fs ensured accurate integration of the equations of the motion. 
 The system was equilibrated for 3~ps using a strongly coupled canonical velocity re-scaling thermostat and then for additional 1.5~ps using the final a weakly coupled thermostat. 
 The total length of production runs for each system was 35~ps. 
-The properties of water including the infrared spectrum, radial distribution, dipole distribution, and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2011travis}.  
+The properties of water including the infrared spectrum, radial distribution, dipole distribution, and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
 
 \textbf{Removal of intermolecular covalency.} A straightforward utilization of ALMOs in an energy decomposition analysis (EDA) method~\cite{khaliullin2007unravelling} leads to significantly underestimated charge-transfer (i.e. covalency) effects if large basis sets are used~\cite{horn2015polarization,lao2016energy}. 
 The problem arises due to the lack of a well-defined separation between the polarization and charge-transfer terms in the complete basis set limit~\cite{misquitta2013charge,horn2015polarization}. 
