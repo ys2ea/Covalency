@@ -76,8 +76,6 @@ After a debate spanning several decades, it has been argued that natural bond or
 It appears that the covalent component of HB is better described by early decomposition methods~\cite{kitaura1976new, bagus1984new, bagus1992decomposition, stevens1987frozen, chen1996energy, stone1993computation} as well as their modern variants~\cite{mo2000energy, misquitta2013charge, khaliullin2007unravelling}. 
 According to these methods, charge transfer contributes only around 20--30\% of the overall binding energy between water molecules in small clusters \cite{stevens1987frozen, stone1993computation, chen1996energy, piquemal2005csov, khaliullin2009electron, cobar2012examination}, in agreement with many chemists' long-held intuitive view of HB.
 
-%RZK0 this is QAIM: Grabowski2011 - 10.1021/cr800346f
-
 While energy decomposition methods have helped understand the importance of charge-transfer in the binding strength of gas-phase water clusters, nothing is known about the contribution of the covalent component of the HB network to the \emph{observed} properties of liquid water. 
 A deep connection between the covalent interactions and features of the X-ray absorption~\cite{fransson2016x, NatureComm2013}, infrared~\cite{JPCL2013, Faraday2011, lenz2006theoretical}, and nuclear magnetic resonance~\cite{NatureComm2015} spectra of liquid water and small water clusters has been pointed out in several recent articles. 
 % RZK: auer2008ir and nagata2015ultrafast are removed. I could not find relevant info after going over the articles briefly. Did I miss something?
@@ -131,7 +129,7 @@ We note in passing that, to quantify the contribution of covalent interactions t
 %Azar, R. Julian; Head-Gordon, Martin, JOURNAL OF CHEMICAL PHYSICS   Volume: 136   Issue: 2     Article Number: 024103
 %Azar, R. Julian; Head-Gordon, Martin, JOURNAL OF CHEMICAL PHYSICS   Volume: 142   Issue: 20   Article Number: 204101
 
-% RZK: We chose the traditional BLYP-D3 model to perform this study because its shortcomings are well documented. Despite improved accuracy in reproducing some properties of liquid water, there is no evidence that newer exchange-correlation functionals can provide significantly more reliable results for the specific task of our study. Moreover, the newer functionals are still semi-empirical in nature and are not guaranteed to be reliable for all properties of interest (e.g. energy gap). Until their performance is carefully examined the AIMD community might continue using - at least for a short while - traditional time-tested functionals like BLYP, the shortcomings of which are well-documented.
+% We chose the traditional BLYP-D3 model to perform this study because its shortcomings are well documented. Despite improved accuracy in reproducing some properties of liquid water, there is no evidence that newer exchange-correlation functionals can provide significantly more reliable results for the specific task of our study. Moreover, the newer functionals are still semi-empirical in nature and are not guaranteed to be reliable for all properties of interest (e.g. energy gap). Until their performance is carefully examined the AIMD community might continue using - at least for a short while - traditional time-tested functionals like BLYP, the shortcomings of which are well-documented.
 
 \section{Results and discussion}
 
@@ -360,7 +358,6 @@ A short time step of 0.5~fs ensured accurate integration of the equations of the
 The system was equilibrated for 3~ps using a strongly coupled canonical velocity re-scaling thermostat and then for additional 1.5~ps using the final weakly coupled thermostat. 
 The total length of production runs for each system was 35~ps. 
 The properties of water including the infrared spectrum, radial distribution, dipole distribution, and mean-square deviation were calculated from the AIMD trajectories using the TRAVIS package~\cite{brehm2012travis}.  
-% RZK: brehm2012travis is not found in the bib file
 
 \textbf{Removal of intermolecular covalency.} A straightforward utilization of ALMOs in an energy decomposition analysis (EDA) method~\cite{khaliullin2007unravelling} leads to significantly underestimated charge-transfer (i.e. covalency) effects if large basis sets are used~\cite{horn2015polarization,lao2016energy}. 
 The problem arises due to the lack of a well-defined separation between the polarization and charge-transfer terms in the complete basis set limit~\cite{misquitta2013charge,horn2015polarization}. 
