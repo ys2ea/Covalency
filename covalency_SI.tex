@@ -113,9 +113,9 @@ The dielectric constant can be calculated using the fluctuation of the total dip
 \eea
 %
 where $V$ and $\vec{M}$ are the volume and total dipole of the simulation box, respectively. 
-Obtaining accurate values of $\epsilon$ for water from \emph{ab initio} molecular dynamics simulations is challenging because nanosecond-long trajectories are required to properly calculate the fluctuations of the total dipole moment~\cite{zhang2016computing}. 
+Obtaining accurate values of $\epsilon$ for water from \emph{ab initio} molecular dynamics simulations is challenging because nanosecond-long trajectories are required to properly calculate the fluctuations of the total dipole moment in the reference model~\cite{zhang2016computing}. 
 %zhang2016computing PHYSICAL REVIEW B 93, 144201 (2016)
-However, water molecules diffuse and rotate much faster in devalent simulations than in the reference runs. As shown in the main text, the diffusion coefficient of devalent water is approximately 7 times larger and the HB lifetime is almost one order of magnitude shorter than those of the reference model. This makes it possible to obtain reasonable estimates of $\epsilon$ over picosecond-long trajectories~\cite{pan2013dielectric}. 
+In devalent simulations, however, water molecules diffuse and rotate much faster than in the reference runs. As shown in the main text, the diffusion coefficient of devalent water is approximately 7 times larger and the HB lifetime is almost one order of magnitude shorter than those of the reference model. This makes it possible to obtain reasonable estimates of $\epsilon$ over picosecond-long trajectories~\cite{pan2013dielectric}. 
 % pan2013dielectric -- PNAS April 23, 2013. 110 (17) 6646-6650; https://doi.org/10.1073/pnas.1221581110
 
 The dielectric constant for the devalent model was estimated to be a remarkable 180. Figure~\ref{Fig:dielectric} shows that this value is reasonably well-converged. This value should be compared to the dielectric constant of 70 for the reference model. While the latter value is less reliable it is in good agreement with previous \emph{ab initio} calculations~\cite{sharma2007dipolar} and the experimental value of 78~\cite{haynes2014crc}.
@@ -123,7 +123,7 @@ The dielectric constant for the devalent model was estimated to be a remarkable 
 
 \begin{figure}[t]
 \includegraphics[width=0.7\textwidth]{dielectric}
-\caption{Dielectric constant of the reference and devalent models as a function of simulation time.}\label{Fig:dielectric}
+\caption{Computed dielectric constant of the reference and devalent models as a function of simulation time.}\label{Fig:dielectric}
 \end{figure} 
 
 %RZK RW2 The statistical errors in dielectric constants are estimated to be 70±3, 180±5 for realistic and devalent models, respectively. This uncertainty is calculated from the fluctuations in the dielectric constant during the last 10 ps. It is not uncommon that relatively short trajectories can be sufficient to evaluate the dielectric constant. For example, R. Car et al. [Phys. Rev. Lett. 2007, 98, 247401] used a 20 ps simulation with PBE functional to compute the dielectric constant of water.
@@ -155,7 +155,7 @@ C_{\text{HB}}(\tau) = \frac{\sum_{ij}\langle \theta_{ij}(\tau)\theta_{ij}(0) \ra
 \eea
 %
 where the HB survival function $\theta_{ij}(\tau)$ is equal to 1 if there is a HB formed between molecules $i$ and $j$ \emph{throughout} the time period from $t=0$ to $t=\tau$ and is otherwise equal to zero~\cite{rapaport1983hydrogen,starr1999fast}. 
-In the long-time limit, the time-correlation function decays exponentially as shown in Fig~\ref{Fig:HBdecay}. 
+In the long-time limit, the time-correlation function decays exponentially as shown in Figure~\ref{Fig:HBdecay}. 
 The HB lifetime is defined as the rate of its decay $C_{\text{HB}}(\tau) \sim e^{-\tau/\tau_{\text{HB}}}$ and is computed as the slope of the logarithm of $C_{\text{HB}}(\tau)$.
 
 
